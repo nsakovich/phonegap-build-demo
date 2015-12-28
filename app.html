@@ -5,25 +5,140 @@
     <title>Angular App!</title>
 </head>
 <body ng-controller="AppController">
-  <div ng-bind = "profile"></div>
+  <div style="min-height: 100%; width:100%; position: absolute; z-index: 999;"  ng-style="bodyStyle('scroll')" class = "scroll-bg">
+    <div ng-if = "profile">
+      <div lucy-control = "part('profile.ui.header')"></div>
+      <div ng-view></div>
+      <div lucy-control = "part('profile.ui.footer')"></div>
+    </div>
+  </div>
+
   <script src="cordova.js"></script>
   <script src="jquery.min.js"></script>
   <script type="text/javascript" src="angular.min.js"></script>
   <script type="text/javascript" src="angular-route.min.js"></script>
   <script type="text/javascript" src="angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="profile.js"></script>
+
+  <script type="text/ng-template" id="templates/ctrl/vpanel.html">
+      <div>
+          <div ng-repeat="c in thisCtrl.controls" ng-class = "controlClasses(c)" style = "margin-bottom: 10px;">
+              <div lucy-control="c"></div>
+          </div>
+      </div>
+  </script>
+
+  <script type="text/ng-template" id="partials/main.html">
+    <div lucy-control="part('profile.ui.pages.main')"></div>
+  </script>
+
   <script>
-    angular.module('cordovaApp', ['ngRoute', 'ngSanitize']).controller('AppController', ['$scope', '$timeout', function($scope, $timeout) {
-      var profile = $.ajax({
-          url: 'http://callmyapp.appspot.com/profile?profile=AVIS Israel',
-          type: 'get'
-      }).success(function(){
-          $scope.profile = profile.responseText;
-          $timeout(function() {
-            $scope.$apply();
+    var module = angular.module('cordovaApp', ['ngRoute', 'ngSanitize']);
+
+    module.config(['$routeProvider', function($routeProvider) {
+      $routeProvider.when('/', {templateUrl: 'partials/main.html'}).otherwise({redirectTo: '/'});
+    }]);
+
+    module.simpleDirective = function (name, template, extra) {
+        return this.directive(name, ['$parse',function ($parse) {
+            return angular.extend({
+                restrict: 'A',
+                scope: true,
+                templateUrl: template,
+                link: function(scope,element,attr) {
+                    var ctrl = scope.thisCtrl = $parse(attr[name])(scope);
+                    ctrl.css && element.css(ctrl.css);
+
+                    scope.controlClasses = function(c) {
+                        var classes = [];
+                        classes.push(c.id);
+                        return classes.join(" ");
+                    }
+                }
+            }, extra || {});
+        }]);
+    };
+
+    module.directive('lucyControl', ['$compile','$parse',function($compile, $parse) {
+        return  {
+            scope: true,
+            link: function(scope, element, attr) {
+                scope.$watch(attr.lucyControl, function (def) {
+                    element.replaceWith(element = $compile('<div ' + def.type + '="' + attr.lucyControl + '">' + '</div>')(scope));
+                }, true);
+            }
+        }
+    }]);
+
+    module.directive('htmlBlock', ['$compile',function($compile) {
+        return  {
+            link: function(scope, element, attr) {
+                scope.$watch(attr.htmlBlock, function (def) {
+                    element.html($compile(def.html)(scope));
+
+                    if (def.javascript) {
+                        eval(def.javascript);
+                    }
+
+                    if (def.conf) {
+                        for (var item in  def.conf) {
+                            scope[item] = def.conf[item].value;
+                        }
+                    }
+
+                    if (this['extend']) {
+                        this['extend'](scope);
+                    }
+                }, true);
+            }
+        }
+    }]);
+
+    module.simpleDirective('lucyVPanel', 'templates/ctrl/vpanel.html');
+
+    module.controller('AppController', ['$scope', '$timeout', '$parse', function($scope, $timeout, $parse) {
+      $scope.profile = window.profile;
+      $scope.part = function(name) {
+        return $parse(name)($scope);
+      };
+
+      $scope.bodyStyle = function(type) {
+        var _this = this;
+        if (this.profile) {
+          if (!this.headStyles) {
+            this.headStyles = $("<style />").appendTo($("head"));
+          }
+          var styles = "";
+          var addControlStyle = function (page) {
+            if (page && page.controls) {
+              $.each(page.controls, function (i, control) {
+                if (control.css && control.css.trim() !== "") {
+                    styles = "\n" + styles + control.css;
+                }
+              });
+            }
+          };
+
+          angular.forEach(this.profile.ui.pages, function(page, name) {
+            addControlStyle(page);
           });
-      }).error(function(){
-          window.alert("Error!");
-      });
+          angular.forEach([this.profile.ui.header, this.profile.ui.footer], function(e, i) {
+            addControlStyle(e);
+          });
+
+          this.headStyles.text(styles);
+
+          var result = {
+            "background-color": this.profile['background-color'] ? this.profile['background-color'] : "transparent",
+            "background-image": this.profile['background-image'] ? "url(" + this.profile['background-image'] + ")" : "none",
+            "background-repeat": this.profile['background-repeat'] ? this.profile['background-repeat'] : "no-repeat",
+            "background-position": "0 0",
+            "background-attachment": "scroll"
+          };
+          return result;
+        }
+      };
+
     }]);
   </script>
 </body>
