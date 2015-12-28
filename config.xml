@@ -23,7 +23,7 @@
     <content src="index.html" />
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
     <plugin name="cordova-plugin-whitelist" spec="1.2.0" />
-    <plugin name="cordova-plugin-camera" spec="1.2.0" />
+    <plugin name="cordova-plugin-camera" />
 
     <access origin="*" />
     <allow-intent href="http://*/*" />
