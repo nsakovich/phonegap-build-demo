@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "cordovaApp" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Angular App!</title>
+</head>
+<body ng-controller="AppController">
+  <div ng-bind = "profile"></div>
+  <script src="cordova.js"></script>
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="angular-route.min.js"></script>
+  <script type="text/javascript" src="angular-sanitize.min.js"></script>
+  <script>
+    angular.module('cordovaApp', ['ngRoute', 'ngSanitize']).controller('AppController', ['$scope', '$timeout', function($scope, $timeout) {
+      var profile = $.ajax({
+          url: 'http://callmyapp.appspot.com/profile?profile=AVIS Israel',
+          type: 'get'
+      }).success(function(){
+          scope.profile = profile.responseText;
+          $timeout(function() {
+            scope.$digest();
+          });
+      }).error(function(){
+          window.alert("Error!");
+      });
+    }]);
+  </script>
+</body>
+</html>
