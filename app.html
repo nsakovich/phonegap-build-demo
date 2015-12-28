@@ -17,9 +17,9 @@
           url: 'http://callmyapp.appspot.com/profile?profile=AVIS Israel',
           type: 'get'
       }).success(function(){
-          scope.profile = profile.responseText;
+          $scope.profile = profile.responseText;
           $timeout(function() {
-            scope.$digest();
+            $scope.$apply();
           });
       }).error(function(){
           window.alert("Error!");
