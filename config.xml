@@ -20,7 +20,7 @@
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <content src="index.html?profile=AVIS Israel" />
+    <content src="app.html" />
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
     <plugin name="cordova-plugin-camera" spec="1.2.0" />
     <plugin name="cordova-plugin-whitelist" spec="1.2.0" />
