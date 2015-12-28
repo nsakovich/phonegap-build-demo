@@ -6,5 +6,28 @@
 </head>
 <body>
   <h1>Hello World!</h1>
+  <img src = "" id = "myImage" />
+  <input type = "button" value = "Take a Photo!" onclick = "takePhoto()" />
+  <script>
+    function takePhoto() {
+      navigator.camera.getPicture(function() {
+        var image = document.getElementById('myImage');
+        image.src = "data:image/jpeg;base64," + imageData;
+      }, function() {
+        window.alert("Camera error!");
+      }, {
+        quality: 50,
+        destinationType: Camera.DestinationType.DATA_URL,
+        sourceType: Camera.PictureSourceType.CAMERA,
+        allowEdit: true,
+        encodingType: Camera.EncodingType.JPEG,
+        targetWidth: 100,
+        targetHeight: 100,
+        popoverOptions: CameraPopoverOptions,
+        saveToPhotoAlbum: false,
+        correctOrientation:true
+      });
+    }
+  </script>
 </body>
 </html>
