@@ -9,6 +9,12 @@
   <img src = "" id = "myImage" />
   <input type = "button" value = "Take a Photo!" onclick = "takePhoto()" />
   <script>
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+         alert(navigator.camera);
+    }
+
     function takePhoto() {
       if (navigator.camera) {
         window.alert("Camera exist!");
