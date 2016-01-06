@@ -41,8 +41,13 @@
   <script>
     var module = angular.module('cordovaApp', ['ngRoute', 'ngSanitize']);
 
-    module.config(['$routeProvider', function($routeProvider) {
+    module.config(['$routeProvider', '$compileProvider', '$sceProvider', function($routeProvider, $compileProvider, $sceProvider) {
       $routeProvider.when('/', {templateUrl: 'partials/main.html'}).otherwise({redirectTo: '/'});
+      var regexp = /^\s*(https?|ftp|mailto|zip|asset|tel|geo|smsto|whatsapp):/;
+      $compileProvider.urlSanitizationWhitelist && $compileProvider.urlSanitizationWhitelist(regexp);
+      $compileProvider.aHrefSanitizationWhitelist && $compileProvider.aHrefSanitizationWhitelist(regexp);
+      $compileProvider.imgSrcSanitizationWhitelist && $compileProvider.imgSrcSanitizationWhitelist(regexp);
+      $sceProvider.enabled(false);
     }]);
 
     module.simpleDirective = function (name, template, extra) {
