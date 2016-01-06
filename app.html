@@ -39,6 +39,11 @@
   </script>
 
   <script>
+    $("body").on("click", "a", function(e) {
+      var href = $(this).attr("href");
+      cordova.InAppBrowser.open(href);
+      e.preventDefault();
+    });
 
     var module = angular.module('cordovaApp', ['ngRoute', 'ngSanitize']);
 
