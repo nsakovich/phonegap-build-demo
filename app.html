@@ -41,7 +41,7 @@
   <script>
     $("body").on("click", "a", function(e) {
       var href = $(this).attr("href");
-      cordova.InAppBrowser.open(href);
+      cordova.InAppBrowser.open(href, "_system", 'location=yes');
       e.preventDefault();
     });
 
