@@ -108,6 +108,10 @@
         return $parse(name)($scope);
       };
 
+      $scope.ep = function(p) {
+          return encodeURI('tel:'+p);
+      };
+
       $scope.bodyStyle = function(type) {
         var _this = this;
         if (this.profile) {
