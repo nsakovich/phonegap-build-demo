@@ -25,6 +25,7 @@
     <plugin name="cordova-plugin-camera" spec="1.2.0" />
     <plugin name="cordova-plugin-whitelist" spec="1.2.0" />
     <plugin name="cordova-plugin-inappbrowser" spec="1.1.1" />
+    <plugin name="call-number" spec="0.0.2" />
 
     <access origin="*" />
     <allow-intent href="http://*/*" />

@@ -41,7 +41,12 @@
   <script>
     $("body").on("click", "a", function(e) {
       var href = $(this).attr("href");
-      cordova.InAppBrowser.open(href, "_system", 'location=yes');
+      var parts = href.split(":")
+      if (parts[0] === 'tel') {
+        window.plugins.CallNumber.callNumber(function() {}, function() {}, parts[1]);
+      } else {
+        cordova.InAppBrowser.open(href, "_system", 'location=yes');
+      }
       e.preventDefault();
     });
 
