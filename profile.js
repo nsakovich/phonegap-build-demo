@@ -1,6 +1,6 @@
 var profile = {
-  "fixed-bar": false,
   "uid": "4928abe9-2a5a-4405-b849-fa44b34c10a5",
+  "fixed-bar": false,
   "primary-button": {
     "gradient": [
       {
@@ -21,288 +21,288 @@ var profile = {
       "id": "phone-1418579300779",
       "phone": "087052",
       "hangup": false,
-      "name": "Разблокировать",
       "remove-sms": false,
+      "name": "Разблокировать",
       "sms-sender": false
     },
     {
       "id": "phone-1418579302354",
       "phone": "087051",
       "hangup": false,
-      "name": "Заблокировать",
       "remove-sms": false,
+      "name": "Заблокировать",
       "sms-sender": false
     },
     {
       "id": "phone-1418579303688",
       "phone": "087021",
       "hangup": false,
-      "name": "Управление паролем",
       "remove-sms": false,
+      "name": "Управление паролем",
       "sms-sender": false
     },
     {
       "id": "phone-1418577987911",
       "phone": "0870264",
       "hangup": false,
-      "name": "SMS-информирование о балансе",
       "remove-sms": false,
+      "name": "SMS-информирование о балансе",
       "sms-sender": false
     },
     {
       "id": "phone-1418577993664",
       "phone": "0870263",
       "hangup": false,
-      "name": "Отказ от SMS-рассылки",
       "remove-sms": false,
+      "name": "Отказ от SMS-рассылки",
       "sms-sender": false
     },
     {
       "id": "phone-1418577363479",
       "phone": "087036",
       "hangup": false,
-      "remove-sms": false,
       "name": "Родной",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418577364698",
       "phone": "087035",
       "hangup": false,
-      "remove-sms": false,
       "name": "Легко сказать",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418577365767",
       "phone": "087034",
       "hangup": false,
-      "remove-sms": false,
       "name": "Будь практичнее",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418577367188",
       "phone": "087033",
       "hangup": false,
-      "remove-sms": false,
       "name": "Р600",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418577368741",
       "phone": "087032",
       "hangup": false,
-      "remove-sms": false,
       "name": "Р300",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418577371238",
       "phone": "087031",
       "hangup": false,
-      "remove-sms": false,
       "name": "Отличный",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576864885",
       "phone": "087044",
       "hangup": false,
-      "remove-sms": false,
       "name": "Удалить",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576866656",
       "phone": "087043",
       "hangup": false,
-      "remove-sms": false,
       "name": "Изменить",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576867974",
       "phone": "087042",
       "hangup": false,
-      "remove-sms": false,
       "name": "Добавить",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576869476",
       "phone": "087041",
       "hangup": false,
-      "remove-sms": false,
       "name": "Действующие номера",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576203544",
       "phone": "0870257",
       "hangup": false,
-      "name": "Запрет вызова",
       "remove-sms": false,
+      "name": "Запрет вызова",
       "sms-sender": false
     },
     {
       "id": "phone-1418576208859",
       "phone": "0870256",
       "hangup": false,
-      "name": "Конференц-связь",
       "remove-sms": false,
+      "name": "Конференц-связь",
       "sms-sender": false
     },
     {
       "id": "phone-1418576210485",
       "phone": "0870255",
       "hangup": false,
-      "name": "Ожидание вызова",
       "remove-sms": false,
+      "name": "Ожидание вызова",
       "sms-sender": false
     },
     {
       "id": "phone-1418576211935",
       "phone": "0870254",
       "hangup": false,
-      "name": "Определитель номера",
       "remove-sms": false,
+      "name": "Определитель номера",
       "sms-sender": false
     },
     {
       "id": "phone-1418576213531",
       "phone": "0870253",
       "hangup": false,
-      "name": "Антиопределитель номера",
       "remove-sms": false,
+      "name": "Антиопределитель номера",
       "sms-sender": false
     },
     {
       "id": "phone-1418576216379",
       "phone": "0870252",
       "hangup": false,
-      "name": "Переадресация",
       "remove-sms": false,
+      "name": "Переадресация",
       "sms-sender": false
     },
     {
       "id": "phone-1418576219741",
       "phone": "0870251",
       "hangup": false,
-      "name": "Голосовая почта",
       "remove-sms": false,
+      "name": "Голосовая почта",
       "sms-sender": false
     },
     {
       "id": "phone-1418575336253",
       "phone": "0870244",
       "hangup": false,
-      "remove-sms": false,
       "name": "MMS-пакеты",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418575338685",
       "phone": "0870243",
       "hangup": false,
-      "remove-sms": false,
       "name": "SMS-пакеты",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418575341817",
       "phone": "0870242",
       "hangup": false,
-      "remove-sms": false,
       "name": "Получение SMS с e-mail",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418575344565",
       "phone": "0870241",
       "hangup": false,
-      "remove-sms": false,
       "name": "Получение SMS с сайта",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418574703144",
       "phone": "0870225",
       "hangup": false,
-      "remove-sms": false,
       "name": "Безлимитный Интернет с телефона",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418574706448",
       "phone": "0870224",
       "hangup": false,
-      "remove-sms": false,
       "name": "3G Коннект",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418574708019",
       "phone": "0870223",
       "hangup": false,
-      "remove-sms": false,
       "name": "Интерн@йт",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418574709952",
       "phone": "0870222",
       "hangup": false,
-      "remove-sms": false,
       "name": "Гипер.Net",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418574711690",
       "phone": "0870221",
       "hangup": false,
-      "remove-sms": false,
       "name": "Передача данных",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418573732850",
       "phone": "0870233",
       "hangup": false,
-      "remove-sms": false,
       "name": "SMS-роуминг",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418573175493",
       "phone": "0870142",
       "hangup": false,
-      "remove-sms": false,
       "name": "Активация карты на другой номер",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418560406070",
       "phone": "08820",
       "hangup": false,
-      "remove-sms": false,
       "name": "Отменить автодозвон",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418560401725",
       "phone": "0882",
       "hangup": false,
-      "remove-sms": false,
       "name": "Установить автодозвон",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418555409998",
       "phone": "0870231",
       "hangup": false,
-      "name": "Международный доступ",
       "remove-sms": false,
+      "name": "Международный доступ",
       "sms-sender": false,
       "note": ""
     },
@@ -310,76 +310,76 @@ var profile = {
       "id": "phone-1418555411904",
       "phone": "0870232",
       "hangup": false,
-      "name": "Роумниг",
       "remove-sms": false,
+      "name": "Роумниг",
       "sms-sender": false,
       "note": "*111*22#"
     },
     {
       "phone": "08901",
       "hangup": false,
-      "remove-sms": false,
       "name": "Новости о тарифах и услугах",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "phone": "087051",
       "hangup": false,
-      "name": "Установить Добровольную блокировку",
       "remove-sms": false,
+      "name": "Установить Добровольную блокировку",
       "sms-sender": false
     },
     {
       "id": "phone-1418554592998",
       "phone": "087013",
       "hangup": false,
-      "name": "Обещанный платеж",
       "remove-sms": false,
+      "name": "Обещанный платеж",
       "sms-sender": false
     },
     {
       "id": "phone-1418554589575",
       "phone": "087012",
       "hangup": false,
-      "name": "Зачисленные платежи",
       "remove-sms": false,
+      "name": "Зачисленные платежи",
       "sms-sender": false
     },
     {
       "id": "phone-1418554584724",
       "phone": "0870141",
       "hangup": false,
-      "name": "Активация карты на свой номер",
       "remove-sms": false,
+      "name": "Активация карты на свой номер",
       "sms-sender": false
     },
     {
       "id": "phone-1418554573811",
       "phone": "087011",
       "hangup": false,
-      "name": "Баланс",
       "remove-sms": false,
+      "name": "Баланс",
       "sms-sender": false
     },
     {
       "phone": "0870",
       "hangup": false,
-      "name": "Мобильный помощник",
       "remove-sms": false,
+      "name": "Мобильный помощник",
       "sms-sender": false
     },
     {
       "phone": "0887",
       "hangup": false,
-      "name": "Узнай свой номер",
       "remove-sms": false,
+      "name": "Узнай свой номер",
       "sms-sender": false
     },
     {
       "phone": "0890",
       "hangup": false,
-      "name": "Заблокировать карту",
       "remove-sms": false,
+      "name": "Заблокировать карту",
       "sms-sender": false,
       "note": ""
     }
@@ -527,8 +527,8 @@ var profile = {
   "banners": [
     {
       "picture": "http://storage.googleapis.com/callmyapp.appspot.com/TEST/1418557227856.png",
-      "name": "Баннер 1",
-      "link": "http://www.mts.by/mobile/entertainment/cinema/"
+      "link": "http://www.mts.by/mobile/entertainment/cinema/",
+      "name": "Баннер 1"
     }
   ],
   "profile": "TEST",
@@ -546,8 +546,8 @@ var profile = {
           "id": "banner-group-1418579931034",
           "margin-bottom": "55",
           "margin-top": 0,
-          "group": [],
-          "type": "banner-group"
+          "type": "banner-group",
+          "group": []
         },
         {
           "id": "html-block-1418580435503",
@@ -599,112 +599,96 @@ var profile = {
             "id": "html-block-1452287655254",
             "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418554543189';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
             "name": "Счет",
-            "html": "<div class = \"padding-wrapper\">\n    <a class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>Счет</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
+            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-if = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
             "type": "html-block",
             "css": ".html-block-1452287655254 .btn-primary .fa-phone:before {\n    content: \"\\f155\";\n}"
           },
           {
-            "id": "phones-button-1418551916477",
-            "use-custom-styles": false,
-            "name": "Счет",
-            "font-size": 24,
-            "margin-bottom": "5",
-            "margin-top": 0,
-            "group": "group-1418554543189",
-            "type": "phones-button",
-            "css": ".phones-button-1418551916477 .btn-primary .fa-phone:before {\n    content: \"\\f155\";\n}",
-            "opened": true
-          },
-          {
-            "id": "phones-button-1418577216005",
-            "use-custom-styles": false,
-            "font-size": "24",
+            "type": "html-block",
+            "id": "html-block-1452291461589",
             "name": "Смена тарифного плана",
-            "margin-bottom": "5",
-            "margin-top": 0,
-            "type": "phones-button",
-            "group": "group-1418577235645",
-            "opened": false
+            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-if = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418577235645';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};"
           },
           {
             "id": "phones-button-1418555455698",
             "use-custom-styles": false,
-            "name": "Международная связь и роуминг",
             "font-size": "21",
+            "name": "Международная связь и роуминг",
             "margin-bottom": "5",
             "margin-top": 0,
-            "group": "group-1418555406960",
             "type": "phones-button",
+            "group": "group-1418555406960",
             "css": ".phones-button-1418555455698 .btn-primary .fa-phone:before {\n    content: \"\\f0ac\";\n}\n\n",
             "opened": false
           },
           {
             "id": "phones-button-1418576733322",
             "use-custom-styles": false,
-            "font-size": 24,
             "name": "Любимые номера",
+            "font-size": 24,
             "margin-bottom": "5",
             "margin-top": 0,
-            "type": "phones-button",
             "group": "group-1418576750737",
+            "type": "phones-button",
             "opened": false
           },
           {
             "id": "phones-button-1418573799661",
             "use-custom-styles": false,
-            "font-size": 24,
             "name": "Интернет",
+            "font-size": 24,
             "margin-bottom": "5",
             "margin-top": 0,
-            "type": "phones-button",
             "group": "group-1418574696054",
+            "type": "phones-button",
             "css": ".phones-button-1418573799661 .btn-primary .fa-phone:before {\n    content: \"\\f0e8\";\n}",
             "opened": false
           },
           {
             "id": "phones-button-1418574934597",
             "use-custom-styles": false,
-            "font-size": "21",
             "name": "SMS и MMS-услуги",
+            "font-size": "21",
             "margin-bottom": "5",
             "margin-top": 0,
-            "type": "phones-button",
             "group": "group-1418575327252",
+            "type": "phones-button",
             "css": ".phones-button-1418574934597 .btn-primary .fa-phone:before {\n    content: \"\\f0e5\";\n}\n\n",
             "opened": false
           },
           {
             "id": "phones-button-1418576021095",
             "use-custom-styles": false,
-            "name": "Сетевые услуги",
             "font-size": 24,
+            "name": "Сетевые услуги",
             "margin-bottom": "5",
             "margin-top": 0,
-            "group": "group-1418576194945",
             "type": "phones-button",
+            "group": "group-1418576194945",
             "opened": false
           },
           {
             "id": "phones-button-1418579074041",
             "use-custom-styles": false,
-            "name": "Безопасность",
             "font-size": 24,
+            "name": "Безопасность",
             "margin-bottom": "5",
             "margin-top": 0,
-            "group": "group-1418579187816",
             "type": "phones-button",
+            "group": "group-1418579187816",
             "css": ".phones-button-1418579074041 .btn-primary .fa-phone:before {\r\n    content: \"\\f023\";\r\n}",
             "opened": false
           },
           {
             "id": "phones-button-1418560381233",
             "use-custom-styles": false,
-            "font-size": 24,
             "name": "Автодозвон",
+            "font-size": 24,
             "margin-bottom": "5",
             "margin-top": 0,
-            "type": "phones-button",
             "group": "group-1418560393109",
+            "type": "phones-button",
             "css": ".phones-button-1418560381233 .btn-primary .fa-phone:before {\n    content: \"\\f01e\";\n}\n\n",
             "opened": false
           }
@@ -748,6 +732,7 @@ var profile = {
     "background-color": "#9c0101",
     "border-color": "#9c0101"
   },
+  "app-root": "zip://storage.googleapis.com/wellknown/wellknown_10.zip",
   "bunches": [
     {
       "id": "group-1418579187816",
@@ -850,7 +835,6 @@ var profile = {
       "name": "Контакты в регионах"
     }
   ],
-  "app-root": "zip://storage.googleapis.com/wellknown/wellknown_10.zip",
   "sms-link-to-profile": false,
   "no-title": true
 };
