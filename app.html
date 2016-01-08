@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Angular App!</title>
+    <link rel="stylesheet" href="ffd12926.app-min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <style type="text/css">
       body, html {
         margin: 0;
@@ -41,16 +43,18 @@
   <script>
     $("body").on("click", "a", function(e) {
       var href = $(this).attr("href");
-      var hrefParts = href.split(":");
-      var scheme = hrefParts.shift();
-      var path = hrefParts.pop();
+      if (href) {
+        var hrefParts = href.split(":");
+        var scheme = hrefParts.shift();
+        var path = hrefParts.pop();
 
-      if (scheme === 'tel') {
-        window.plugins.CallNumber.callNumber(function() {}, function() {}, path, true);
-      } else {
-        cordova.InAppBrowser.open(href, "_system", 'location=yes');
+        if (scheme === 'tel') {
+          window.plugins.CallNumber.callNumber(function() {}, function() {}, path, true);
+        } else {
+          cordova.InAppBrowser.open(href, "_system", 'location=yes');
+        }
+        e.preventDefault();
       }
-      e.preventDefault();
     });
 
     document.addEventListener("deviceready", onDeviceReady, false);

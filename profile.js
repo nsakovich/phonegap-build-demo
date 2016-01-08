@@ -1,1 +1,856 @@
-var profile = {"uid":"0d954a77-79bc-4f83-8b22-2d36df588741","fixed-bar":false,"primary-button":{"gradient":[{"position":0,"color":"#0088cc"},{"position":1,"color":"#0044cc"}]},"hangup":false,"autoInstall":false,"check-availablity-frequency":"1","profile-view":"/lucy/standard.html?profile=AVIS Israel","version":1444326692087,"phones":[{"phone":"+97236170000","name_iw":"לחיוג למוקד לחץ כאן !","hangup":true,"remove-sms":false,"name":"To Dial Call Center","name_ru":"Позвонить в колл-центр","sms-sender":false,"outgoing":"/lucy/standard.html?profile=AVIS Israel"},{"name_iw":"שירות ללקוחות ליסינג","phone":"+97236170030","hangup":true,"note_iw":"תקלת דרך, הזמנת טיפול תקופתי, הזמנת שירות","remove-sms":false,"name":"Service for Leasing Customers","name_ru":"Лизинговым клиентам","sms-sender":false,"note_ru":"ДТП, периодическое ТО, обслуживание заказа","note":"Road Incident, Periodic Maintanance, Ordering service","outgoing":"/lucy/standard.html?profile=AVIS Israel"},{"phone":"+97236171934","name_iw":"רכישת רכב חדש","hangup":true,"note_iw":"רכישת רכב מיד ראשונה","remove-sms":false,"name":"Buying New Car","name_ru":"Покупка автомобиля","sms-sender":false,"note_ru":"Приобретение нового автомобиля","note":"Buying First Hand Car","outgoing":"/lucy/standard.html?profile=AVIS Israel"},{"phone":"+97236170030","name_iw":"דיווח על תאונת דרכים","hangup":true,"remove-sms":false,"name":"Reporting Road Accident","name_ru":"Сообщить о ДТП","sms-sender":false,"outgoing":"/lucy/standard.html?profile=AVIS Israel"},{"phone":"+97236171932","name_iw":"השכרת רכב","hangup":true,"note_iw":"השכרת רכב בישראל, השכרת רכב בחול, קוויקי","remove-sms":false,"name":"Car Rental","name_ru":"Прокат автомобиля","sms-sender":false,"note_ru":"Аренда в Израиле и за рубежом","note":"Car Rental in Israel, Car Rental Abroad, Quicky","outgoing":"/lucy/standard.html?profile=AVIS Israel"},{"phone":"+97236171933","name_iw":"ליסינג פרטי","hangup":true,"remove-sms":false,"name":"Private Leasing","name_ru":"Частный лизинг","sms-sender":false,"outgoing":"/lucy/standard.html?profile=AVIS Israel"},{"phone":"+97236170099","name_iw":"המגזר העסקי","hangup":true,"note_iw":"Back Office ללקוחות ליסינג","remove-sms":false,"name":"Business Sector","name_ru":"Бизнес сектор","sms-sender":false,"note_ru":"Бэк-офис для лизинговых клиентов","note":"Back Office for Leasing Customers","outgoing":"/lucy/standard.html?profile=AVIS Israel"},{"phone":"+97236170000","name_iw":"יתר שירותי Avis","hangup":true,"note_iw":"תביעות, דוחות, כספים, פניות לקוחות, מרכזיה","remove-sms":false,"name":"Other Avis services","name_ru":"Дополнительные услуги от Avis","sms-sender":false,"note_ru":"Рассмотрение жалоб и запросов клиентов, отчеты, финансы, обмен","note":"Claims, Reports, Finance, Customer Inquiries, Exchange","outgoing":"/lucy/standard.html?profile=AVIS Israel"}],"timezone":"Asia/Jerusalem","message-panel":{},"background-scroll":false,"social":{"facebook":"https://www.facebook.com/Avis.Israel"},"working-hours":{"3":{"name":"Wednesday","intervals":[]},"2":{"name":"Tuesday","intervals":[]},"1":{"name":"Monday","intervals":[]},"0":{"name":"Sunday","intervals":[]},"6":{"name":"Saturday","intervals":[]},"5":{"name":"Friday","intervals":[]},"4":{"name":"Thursday","intervals":[]}},"groups":{"addresses":[]},"banners":[],"profile":"AVIS Israel","ui":{"footer":{"controls":[{"id":"html-block-1397553060514","javascript":"","name":"Footer","html":"<div style = \"height: 60px;\"><\/div>\n<div class = \"footer\">\n    <a ng-href = \"{{profile.social.facebook}}\" class = \"facebook\">\n        avis.co.il <img src = \"http://callmyapp.appspot.com/profiles_assets/images/avis/fb.png\" />\n    <\/a>\n    \n    <a ng-href = \"{{ep(profile.phones[0].phone)}}\" class = \"avis-btn btn-red footer-btn\" href = \"#\" style = \"\">\n        <span class = \"bg\">\n            <span ng-bind-html = \"profile.i18n(profile.phones[0], 'name')\"><\/span>\n        <\/span>\n    <\/a>\n<\/div>","type":"html-block","css":".footer {\n    height: 70px;\n    background-color: #fff;\n    bottom: 0;\n    position: absolute;\n    width: 100%;\n}\n\n.footer a.facebook {\n    display: block;\n    color: #d1001d;\n    font-family: Helvetica;\n    text-decoration: none;\n    float: left;\n    margin: 30px 0 0 15px;\n    font-size: 14px;\n    height: 14px;\n}\n\n.footer a.facebook img {\n    margin-top:-9px\n}\n\n.footer-btn {\n    float: right;\n    white-space: nowrap;\n    max-width: 70%;\n    margin:20px 10px 0 0;\n}"},{"id":"html-block-1414139693846","javascript":"this.extend = function(scope) {\n    'use strict';\n    scope.track = function() {\n        var label = \"browser\";\n        if (window !== window.parent) {\n            label = \"editor\";\n        }\n        if (window.Lucy && window.Lucy.Config && window.Lucy.Config.outgoingNumber) {\n            label = window.Lucy.Config.outgoingNumber;\n        }\n        if (window.ga && scope.profile.profile) {\n            window.ga('send', 'event', scope.profile.profile, \"opened\", label);\n            window.console.log(\"GA:\" + scope.profile.profile + \"|opened|\" + label);\n            window.$(\"body\").on(\"click\", \"a\", function() {\n                var href = window.$(this).attr(\"href\"),\n                    action = \"nav\";\n                 if (href) {\n                    if (href.indexOf(\"tel:\") === 0) {action = \"phone\";}\n                    if (href.indexOf(\"mailto:\") === 0) {action = \"email\";}\n                    if (href.indexOf(\"geo:\") === 0) {action = \"address\";}\n                    window.ga('send', 'event', scope.profile.profile, action, href);\n                    window.console.log(\"GA:\" + scope.profile.profile + \"|\" + action + \"|\" + href);\n                }\n            });\n        }\n    };\n    \n    scope.track();\n};","name":"Analytics","type":"html-block"}],"type":"lucy-v-panel"},"pages":{"unavailable":{"controls":[{"id":"wysiwyg-block-1411575087165","html_en":"<div style=\"text-align: center;\"><span style=\"font-family: inherit; line-height: 1.42857143;\"><font size=\"5\" color=\"#ffffff\">Service Unavailable!<\/font><\/span><\/div>","margin-bottom":10,"margin-top":0,"type":"wysiwyg-block","css":".wysiwyg-block-1411575087165 {\n    margin: 50% auto;\n    position: relative;\n    top: -20px;\n}"}],"type":"lucy-v-panel"},"main":{"controls":[{"id":"html-block-1397556135655","javascript":"this.extend = function(scope) {\n    'use strict';\n    scope.profile.titleTxt = {\n        iw: \"עוד חידוש מהפכני מ- Avis\",\n        ru: \"Новинка от Avis\",\n        en: \"Another Revolutionary Innovation From Avis\"\n    };\n    scope.profile.subTitleTxt = {\n        iw: \"מערכת הניתוב החדשנית שלנו תסייע להגיע ישירות אל נותני השירות הרלוונטיים בקלות, מהירות ויעילות\",\n        en: \"Our new innovative routing system helps reach directly to the relevant service easily, quickly and efficiently\",\n        ru: \"Наш новая инновационная система помогает получить доступ к любой услуге легко, быстро и эффективно\"\n    };\n};","name":"Title","html":"<div style = \"padding: 15px 10px 0 10px;\">\n    <div class = \"head-title\" ng-class = \"{rtl: profile.isRtl()}\">\n        <h1 ng-bind = \"profile.i18n(profile.titleTxt)\"><\/h1>\n        <p ng-bind = \"profile.i18n(profile.subTitleTxt)\"><\/p>\n    <\/div>\n<\/div>","type":"html-block","css":".head-title h1 {\n    color: #fff;\n    font-size: 26px;\n    line-height: 27px;\n    font-weight: normal;\n    text-align: center;\n    margin: 0;\n    padding: 0;\n}\n\n.head-title p {\n    color: #fff;\n    text-align: center;\n    direction: rtl;\n    line-height: 16px\n    font-size: 16px;\n    padding: 10px 0 0 0;\n}"},{"id":"html-block-1397557452292","javascript":"this.extend = function(scope) {\n    'use strict';\n    scope.profile.selectServiceTxt = {\n        iw: \"אנא בחר/י את השירות המבוקש:\",\n        en: \"Please select the required service:\",\n        ru: \"Выберите интересующую Вас услугу:\"\n    };\n    \n    scope.profile.getGroupedPhones = function() {\n        var btnsRows = [],  \n            profile = scope.profile,\n            phones = window.$.grep(profile.phones, function(p) {\n                return p.name && p.name !== \"\";\n            }),\n            i, btns;\n        \n        if (profile.btnsRows) { return profile.btnsRows; }\n        \n        for (i = 1; i < phones.length; i = i + 2) {\n            btns = [];\n            if (phones[i]) { btns.unshift(phones[i]); }\n            if (phones[i + 1]) { btns.unshift(phones[i + 1]); }\n            btnsRows.push(btns);\n        }\n        \n        scope.profile.btnsRows = btnsRows;\n        return btnsRows;\n    };\n};","name":"Buttons","html":"<div class = \"main-btns\" style = \"padding: 0 10px 0 10px;\">\n    <p ng-class = \"{rtl: profile.isRtl()}\" ng-bind = \"profile.i18n(profile.selectServiceTxt)\"><\/p>\n    <table>\n        <tbody>\n            <tr ng-repeat = \"group in profile.getGroupedPhones()\">\n            <td colspan = \"{{group.length == 1 ? 2 : 0}}\" ng-repeat = \"phone in group\">\n            \t<a ng-href = \"{{ep(phone.phone)}}\" class = \"avis-btn btn-white\" href = \"#\">\n        \t\t\t<span class = \"bg\" style = \"margin-top: 0;\">\n        \t\t\t\t<span><b ng-bind-html = \"profile.i18n(phone, 'name')\"><\/b><br/>{{profile.i18n(phone, 'note')}}<\/span>\n        \t\t\t<\/span>\n        \t\t<\/a>\n        \t<\/td>\n            <\/tr>\n        <\/tbody>\n    <\/table>\n\n<\/div>","type":"html-block","css":".main-btns table {\n    width: 100%;\n    margin: 0;\n    padding:0;\n}\n\n.main-btns .avis-btn {\n    height: 100%;\n}\n\n.main-btns .avis-btn span.bg {\n    display: table;\n}\n\n.main-btns .avis-btn span.bg span {\n    display: table-cell;\n    vertical-align: middle;\n    font-size: 12px;\n    padding: 3px;\n}\n\n.main-btns table td, .main-btns table tr {\n    padding: 0;\n    margin: 0;\n}\n\n\n.main-btns table td {\n    height: 50px;\n    width: 50%;\n    vertical-align: top;\n    padding-bottom: 6px;\n}\n\n.main-btns table td:first-child {\n    padding-right: 3px;\n}\n\n.main-btns table td:last-child {\n\tpadding-left: 3px;\n}\n\n.main-btns table tr:last-child td {\n    padding: 0 !important;\n}\n\n\n.main-btns p {\n    text-align: center;\n    color: #fff;\n}"}],"type":"lucy-v-panel"}},"header":{"controls":[{"id":"html-block-1397552814163","javascript":"this.extend = function(scope) {\r\n    'use strict';\r\n    if (!scope.profile.browserLang) {\r\n        scope.profile.browserLang = window.navigator.language.split(\"-\")[0];\r\n    }\r\n    \r\n    scope.profile.i18n = function(o, field) {\r\n        var lang = scope.profile.currentLang();\r\n        if (!field) {\r\n            return o[lang] || o.en;\r\n        }\r\n\t\treturn o[field + \"_\" + lang] || o[field];    \r\n    };\r\n    \r\n    scope.profile.currentLang = function() {\r\n        if (window.parent !== window) {\r\n            return window.Lucy.Config.lang || \"en\";\r\n        }\r\n\t\tif ([\"en\", \"iw\", \"ru\"].indexOf(scope.profile.browserLang) >= 0) {\r\n\t\t\treturn scope.profile.browserLang;\r\n\t\t}\r\n\t\treturn \"iw\";\r\n    };\r\n    \r\n    scope.profile.isRtl = function() {\r\n        return scope.profile.currentLang() === \"iw\";\r\n    };\r\n};","name":"Header & Common JS + CSS","html":"<div class = \"header\">\n    <a href = \"#\">\n        <img src = \"http://callmyapp.appspot.com/profiles_assets/images/avis/avis_logo.png\" />\n    <\/a>\n<\/div>","type":"html-block","css":".html-block-1397552814163 {\n    margin: 0 !important;\n}\n\n.rtl {\n    direction: rtl;\n}\n\n.footer-market-alert {\n    display: none;\n}\n\n.header {\n    height: 50px;\n    background-color: #fff;\n}\n\n.header a {\n    float: right;\n    margin: 8px \n}\n\n.avis-btn {\n    height: 30px;\n    display: block;\n    border-radius: 4px;\n    overflow: hidden;\n    text-decoration: none !important;\n    direction: rtl;\n}\n\n.avis-btn.btn-red {\n    background-color: #cb0003;\n    color: #fff !important;\n    border:1px solid #ff4342;\n    text-shadow:0px 2px #880209;\n}\n\n.avis-btn.btn-white {\n    background-color: #fff;\n    color: #c80201 !important;\n    border:1px solid #fff;\n    text-shadow:0px 2px #f8cfd5;\n    text-align: center;\n}\n\n.avis-btn.btn-white b {\n    font-size: 14px;\n}\n\n.avis-btn span.bg {\n    display: block;\n    border-top-right-radius: 190px;\n    border-top-left-radius: 190px;\n    width: 100%;\n    height: 100%;\n    margin-top: 5px;\n}\n\n.avis-btn.btn-red span.bg {\n    background-image: linear-gradient(to bottom, #cb0003 0%,  #990003 80%);\n    background-image: -webkit-gradient(linear,0 0,0 100%,from(#cb0003),to(#990003));\n}\n\n.avis-btn.btn-white span.bg {\n    background-image: linear-gradient(to bottom, #fff 0%,  #b8b6b9 80%);\n    background-image: -webkit-gradient(linear,0 0,0 200%,from(#fff),to(#b8b6b9));\n}\n\n.avis-btn.btn-white span.bg span {\n    line-height: 15px\n}\n\n.avis-btn span.bg span {\n    padding: 0 10px 0 10px;\n    height:100%;\n    display: block;\n    line-height: 20px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}"}],"type":"lucy-v-panel"}},"secondary-button":{"gradient":[{"position":0,"color":"#62c462"},{"position":1,"color":"#51a351"}]},"logo":"http://storage.googleapis.com/callmyapp.appspot.com/AVIS%20Israel/1416521422178.png","check-working-hours":false,"fast-click":false,"prefetch":["http://callmyapp.appspot.com/profiles_assets/images/avis/avis_logo.png","http://callmyapp.appspot.com/profiles_assets/images/avis/fb.png"],"service-unavailable-page":"unavailable","copyright-panel":{},"have-profile-view-app":false,"background-color":"#cc0001","buttons-panel":{},"bunches":[],"app-root":"zip://storage.googleapis.com/wellknown/wellknown_10.zip","translations":[{"value":{"iw":"לצפייה בתפריט המהיר, לחץ והתקן את אפליקציית DialMyApp."},"key":"sms.landing"}],"addresses":[],"sms-link-to-profile":false,"no-title":true};
+var profile = {
+  "fixed-bar": false,
+  "uid": "4928abe9-2a5a-4405-b849-fa44b34c10a5",
+  "primary-button": {
+    "gradient": [
+      {
+        "position": 0,
+        "color": "#fc2e35"
+      },
+      {
+        "position": 1,
+        "color": "#9c0101"
+      }
+    ]
+  },
+  "hangup": false,
+  "check-availablity-frequency": 5,
+  "profile-view": "/lucy/standard.html?profile=TEST",
+  "phones": [
+    {
+      "id": "phone-1418579300779",
+      "phone": "087052",
+      "hangup": false,
+      "name": "Разблокировать",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418579302354",
+      "phone": "087051",
+      "hangup": false,
+      "name": "Заблокировать",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418579303688",
+      "phone": "087021",
+      "hangup": false,
+      "name": "Управление паролем",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418577987911",
+      "phone": "0870264",
+      "hangup": false,
+      "name": "SMS-информирование о балансе",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418577993664",
+      "phone": "0870263",
+      "hangup": false,
+      "name": "Отказ от SMS-рассылки",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418577363479",
+      "phone": "087036",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Родной",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418577364698",
+      "phone": "087035",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Легко сказать",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418577365767",
+      "phone": "087034",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Будь практичнее",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418577367188",
+      "phone": "087033",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Р600",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418577368741",
+      "phone": "087032",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Р300",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418577371238",
+      "phone": "087031",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Отличный",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576864885",
+      "phone": "087044",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Удалить",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576866656",
+      "phone": "087043",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Изменить",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576867974",
+      "phone": "087042",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Добавить",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576869476",
+      "phone": "087041",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Действующие номера",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576203544",
+      "phone": "0870257",
+      "hangup": false,
+      "name": "Запрет вызова",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576208859",
+      "phone": "0870256",
+      "hangup": false,
+      "name": "Конференц-связь",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576210485",
+      "phone": "0870255",
+      "hangup": false,
+      "name": "Ожидание вызова",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576211935",
+      "phone": "0870254",
+      "hangup": false,
+      "name": "Определитель номера",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576213531",
+      "phone": "0870253",
+      "hangup": false,
+      "name": "Антиопределитель номера",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576216379",
+      "phone": "0870252",
+      "hangup": false,
+      "name": "Переадресация",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418576219741",
+      "phone": "0870251",
+      "hangup": false,
+      "name": "Голосовая почта",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418575336253",
+      "phone": "0870244",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "MMS-пакеты",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418575338685",
+      "phone": "0870243",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "SMS-пакеты",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418575341817",
+      "phone": "0870242",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Получение SMS с e-mail",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418575344565",
+      "phone": "0870241",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Получение SMS с сайта",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418574703144",
+      "phone": "0870225",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Безлимитный Интернет с телефона",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418574706448",
+      "phone": "0870224",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "3G Коннект",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418574708019",
+      "phone": "0870223",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Интерн@йт",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418574709952",
+      "phone": "0870222",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Гипер.Net",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418574711690",
+      "phone": "0870221",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Передача данных",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418573732850",
+      "phone": "0870233",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "SMS-роуминг",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418573175493",
+      "phone": "0870142",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Активация карты на другой номер",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418560406070",
+      "phone": "08820",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Отменить автодозвон",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418560401725",
+      "phone": "0882",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Установить автодозвон",
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418555409998",
+      "phone": "0870231",
+      "hangup": false,
+      "name": "Международный доступ",
+      "remove-sms": false,
+      "sms-sender": false,
+      "note": ""
+    },
+    {
+      "id": "phone-1418555411904",
+      "phone": "0870232",
+      "hangup": false,
+      "name": "Роумниг",
+      "remove-sms": false,
+      "sms-sender": false,
+      "note": "*111*22#"
+    },
+    {
+      "phone": "08901",
+      "hangup": false,
+      "remove-sms": false,
+      "name": "Новости о тарифах и услугах",
+      "sms-sender": false
+    },
+    {
+      "phone": "087051",
+      "hangup": false,
+      "name": "Установить Добровольную блокировку",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418554592998",
+      "phone": "087013",
+      "hangup": false,
+      "name": "Обещанный платеж",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418554589575",
+      "phone": "087012",
+      "hangup": false,
+      "name": "Зачисленные платежи",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418554584724",
+      "phone": "0870141",
+      "hangup": false,
+      "name": "Активация карты на свой номер",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "id": "phone-1418554573811",
+      "phone": "087011",
+      "hangup": false,
+      "name": "Баланс",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "phone": "0870",
+      "hangup": false,
+      "name": "Мобильный помощник",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "phone": "0887",
+      "hangup": false,
+      "name": "Узнай свой номер",
+      "remove-sms": false,
+      "sms-sender": false
+    },
+    {
+      "phone": "0890",
+      "hangup": false,
+      "name": "Заблокировать карту",
+      "remove-sms": false,
+      "sms-sender": false,
+      "note": ""
+    }
+  ],
+  "timezone": "Asia/Jerusalem",
+  "message-panel": {
+    "background-color": "#"
+  },
+  "background-scroll": false,
+  "social": {},
+  "working-hours": {
+    "0": {
+      "name": "Sunday",
+      "intervals": []
+    },
+    "1": {
+      "name": "Monday",
+      "intervals": []
+    },
+    "2": {
+      "name": "Tuesday",
+      "intervals": []
+    },
+    "3": {
+      "name": "Wednesday",
+      "intervals": []
+    },
+    "4": {
+      "name": "Thursday",
+      "intervals": []
+    },
+    "5": {
+      "name": "Friday",
+      "intervals": []
+    },
+    "6": {
+      "name": "Saturday",
+      "intervals": []
+    }
+  },
+  "groups": {
+    "phones": [
+      {
+        "id": "group-1418579187816",
+        "items": [
+          "phone-1418579303688",
+          "phone-1418579302354",
+          "phone-1418579300779"
+        ],
+        "name": "Безопасность"
+      },
+      {
+        "id": "group-1418577235645",
+        "items": [
+          "phone-1418577371238",
+          "phone-1418577368741",
+          "phone-1418577367188",
+          "phone-1418577365767",
+          "phone-1418577364698",
+          "phone-1418577363479"
+        ],
+        "name": "Смена тарифного плана"
+      },
+      {
+        "id": "group-1418576750737",
+        "items": [
+          "phone-1418576869476",
+          "phone-1418576867974",
+          "phone-1418576866656",
+          "phone-1418576864885"
+        ],
+        "name": "Любимые номера"
+      },
+      {
+        "id": "group-1418576194945",
+        "items": [
+          "phone-1418576219741",
+          "phone-1418576216379",
+          "phone-1418576213531",
+          "phone-1418576211935",
+          "phone-1418576210485",
+          "phone-1418576208859",
+          "phone-1418576203544"
+        ],
+        "name": "Сетевые услуги"
+      },
+      {
+        "id": "group-1418575327252",
+        "items": [
+          "phone-1418575344565",
+          "phone-1418575341817",
+          "phone-1418575338685",
+          "phone-1418575336253",
+          "phone-1418577993664",
+          "phone-1418577987911"
+        ],
+        "name": "SMS и MMS-услуги"
+      },
+      {
+        "id": "group-1418574696054",
+        "items": [
+          "phone-1418574711690",
+          "phone-1418574709952",
+          "phone-1418574708019",
+          "phone-1418574706448",
+          "phone-1418574703144"
+        ],
+        "name": "Интернет"
+      },
+      {
+        "id": "group-1418554543189",
+        "items": [
+          "phone-1418554573811",
+          "phone-1418554589575",
+          "phone-1418554592998",
+          "phone-1418554584724",
+          "phone-1418573175493"
+        ],
+        "name": "Счет"
+      },
+      {
+        "id": "group-1418555406960",
+        "items": [
+          "phone-1418555409998",
+          "phone-1418555411904",
+          "phone-1418573732850"
+        ],
+        "name": "Роуминг и междунродный доступ"
+      },
+      {
+        "id": "group-1418560393109",
+        "items": [
+          "phone-1418560401725",
+          "phone-1418560406070"
+        ],
+        "name": "Автодозвон"
+      },
+      {
+        "id": "group-1418553981963",
+        "items": [],
+        "name": "Контакты в регионах"
+      }
+    ]
+  },
+  "banners": [
+    {
+      "picture": "http://storage.googleapis.com/callmyapp.appspot.com/TEST/1418557227856.png",
+      "name": "Баннер 1",
+      "link": "http://www.mts.by/mobile/entertainment/cinema/"
+    }
+  ],
+  "profile": "TEST",
+  "ui": {
+    "footer": {
+      "controls": [
+        {
+          "id": "html-block-1418563437537",
+          "name": "Нашли ошибку",
+          "html": "<p>\n    Не нашли что искали? Где-то допущена ошибка? <a href = \"mailto:n.sakovich@gmail.com\">Дайте нам знать!</a>\n</p>",
+          "type": "html-block",
+          "css": ".html-block-1418563437537 {\n    text-align: center;\n}"
+        },
+        {
+          "id": "banner-group-1418579931034",
+          "margin-bottom": "55",
+          "margin-top": 0,
+          "group": [],
+          "type": "banner-group"
+        },
+        {
+          "id": "html-block-1418580435503",
+          "html": "<div class = \"share\">\n    <p>Нравится? Расскажите друзьям!</p>\n    <a ng-href = \"{{shareFbLink}}\" target = \"_blank\"><i class = \"fa fa-facebook-square\"></i></a>\n    <a ng-href = \"{{shareTwLink}}\" target = \"_blank\"><i class = \"fa fa-twitter-square\"></i></a>\n    <a ng-href = \"{{sharePlusLink}}\" target = \"_blank\"><i class = \"fa fa-vk\"></i></a>\n    <a ng-href = \"{{sharePlusLink}}\" target = \"_blank\"><i class = \"fa fa-google-plus-square\"></i></a>\n    <a ng-href = \"{{emailLink}}\" target = \"_blank\"><i class = \"fa fa-envelope\"></i></a>\n</div>",
+          "type": "html-block",
+          "css": ".html-block-1418580435503 {\n    position: fixed;\n    bottom: 0; margin: 0 !important; width: 100%;\n}\n\n.html-block-1418580435503 .share {\n    height: 55px;\n    background-color: #fff;\n    box-shadow: 0 0 20px #000;\n    -webkit-box-shadow: 0 0 20px #000;\n    text-align: center;\n}\n\n.html-block-1418580435503 .share i {\n    font-size: 32px;\n    color: #9c9d9e;\n}\n\n.html-block-1418580435503 .share p {\n    padding: 0; margin: 0;\n}\n\n.html-block-1418580435503 .share .fa-envelope {\n    position: relative;\n    top:-1px;\n}"
+        }
+      ],
+      "type": "lucy-v-panel"
+    },
+    "pages": {
+      "ussd": {
+        "controls": [
+          {
+            "id": "wysiwyg-block-1418557088929",
+            "html_en": "<div style=\"text-align: center;\"><span style=\"font-family: inherit; line-height: 1.42857143;\"><font size=\"5\">Все самые необходимые USSD запросы в одном месте!</font></span></div>",
+            "margin-bottom": 10,
+            "margin-top": 0,
+            "type": "wysiwyg-block",
+            "css": ".wysiwyg-block-1418557088929 font {\r\n    line-height: 24px !important;\r\n}"
+          },
+          {
+            "id": "html-block-1418557484411",
+            "name": "USSD",
+            "html": "<p><b>За мой счет</b>: *190*1*&lt;номер абонента&gt;#</p>\n<p><b>Пополнить счет</b>: *121#</p>\n<p><b>Обещанный платеж</b>: *113*&lt;сумма&gt;#</p>\n<p><b>Перезвони мне</b>: *120*&lt;номер абонента&gt;#</p>\n<p><b>Международные звонки</b>: *111*20#</p>\n<p><b>Роуминг</b>: *111*22#</p>\n<p><b>WAP-портал МТС</b>: *303#</p>\n<p><b>Услуга \"Вам Звонили\" когда телефон</b>:<br/>\n    <ul>\n        <li><b>недоступен или выключен</b>: **62*110110#</li>\n        <li><b>занят</b>: **61*110110#</li>\n        <li><b>не отвечает 15 секунд</b>: **67*110110#</li>\n    </ul>\n</p>\n\n\n",
+            "type": "html-block",
+            "css": ".html-block-1418557484411 {\n    padding: 0 10px 0 10px;\n    margin-bottom: 0 !important;\n}\n\n.html-block-1418557484411 p {\n    padding: 0 0 5px 0; margin: 0;\n}"
+          }
+        ],
+        "type": "lucy-v-panel"
+      },
+      "main": {
+        "controls": [
+          {
+            "id": "html-block-1452287413523",
+            "name": "Логотип",
+            "html": "<img ng-src=\"{{profile.logo}}\">",
+            "type": "html-block",
+            "css": ".html-block-1452287413523 {\n    text-align: center;\n}"
+          },
+          {
+            "id": "html-block-1418580118366",
+            "name": "Описание",
+            "html": "<h3>Быстрый и простой доступ к возможностям мобильного помощника МТС!</h3>\n<p><sup>*</sup>на территории Республики Беларусь</p>",
+            "type": "html-block",
+            "css": ".html-block-1418580118366, .html-block-1418580118366 h3 {\n    margin: 0 !important;\n}\n\n.html-block-1418580118366 h3 {\n    font-size: 18px;\n    line-height: 18px;\n    text-align: center;\n    padding: 0 5px 0 5px;\n}\n\n.html-block-1418580118366 p {\n    text-align: center;\n    padding: 0 0 10px 0; margin: 0;\n    font-size: 12px;\n}\n\n.html-block-1418580118366 p sup {\n    color: red;\n}"
+          },
+          {
+            "id": "html-block-1452287655254",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418554543189';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
+            "name": "Счет",
+            "html": "<div class = \"padding-wrapper\">\n    <a class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>Счет</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
+            "type": "html-block",
+            "css": ".html-block-1452287655254 .btn-primary .fa-phone:before {\n    content: \"\\f155\";\n}"
+          },
+          {
+            "id": "phones-button-1418551916477",
+            "use-custom-styles": false,
+            "name": "Счет",
+            "font-size": 24,
+            "margin-bottom": "5",
+            "margin-top": 0,
+            "group": "group-1418554543189",
+            "type": "phones-button",
+            "css": ".phones-button-1418551916477 .btn-primary .fa-phone:before {\n    content: \"\\f155\";\n}",
+            "opened": true
+          },
+          {
+            "id": "phones-button-1418577216005",
+            "use-custom-styles": false,
+            "font-size": "24",
+            "name": "Смена тарифного плана",
+            "margin-bottom": "5",
+            "margin-top": 0,
+            "type": "phones-button",
+            "group": "group-1418577235645",
+            "opened": false
+          },
+          {
+            "id": "phones-button-1418555455698",
+            "use-custom-styles": false,
+            "name": "Международная связь и роуминг",
+            "font-size": "21",
+            "margin-bottom": "5",
+            "margin-top": 0,
+            "group": "group-1418555406960",
+            "type": "phones-button",
+            "css": ".phones-button-1418555455698 .btn-primary .fa-phone:before {\n    content: \"\\f0ac\";\n}\n\n",
+            "opened": false
+          },
+          {
+            "id": "phones-button-1418576733322",
+            "use-custom-styles": false,
+            "font-size": 24,
+            "name": "Любимые номера",
+            "margin-bottom": "5",
+            "margin-top": 0,
+            "type": "phones-button",
+            "group": "group-1418576750737",
+            "opened": false
+          },
+          {
+            "id": "phones-button-1418573799661",
+            "use-custom-styles": false,
+            "font-size": 24,
+            "name": "Интернет",
+            "margin-bottom": "5",
+            "margin-top": 0,
+            "type": "phones-button",
+            "group": "group-1418574696054",
+            "css": ".phones-button-1418573799661 .btn-primary .fa-phone:before {\n    content: \"\\f0e8\";\n}",
+            "opened": false
+          },
+          {
+            "id": "phones-button-1418574934597",
+            "use-custom-styles": false,
+            "font-size": "21",
+            "name": "SMS и MMS-услуги",
+            "margin-bottom": "5",
+            "margin-top": 0,
+            "type": "phones-button",
+            "group": "group-1418575327252",
+            "css": ".phones-button-1418574934597 .btn-primary .fa-phone:before {\n    content: \"\\f0e5\";\n}\n\n",
+            "opened": false
+          },
+          {
+            "id": "phones-button-1418576021095",
+            "use-custom-styles": false,
+            "name": "Сетевые услуги",
+            "font-size": 24,
+            "margin-bottom": "5",
+            "margin-top": 0,
+            "group": "group-1418576194945",
+            "type": "phones-button",
+            "opened": false
+          },
+          {
+            "id": "phones-button-1418579074041",
+            "use-custom-styles": false,
+            "name": "Безопасность",
+            "font-size": 24,
+            "margin-bottom": "5",
+            "margin-top": 0,
+            "group": "group-1418579187816",
+            "type": "phones-button",
+            "css": ".phones-button-1418579074041 .btn-primary .fa-phone:before {\r\n    content: \"\\f023\";\r\n}",
+            "opened": false
+          },
+          {
+            "id": "phones-button-1418560381233",
+            "use-custom-styles": false,
+            "font-size": 24,
+            "name": "Автодозвон",
+            "margin-bottom": "5",
+            "margin-top": 0,
+            "type": "phones-button",
+            "group": "group-1418560393109",
+            "css": ".phones-button-1418560381233 .btn-primary .fa-phone:before {\n    content: \"\\f01e\";\n}\n\n",
+            "opened": false
+          }
+        ],
+        "type": "lucy-v-panel"
+      }
+    },
+    "header": {
+      "controls": [
+        {
+          "id": "html-block-1418551548594",
+          "javascript": "this.extend = function(scope) {\n    'use strict';\n    scope.profile.phonesMap = {};\n    if (scope.profile.phones) {\n        window.$.each(scope.profile.phones, function(i) {\n            var phone = scope.profile.phones[i];\n            if (phone.id) {\n                scope.profile.phonesMap[phone.id] = phone;\n            }\n        });\n    }\n    \n    scope.profile.openGroup = function(groupId) {\n        if (scope.profile.openedId !== groupId) {\n            scope.profile.openedId = groupId;\n        } else {\n            scope.profile.openedId = \"\";\n        }\n    };\n};",
+          "name": "CSS  & JS",
+          "type": "html-block",
+          "css": ".footer-market-alert {\n    display: none;\n}\n\n.fa-home {\n    color: #fc2e35;\n}\n\n.no-r {\n    -webkit-border-bottom-right-radius: 5px !important;\n    -webkit-border-bottom-left-radius: 5px !important;\n}\n\n.alert-success {\n    margin-top: -3px !important;\n    background-color: #9c0101;\n    border-color: #9c0101;\n}\n\n.btn-primary, .btn-success {\n    width: 100%;\n    box-sizing: border-box;\n    display: block;\n}\n\n.btn-success {\n    margin-bottom: 10px;\n}\n\n.alert-success {\n    padding: 10px;\n    margin: 0;\n    -webkit-border-top-left-radius: 0;\n    -webkit-border-top-right-radius: 0;\n}\n\n.padding-wrapper {\n    padding-left: 5px;\n    padding-right: 5px;\n}\n\n.btn-primary, .btn-primary:hover {\n    background-image: -webkit-gradient(linear,0 0,0 100%,from(#fc2e35),to(#9c0101));\n    background-image: linear-gradient(to bottom, #fc2e35 0%, #9c0101 100%);\n    background-color: #9c0101;\n}\n\n.btn-success, .btn-success:hover {\n    background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ffffff));\n    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);\n    background-color: #ffffff;\n    color: #fc2e35;\n}"
+        }
+      ],
+      "type": "lucy-v-panel"
+    }
+  },
+  "secondary-button": {
+    "text-color": "#fc2e35",
+    "gradient": [
+      {
+        "position": 0,
+        "color": "#ffffff"
+      },
+      {
+        "position": 1,
+        "color": "#ffffff"
+      }
+    ]
+  },
+  "logo": "http://storage.googleapis.com/callmyapp.appspot.com/TEST/1418581895468.png",
+  "fast-click": false,
+  "copyright-panel": {},
+  "have-profile-view-app": false,
+  "background-color": "",
+  "emails": [],
+  "buttons-panel": {
+    "background-color": "#9c0101",
+    "border-color": "#9c0101"
+  },
+  "bunches": [
+    {
+      "id": "group-1418579187816",
+      "items": [
+        "phone-1418579303688",
+        "phone-1418579302354",
+        "phone-1418579300779"
+      ],
+      "name": "Безопасность"
+    },
+    {
+      "id": "group-1418577235645",
+      "items": [
+        "phone-1418577371238",
+        "phone-1418577368741",
+        "phone-1418577367188",
+        "phone-1418577365767",
+        "phone-1418577364698",
+        "phone-1418577363479"
+      ],
+      "name": "Смена тарифного плана"
+    },
+    {
+      "id": "group-1418576750737",
+      "items": [
+        "phone-1418576869476",
+        "phone-1418576867974",
+        "phone-1418576866656",
+        "phone-1418576864885"
+      ],
+      "name": "Любимые номера"
+    },
+    {
+      "id": "group-1418576194945",
+      "items": [
+        "phone-1418576219741",
+        "phone-1418576216379",
+        "phone-1418576213531",
+        "phone-1418576211935",
+        "phone-1418576210485",
+        "phone-1418576208859",
+        "phone-1418576203544"
+      ],
+      "name": "Сетевые услуги"
+    },
+    {
+      "id": "group-1418575327252",
+      "items": [
+        "phone-1418575344565",
+        "phone-1418575341817",
+        "phone-1418575338685",
+        "phone-1418575336253",
+        "phone-1418577993664",
+        "phone-1418577987911"
+      ],
+      "name": "SMS и MMS-услуги"
+    },
+    {
+      "id": "group-1418574696054",
+      "items": [
+        "phone-1418574711690",
+        "phone-1418574709952",
+        "phone-1418574708019",
+        "phone-1418574706448",
+        "phone-1418574703144"
+      ],
+      "name": "Интернет"
+    },
+    {
+      "id": "group-1418554543189",
+      "items": [
+        "phone-1418554573811",
+        "phone-1418554589575",
+        "phone-1418554592998",
+        "phone-1418554584724",
+        "phone-1418573175493"
+      ],
+      "name": "Счет"
+    },
+    {
+      "id": "group-1418555406960",
+      "items": [
+        "phone-1418555409998",
+        "phone-1418555411904",
+        "phone-1418573732850"
+      ],
+      "name": "Роуминг и междунродный доступ"
+    },
+    {
+      "id": "group-1418560393109",
+      "items": [
+        "phone-1418560401725",
+        "phone-1418560406070"
+      ],
+      "name": "Автодозвон"
+    },
+    {
+      "id": "group-1418553981963",
+      "items": [],
+      "name": "Контакты в регионах"
+    }
+  ],
+  "app-root": "zip://storage.googleapis.com/wellknown/wellknown_10.zip",
+  "sms-link-to-profile": false,
+  "no-title": true
+};
