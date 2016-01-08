@@ -53,6 +53,16 @@
       e.preventDefault();
     });
 
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+      document.addEventListener("offline", function() {
+        window.alert("Offline!");
+      }, false);
+      document.addEventListener("online", function() {
+        window.alert("Online!");
+      }, false);
+    }
+
     var module = angular.module('cordovaApp', ['ngRoute', 'ngSanitize']);
 
     module.config(['$routeProvider', '$compileProvider', '$sceProvider', function($routeProvider, $compileProvider, $sceProvider) {
