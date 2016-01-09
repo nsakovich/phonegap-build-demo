@@ -44,7 +44,7 @@
       <icon src="res/android/mipmap-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
      </platform>
 
-     <splash src="res/android/drawable-land-xhdpi/screen.png" />
+     <splash platform="android" src="res/android/drawable-land-xhdpi/screen.png" />
 
      <!-- <platform name="android">
        <splash src="res/android/drawable-land/screen.png" density="land-ldpi"/>
