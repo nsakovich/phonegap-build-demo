@@ -58,6 +58,9 @@
        <splash src="res/android/drawable-xxxhdpi/screen.png" density="xxxhdpi"/>
     </platform>
 
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="SplashScreen" value="splash" />
+
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
