@@ -27,6 +27,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="1.1.1" />
     <plugin name="call-number" spec="0.0.2" />
     <plugin name="cordova-plugin-network-information" />
+    <plugin name="cordova-plugin-splashscreen" />
 
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -44,14 +45,17 @@
       <icon src="res/android/mipmap-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
      </platform>
 
-     <splash platform="android" src="res/android/drawable-land-xhdpi/screen.png" />
+     <preference name="SplashScreen" value="res/android/drawable/screen.png" />
+     <preference name="SplashScreenDelay" value="3000" />
+
+     <!-- <splash platform="android" src="res/android/drawable-land-xhdpi/screen.png" />
 
     <splash src="res/android/drawable/screen.png" platform="android" qualifier="ldpi" />
     <splash src="res/android/drawable-mdpi/screen.png" platform="android" qualifier="mdpi" />
     <splash src="res/android/drawable-hdpi/screen.png" platform="android" qualifier="hdpi" />
     <splash src="res/android/drawable-xhdpi/screen.png" platform="android" qualifier="xhdpi" />
     <splash src="res/android/drawable-xxhdpi/screen.png" platform="android" qualifier="xxhdpi" />
-    <splash src="res/android/drawable-xxxhdpi/screen.png" platform="android" qualifier="xxxhdpi" />
+    <splash src="res/android/drawable-xxxhdpi/screen.png" platform="android" qualifier="xxxhdpi" /> -->
 
      <!-- <platform name="android">
        <splash src="res/android/drawable-land/screen.png" density="land-ldpi"/>
