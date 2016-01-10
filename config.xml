@@ -43,6 +43,12 @@
       <icon src="res/android/mipmap-xhdpi/ic_launcher.png" density="xhdpi" />
       <icon src="res/android/mipmap-xxhdpi/ic_launcher.png" density="xxhdpi" />
       <icon src="res/android/mipmap-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
+
+      <splash src="res/android/drawable-hdpi/screen.png" density="hdpi" />
+      <splash src="res/android/drawable-mdpi/screen.png" density="mdpi" />
+      <splash src="res/android/drawable-xhdpi/screen.png" density="xhdpi" />
+      <splash src="res/android/drawable-xxhdpi/screen.png" density="xxhdpi" />
+      <splash src="res/android/drawable-xxxhdpi/screen.png" density="xxxhdpi" />
      </platform>
 
      <preference name="SplashScreen" value="screen" />
