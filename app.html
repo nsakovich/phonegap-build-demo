@@ -14,11 +14,6 @@
 </head>
 <body ng-controller="AppController">
 
-  <script>
-    window.alert("Started!");
-    window.alert(navigator.splashscreen);
-  </script>
-
   <div style="min-height: 100%; width:100%; position: absolute; z-index: 999;"  ng-style="bodyStyle('scroll')" class = "scroll-bg">
     <div ng-if = "profile">
       <div lucy-control = "part('profile.ui.header')"></div>
@@ -65,6 +60,8 @@
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
+      window.alert(navigator.splashscreen);
+      
       document.addEventListener("offline", function() {
         window.alert("Offline!");
       }, false);
