@@ -45,8 +45,9 @@
       <icon src="res/android/mipmap-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
      </platform>
 
-     <preference name="SplashScreen" value="res/android/drawable/screen.png" />
+     <preference name="SplashScreen" value="screen.png" />
      <preference name="SplashScreenDelay" value="3000" />
+     <preference name="SplashShowOnlyFirstTime" value="false" />
 
      <!-- <splash platform="android" src="res/android/drawable-land-xhdpi/screen.png" />
 
