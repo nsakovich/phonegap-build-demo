@@ -28,6 +28,7 @@
     <plugin name="call-number" spec="0.0.2" />
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-contacts" />
 
     <access origin="*" />
     <allow-intent href="http://*/*" />
