@@ -60,8 +60,8 @@
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-      window.alert(navigator.splashscreen);
-      
+      navigator.splashscreen.hide();
+
       document.addEventListener("offline", function() {
         window.alert("Offline!");
       }, false);

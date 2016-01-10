@@ -53,6 +53,7 @@
 
      <preference name="SplashScreen" value="screen" />
      <preference name="SplashScreenDelay" value="3000" />
+     <preference name="AutoHideSplashScreen" value="false" />
      <preference name="SplashShowOnlyFirstTime" value="false" />
 
     <allow-intent href="sms:*" />
