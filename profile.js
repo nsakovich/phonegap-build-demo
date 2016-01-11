@@ -355,7 +355,7 @@ var profile = {
     },
     {
       "id": "phone-1418554573811",
-      "phone": "087011",
+      "phone": "*100#",
       "hangup": false,
       "name": "Баланс",
       "remove-sms": false,
@@ -441,7 +441,7 @@ var profile = {
           "phone-1418577364698",
           "phone-1418577363479"
         ],
-        "name": "Смена тарифного плана"
+        "name": "Тарифы"
       },
       {
         "id": "group-1418576750737",
@@ -507,7 +507,7 @@ var profile = {
           "phone-1418555411904",
           "phone-1418573732850"
         ],
-        "name": "Международная связь и роуминг"
+        "name": "Роуминг"
       },
       {
         "id": "group-1418560393109",
@@ -618,7 +618,7 @@ var profile = {
             "name": "Международная связь и роуминг",
             "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
             "type": "html-block",
-            "css": ".html-block-1452354288484 {\n    margin-bottom: 5px !important;\n}\n\n.html-block-1452354288484 .btn-primary .fa-phone:before {\n    content: \"\\f0ac\";\n}\n\n.html-block-1452354288484 .btn-primary h3 {\n    font-size: 21px;\n}"
+            "css": ".html-block-1452354288484 {\n    margin-bottom: 5px !important;\n}\n\n.html-block-1452354288484 .btn-primary .fa-phone:before {\n    content: \"\\f0ac\";\n}"
           },
           {
             "id": "html-block-1452354945971",
@@ -735,7 +735,7 @@ var profile = {
         "phone-1418577364698",
         "phone-1418577363479"
       ],
-      "name": "Смена тарифного плана"
+      "name": "Тарифы"
     },
     {
       "id": "group-1418576750737",
@@ -801,7 +801,7 @@ var profile = {
         "phone-1418555411904",
         "phone-1418573732850"
       ],
-      "name": "Международная связь и роуминг"
+      "name": "Роуминг"
     },
     {
       "id": "group-1418560393109",
