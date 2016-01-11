@@ -821,4 +821,4 @@ var profile = {
   "sms-link-to-profile": false,
   "no-title": true
 };
-window.alert("Updated !!!");
+window.alert("Updated 2 !!!");
