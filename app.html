@@ -28,6 +28,7 @@
   <script type="text/javascript" src="angular-route.min.js"></script>
   <script type="text/javascript" src="angular-sanitize.min.js"></script>
   <script type="text/javascript" src="profile.js"></script>
+  <script type="text/javascript" src="file://data/data/io.cordova.demoapp/files/mts-app/profile.js"></script>
 
   <script type="text/ng-template" id="templates/ctrl/vpanel.html">
       <div>
@@ -68,7 +69,7 @@
        });
 
        sync.on('error', function(e) {
-           window.alert("Something went wrong: " + e);
+           window.alert("Something went wrong with sync: " + e);
        });
 
       navigator.splashscreen.hide();
