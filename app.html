@@ -15,7 +15,6 @@
 <body ng-controller="AppController">
 
   <div style="min-height: 100%; width:100%; position: absolute; z-index: 999;"  ng-style="bodyStyle('scroll')" class = "scroll-bg">
-    <a href = "file://data/data/io.cordova.demoapp/files/mts-app/profile.js">profile.js</a>
     <div ng-if = "profile">
       <div lucy-control = "part('profile.ui.header')"></div>
       <div ng-view></div>
@@ -29,7 +28,6 @@
   <script type="text/javascript" src="angular-route.min.js"></script>
   <script type="text/javascript" src="angular-sanitize.min.js"></script>
   <script type="text/javascript" src="profile.js"></script>
-  <script type="text/javascript" src="file://data/data/io.cordova.demoapp/files/mts-app/profile.js"></script>
 
   <script type="text/ng-template" id="templates/ctrl/vpanel.html">
       <div>
@@ -64,14 +62,17 @@
     function onDeviceReady() {
 
       var url = "https://raw.githubusercontent.com/nsakovich/phonegap-build-demo/master/profile.js";
-      var sync = ContentSync.sync({ src: url, id: 'mts-app', type: 'merge'});
+      var sync = ContentSync.sync({ src: url, id: 'mts-app', type: 'merge', copyRootApp: true });
       sync.on('complete', function(data) {
            window.alert(data.localPath);
+           document.location = data.localPath + "/index.html";
        });
 
        sync.on('error', function(e) {
            window.alert("Something went wrong with sync: " + e);
        });
+
+      navigator.splashscreen.hide();
 
       document.addEventListener("offline", function() {
         window.alert("Offline!");
@@ -85,7 +86,7 @@
 
     module.config(['$routeProvider', '$compileProvider', '$sceProvider', function($routeProvider, $compileProvider, $sceProvider) {
       $routeProvider.when('/', {templateUrl: 'partials/main.html'}).otherwise({redirectTo: '/'});
-      var regexp = /^\s*(https?|ftp|mailto|zip|asset|tel|geo|smsto|whatsapp|file):/;
+      var regexp = /^\s*(https?|ftp|mailto|zip|asset|tel|geo|smsto|whatsapp):/;
       $compileProvider.urlSanitizationWhitelist && $compileProvider.urlSanitizationWhitelist(regexp);
       $compileProvider.aHrefSanitizationWhitelist && $compileProvider.aHrefSanitizationWhitelist(regexp);
       $compileProvider.imgSrcSanitizationWhitelist && $compileProvider.imgSrcSanitizationWhitelist(regexp);
@@ -195,13 +196,8 @@
           return result;
         }
       };
-    }]);
 
-    module.run([function() {
-      if (navigator.splashscreen) {
-        navigator.splashscreen.hide();
     }]);
-
   </script>
 </body>
 </html>
