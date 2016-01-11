@@ -1,6 +1,6 @@
 var profile = {
-  "uid": "4928abe9-2a5a-4405-b849-fa44b34c10a5",
   "fixed-bar": false,
+  "uid": "4928abe9-2a5a-4405-b849-fa44b34c10a5",
   "primary-button": {
     "gradient": [
       {
@@ -23,288 +23,288 @@ var profile = {
       "id": "phone-1418579300779",
       "phone": "087052",
       "hangup": false,
-      "remove-sms": false,
       "name": "Разблокировать",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418579302354",
       "phone": "087051",
       "hangup": false,
-      "remove-sms": false,
       "name": "Заблокировать",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418579303688",
       "phone": "087021",
       "hangup": false,
-      "remove-sms": false,
       "name": "Управление паролем",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418577987911",
       "phone": "0870264",
       "hangup": false,
-      "remove-sms": false,
       "name": "SMS-информирование о балансе",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418577993664",
       "phone": "0870263",
       "hangup": false,
-      "remove-sms": false,
       "name": "Отказ от SMS-рассылки",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418577363479",
       "phone": "087036",
       "hangup": false,
-      "name": "Родной",
       "remove-sms": false,
+      "name": "Родной",
       "sms-sender": false
     },
     {
       "id": "phone-1418577364698",
       "phone": "087035",
       "hangup": false,
-      "name": "Легко сказать",
       "remove-sms": false,
+      "name": "Легко сказать",
       "sms-sender": false
     },
     {
       "id": "phone-1418577365767",
       "phone": "087034",
       "hangup": false,
-      "name": "Будь практичнее",
       "remove-sms": false,
+      "name": "Будь практичнее",
       "sms-sender": false
     },
     {
       "id": "phone-1418577367188",
       "phone": "087033",
       "hangup": false,
-      "name": "Р600",
       "remove-sms": false,
+      "name": "Р600",
       "sms-sender": false
     },
     {
       "id": "phone-1418577368741",
       "phone": "087032",
       "hangup": false,
-      "name": "Р300",
       "remove-sms": false,
+      "name": "Р300",
       "sms-sender": false
     },
     {
       "id": "phone-1418577371238",
       "phone": "087031",
       "hangup": false,
-      "name": "Отличный",
       "remove-sms": false,
+      "name": "Отличный",
       "sms-sender": false
     },
     {
       "id": "phone-1418576864885",
       "phone": "087044",
       "hangup": false,
-      "name": "Удалить",
       "remove-sms": false,
+      "name": "Удалить",
       "sms-sender": false
     },
     {
       "id": "phone-1418576866656",
       "phone": "087043",
       "hangup": false,
-      "name": "Изменить",
       "remove-sms": false,
+      "name": "Изменить",
       "sms-sender": false
     },
     {
       "id": "phone-1418576867974",
       "phone": "087042",
       "hangup": false,
-      "name": "Добавить",
       "remove-sms": false,
+      "name": "Добавить",
       "sms-sender": false
     },
     {
       "id": "phone-1418576869476",
       "phone": "087041",
       "hangup": false,
-      "name": "Действующие номера",
       "remove-sms": false,
+      "name": "Действующие номера",
       "sms-sender": false
     },
     {
       "id": "phone-1418576203544",
       "phone": "0870257",
       "hangup": false,
-      "remove-sms": false,
       "name": "Запрет вызова",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576208859",
       "phone": "0870256",
       "hangup": false,
-      "remove-sms": false,
       "name": "Конференц-связь",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576210485",
       "phone": "0870255",
       "hangup": false,
-      "remove-sms": false,
       "name": "Ожидание вызова",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576211935",
       "phone": "0870254",
       "hangup": false,
-      "remove-sms": false,
       "name": "Определитель номера",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576213531",
       "phone": "0870253",
       "hangup": false,
-      "remove-sms": false,
       "name": "Антиопределитель номера",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576216379",
       "phone": "0870252",
       "hangup": false,
-      "remove-sms": false,
       "name": "Переадресация",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418576219741",
       "phone": "0870251",
       "hangup": false,
-      "remove-sms": false,
       "name": "Голосовая почта",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418575336253",
       "phone": "0870244",
       "hangup": false,
-      "name": "MMS-пакеты",
       "remove-sms": false,
+      "name": "MMS-пакеты",
       "sms-sender": false
     },
     {
       "id": "phone-1418575338685",
       "phone": "0870243",
       "hangup": false,
-      "name": "SMS-пакеты",
       "remove-sms": false,
+      "name": "SMS-пакеты",
       "sms-sender": false
     },
     {
       "id": "phone-1418575341817",
       "phone": "0870242",
       "hangup": false,
-      "name": "Получение SMS с e-mail",
       "remove-sms": false,
+      "name": "Получение SMS с e-mail",
       "sms-sender": false
     },
     {
       "id": "phone-1418575344565",
       "phone": "0870241",
       "hangup": false,
-      "name": "Получение SMS с сайта",
       "remove-sms": false,
+      "name": "Получение SMS с сайта",
       "sms-sender": false
     },
     {
       "id": "phone-1418574703144",
       "phone": "0870225",
       "hangup": false,
-      "name": "Безлимитный Интернет с телефона",
       "remove-sms": false,
+      "name": "Безлимитный Интернет с телефона",
       "sms-sender": false
     },
     {
       "id": "phone-1418574706448",
       "phone": "0870224",
       "hangup": false,
-      "name": "3G Коннект",
       "remove-sms": false,
+      "name": "3G Коннект",
       "sms-sender": false
     },
     {
       "id": "phone-1418574708019",
       "phone": "0870223",
       "hangup": false,
-      "name": "Интерн@йт",
       "remove-sms": false,
+      "name": "Интерн@йт",
       "sms-sender": false
     },
     {
       "id": "phone-1418574709952",
       "phone": "0870222",
       "hangup": false,
-      "name": "Гипер.Net",
       "remove-sms": false,
+      "name": "Гипер.Net",
       "sms-sender": false
     },
     {
       "id": "phone-1418574711690",
       "phone": "0870221",
       "hangup": false,
-      "name": "Передача данных",
       "remove-sms": false,
+      "name": "Передача данных",
       "sms-sender": false
     },
     {
       "id": "phone-1418573732850",
       "phone": "0870233",
       "hangup": false,
-      "name": "SMS-роуминг",
       "remove-sms": false,
+      "name": "SMS-роуминг",
       "sms-sender": false
     },
     {
       "id": "phone-1418573175493",
       "phone": "0870142",
       "hangup": false,
-      "name": "Активация карты на другой номер",
       "remove-sms": false,
+      "name": "Активация карты на другой номер",
       "sms-sender": false
     },
     {
       "id": "phone-1418560406070",
       "phone": "08820",
       "hangup": false,
-      "name": "Отменить автодозвон",
       "remove-sms": false,
+      "name": "Отменить автодозвон",
       "sms-sender": false
     },
     {
       "id": "phone-1418560401725",
       "phone": "0882",
       "hangup": false,
-      "name": "Установить автодозвон",
       "remove-sms": false,
+      "name": "Установить автодозвон",
       "sms-sender": false
     },
     {
       "id": "phone-1418555409998",
       "phone": "0870231",
       "hangup": false,
-      "remove-sms": false,
       "name": "Международный доступ",
+      "remove-sms": false,
       "sms-sender": false,
       "note": ""
     },
@@ -312,76 +312,76 @@ var profile = {
       "id": "phone-1418555411904",
       "phone": "0870232",
       "hangup": false,
-      "remove-sms": false,
       "name": "Роумниг",
+      "remove-sms": false,
       "sms-sender": false,
       "note": "*111*22#"
     },
     {
       "phone": "08901",
       "hangup": false,
-      "name": "Новости о тарифах и услугах",
       "remove-sms": false,
+      "name": "Новости о тарифах и услугах",
       "sms-sender": false
     },
     {
       "phone": "087051",
       "hangup": false,
-      "remove-sms": false,
       "name": "Установить Добровольную блокировку",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418554592998",
       "phone": "087013",
       "hangup": false,
-      "remove-sms": false,
       "name": "Обещанный платеж",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418554589575",
       "phone": "087012",
       "hangup": false,
-      "remove-sms": false,
       "name": "Зачисленные платежи",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418554584724",
       "phone": "0870141",
       "hangup": false,
-      "remove-sms": false,
       "name": "Активация карты на свой номер",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "id": "phone-1418554573811",
       "phone": "*100#",
       "hangup": false,
-      "remove-sms": false,
       "name": "Баланс",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "phone": "0870",
       "hangup": false,
-      "remove-sms": false,
       "name": "Мобильный помощник",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "phone": "0887",
       "hangup": false,
-      "remove-sms": false,
       "name": "Узнай свой номер",
+      "remove-sms": false,
       "sms-sender": false
     },
     {
       "phone": "0890",
       "hangup": false,
-      "remove-sms": false,
       "name": "Заблокировать карту",
+      "remove-sms": false,
       "sms-sender": false,
       "note": ""
     }
@@ -529,8 +529,8 @@ var profile = {
   "banners": [
     {
       "picture": "http://storage.googleapis.com/callmyapp.appspot.com/TEST/1418557227856.png",
-      "link": "http://www.mts.by/mobile/entertainment/cinema/",
-      "name": "Баннер 1"
+      "name": "Баннер 1",
+      "link": "http://www.mts.by/mobile/entertainment/cinema/"
     }
   ],
   "profile": "TEST",
@@ -554,9 +554,10 @@ var profile = {
         {
           "id": "html-block-1418580435503",
           "name": "Шаринг",
-          "html": "<div class = \"share\">\n    <p>Нравится? Расскажите друзьям!</p>\n    <a ng-href = \"{{shareFbLink}}\" target = \"_blank\"><i class = \"fa fa-facebook-square\"></i></a>\n    <a ng-href = \"{{shareTwLink}}\" target = \"_blank\"><i class = \"fa fa-twitter-square\"></i></a>\n    <a ng-href = \"{{sharePlusLink}}\" target = \"_blank\"><i class = \"fa fa-vk\"></i></a>\n    <a ng-href = \"{{sharePlusLink}}\" target = \"_blank\"><i class = \"fa fa-google-plus-square\"></i></a>\n    <a ng-href = \"{{emailLink}}\" target = \"_blank\"><i class = \"fa fa-envelope\"></i></a>\n</div>",
+          "html": "<div class = \"share\">\n    <p>Нравится? Расскажите друзьям!</p>\n    <a ng-click = \"share()\"><i class = \"fa fa-share-alt\"></i></a>\n    <!--a ng-href = \"{{shareFbLink}}\" target = \"_blank\"><i class = \"fa fa-facebook-square\"></i></a>\n    <a ng-href = \"{{shareTwLink}}\" target = \"_blank\"><i class = \"fa fa-twitter-square\"></i></a>\n    <a ng-href = \"{{sharePlusLink}}\" target = \"_blank\"><i class = \"fa fa-vk\"></i></a>\n    <a ng-href = \"{{sharePlusLink}}\" target = \"_blank\"><i class = \"fa fa-google-plus-square\"></i></a>\n    <a ng-href = \"{{emailLink}}\" target = \"_blank\"><i class = \"fa fa-envelope\"></i></a-->\n</div>",
           "type": "html-block",
-          "css": ".html-block-1418580435503 {\n    position: fixed;\n    bottom: 0; margin: 0 !important; width: 100%;\n}\n\n.html-block-1418580435503 .share {\n    height: 55px;\n    background-color: #fff;\n    box-shadow: 0 0 20px #000;\n    -webkit-box-shadow: 0 0 20px #000;\n    text-align: center;\n}\n\n.html-block-1418580435503 .share i {\n    font-size: 32px;\n    color: #9c9d9e;\n}\n\n.html-block-1418580435503 .share p {\n    padding: 0; margin: 0;\n}\n\n.html-block-1418580435503 .share .fa-envelope {\n    position: relative;\n    top:-1px;\n}"
+          "css": ".html-block-1418580435503 {\n    position: fixed;\n    bottom: 0; margin: 0 !important; width: 100%;\n}\n\n.html-block-1418580435503 .share {\n    height: 55px;\n    background-color: #fff;\n    box-shadow: 0 0 20px #000;\n    -webkit-box-shadow: 0 0 20px #000;\n}\n\n.fa-share-alt {\n    background-color: #eee;\n    padding: 5px 8px 5px 5px;\n    border: 1px solid #ccc;\n    border-radius: 20px;\n    float: right;\n    margin: 6px 5px 0 0;\n}\n\n.html-block-1418580435503 .share i {\n    font-size: 32px;\n    color: #9c9d9e;\n}\n\n.html-block-1418580435503 .share p {\n    padding: 17px 0 0 20px; margin: 0;\n    float: left;\n}\n\n.html-block-1418580435503 .share .fa-envelope {\n    position: relative;\n    top:-1px;\n}",
+          "javascript": "this.extend = function(scope) {\n    'use strict';\n    scope.share = function() {\n        window.plugins.socialsharing.share(\"Удобное приложение для абонентов МТС (Беларусь)!\", null, null, 'http://mts.by');       \n    };\n};"
         }
       ],
       "type": "lucy-v-panel"
@@ -717,7 +718,6 @@ var profile = {
     "background-color": "#9c0101",
     "border-color": "#9c0101"
   },
-  "app-root": "zip://storage.googleapis.com/wellknown/wellknown_10.zip",
   "bunches": [
     {
       "id": "group-1418579187816",
@@ -820,7 +820,8 @@ var profile = {
       "name": "Контакты в регионах"
     }
   ],
+  "app-root": "zip://storage.googleapis.com/wellknown/wellknown_10.zip",
   "sms-link-to-profile": false,
-  "oncall-push-msg": {},
-  "no-title": true
+  "no-title": true,
+  "oncall-push-msg": {}
 };
