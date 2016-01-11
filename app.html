@@ -61,7 +61,7 @@
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
 
-      var url = "https://raw.githubusercontent.com/nsakovich/phonegap-build-demo/master/";
+      var url = "https://raw.githubusercontent.com/nsakovich/phonegap-build-demo/master/profile.js";
       var sync = ContentSync.sync({ src: url, id: 'mts-app', type: 'merge', copyRootApp: true });
       sync.on('complete', function(data) {
            window.alert(data.localPath);
