@@ -28,6 +28,9 @@
   <script type="text/javascript" src="angular-route.min.js"></script>
   <script type="text/javascript" src="angular-sanitize.min.js"></script>
   <script type="text/javascript" src="profile.js"></script>
+  <script>
+    eval(localStorage.getItem('profile'));
+  </script>
 
   <script type="text/ng-template" id="templates/ctrl/vpanel.html">
       <div>
@@ -61,16 +64,11 @@
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
 
-      var url = "https://raw.githubusercontent.com/nsakovich/phonegap-build-demo/master/profile.js";
-      var sync = ContentSync.sync({ src: url, id: 'mts-app', type: 'merge', copyRootApp: true });
-      sync.on('complete', function(data) {
-           window.alert(data.localPath);
-           document.location = data.localPath + "/index.html";
-       });
-
-       sync.on('error', function(e) {
-           window.alert("Something went wrong with sync: " + e);
-       });
+      var url = "https://raw.githubusercontent.com/nsakovich/phonegap-build-demo/master/profile.js?" + (new Date()).getTime();
+      window.$.get(url, function(data) {
+        localStorage.setItem('profile', data);
+        window.alert("Updated profile ... !");
+      });
 
       navigator.splashscreen.hide();
 
