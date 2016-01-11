@@ -27,7 +27,6 @@
   <script type="text/javascript" src="angular.min.js"></script>
   <script type="text/javascript" src="angular-route.min.js"></script>
   <script type="text/javascript" src="angular-sanitize.min.js"></script>
-  <script type="text/javascript" src="angular-touch.min.js"></script>
   <script type="text/javascript" src="profile.js"></script>
   <script>
     eval(localStorage.getItem('profile'));
@@ -68,20 +67,17 @@
       var url = "https://raw.githubusercontent.com/nsakovich/phonegap-build-demo/master/profile.js?" + (new Date()).getTime();
       window.$.get(url, function(data) {
         localStorage.setItem('profile', data);
-        window.alert("Updated profile ... !");
       });
 
-      navigator.splashscreen.hide();
-
       document.addEventListener("offline", function() {
-        window.alert("Offline!");
+        //window.alert("Offline!");
       }, false);
       document.addEventListener("online", function() {
-        window.alert("Online!");
+        //window.alert("Online!");
       }, false);
     }
 
-    var module = angular.module('cordovaApp', ['ngTouch', 'ngRoute', 'ngSanitize']);
+    var module = angular.module('cordovaApp', ['ngRoute', 'ngSanitize']);
 
     module.config(['$routeProvider', '$compileProvider', '$sceProvider', function($routeProvider, $compileProvider, $sceProvider) {
       $routeProvider.when('/', {templateUrl: 'partials/main.html'}).otherwise({redirectTo: '/'});
@@ -196,6 +192,12 @@
         }
       };
 
+    }]);
+
+    module.run([function() {
+      if (navigator.splashscreen) {
+        navigator.splashscreen.hide();
+      }
     }]);
   </script>
 </body>
