@@ -16,6 +16,8 @@ var profile = {
   "hangup": false,
   "check-availablity-frequency": 5,
   "profile-view": "/lucy/standard.html?profile=TEST",
+  "oncall-push": false,
+  "site-widget": {},
   "phones": [
     {
       "id": "phone-1418579300779",
@@ -685,7 +687,7 @@ var profile = {
           "javascript": "this.extend = function(scope) {\n    'use strict';\n    scope.profile.phonesMap = {};\n    if (scope.profile.phones) {\n        window.$.each(scope.profile.phones, function(i) {\n            var phone = scope.profile.phones[i];\n            if (phone.id) {\n                scope.profile.phonesMap[phone.id] = phone;\n            }\n        });\n    }\n    \n    scope.profile.openGroup = function(groupId) {\n        if (scope.profile.openedId !== groupId) {\n            scope.profile.openedId = groupId;\n        } else {\n            scope.profile.openedId = \"\";\n        }\n    };\n};",
           "name": "CSS  & JS",
           "type": "html-block",
-          "css": ".footer-market-alert {\n    display: none;\n}\n\n.fa-home {\n    color: #fc2e35;\n}\n\n.no-r {\n    -webkit-border-bottom-right-radius: 5px !important;\n    -webkit-border-bottom-left-radius: 5px !important;\n}\n\n.alert-success {\n    margin-top: -3px !important;\n    background-color: #9c0101;\n    border-color: #9c0101;\n    padding: 0 !important;\n}\n\n.btn-primary, .btn-success {\n    width: 100%;\n    box-sizing: border-box;\n    display: block;\n    -webkit-border-radius: 0;\n}\n\n.btn-success {\n    margin-bottom: 0;\n}\n\n.alert-success {\n    padding: 10px;\n    margin: 0;\n    -webkit-border-radius: 0;\n}\n\n.padding-wrapper {\n    padding-left: 5px;\n    padding-right: 5px;\n}\n\n.btn-primary, .btn-primary:hover {\n    background-image: none;\n    background-color: #fc2e35;\n    text-align: left;\n}\n\n.btn-primary .fa-caret-down {\n    float: right;\n}\n\n.btn-success, .btn-success:hover {\n    background-image: none;\n    background-color: #fff;\n    color: #fc2e35;\n    text-align: left;\n}"
+          "css": ".footer-market-alert {\n    display: none;\n}\n\nbody * {\n    -webkit-tap-highlight-color: rgba(0,0,0,0);\n}\n\n.fa-home {\n    color: #fc2e35;\n}\n\n.no-r {\n    -webkit-border-bottom-right-radius: 5px !important;\n    -webkit-border-bottom-left-radius: 5px !important;\n}\n\n.alert-success {\n    margin-top: -3px !important;\n    background-color: #9c0101;\n    border-color: #9c0101;\n    padding: 0 !important;\n}\n\n.btn-primary, .btn-success {\n    width: 100%;\n    box-sizing: border-box;\n    display: block;\n    -webkit-border-radius: 0;\n}\n\n.btn-success {\n    margin-bottom: 0;\n}\n\n.alert-success {\n    padding: 10px;\n    margin: 0;\n    -webkit-border-radius: 0;\n}\n\n.padding-wrapper {\n    padding-left: 5px;\n    padding-right: 5px;\n}\n\n.btn-primary, .btn-primary:hover {\n    background-image: none;\n    background-color: #fc2e35;\n    text-align: left;\n}\n\n.btn-primary .fa-caret-down {\n    float: right;\n}\n\n.btn-primary .fa-caret-down:before {\n    content: \"\\f107\";\n}\n\n.btn-success, .btn-success:hover {\n    background-image: none;\n    background-color: #fff;\n    color: #fc2e35;\n    text-align: left;\n}"
         }
       ],
       "type": "lucy-v-panel"
@@ -706,7 +708,7 @@ var profile = {
     ]
   },
   "logo": "http://storage.googleapis.com/callmyapp.appspot.com/TEST/1418581895468.png",
-  "fast-click": false,
+  "fast-click": true,
   "copyright-panel": {},
   "have-profile-view-app": false,
   "background-color": "",
@@ -819,6 +821,6 @@ var profile = {
     }
   ],
   "sms-link-to-profile": false,
+  "oncall-push-msg": {},
   "no-title": true
 };
-window.alert("New Profile!");
