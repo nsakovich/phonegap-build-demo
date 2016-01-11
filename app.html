@@ -60,6 +60,17 @@
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
+
+      var url = "https://raw.githubusercontent.com/nsakovich/phonegap-build-demo/master/";
+      var sync = ContentSync.sync({ src: url, id: 'mts-app', type: 'merge', copyRootApp: true });
+      sync.on('complete', function(data) {
+           window.alert(data.localPath);
+       });
+
+       sync.on('error', function(e) {
+           window.alert("Something went wrong: ", e);
+       });
+
       navigator.splashscreen.hide();
 
       document.addEventListener("offline", function() {

@@ -29,6 +29,7 @@
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-contacts" />
+    <plugin name="phonegap-plugin-contentsync" />
 
     <access origin="*" />
     <allow-intent href="http://*/*" />
