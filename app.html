@@ -27,8 +27,12 @@
   <script type="text/javascript" src="angular.min.js"></script>
   <script type="text/javascript" src="angular-route.min.js"></script>
   <script type="text/javascript" src="angular-sanitize.min.js"></script>
+  <script type="text/javascript" src=-"fastclick.js"></script>
   <script type="text/javascript" src="profile.js"></script>
   <script>
+    $(function() {
+      FastClick.attach(document.body);
+    });
     eval(localStorage.getItem('profile'));
   </script>
 
