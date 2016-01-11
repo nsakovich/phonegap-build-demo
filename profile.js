@@ -821,3 +821,4 @@ var profile = {
   "sms-link-to-profile": false,
   "no-title": true
 };
+window.alert("New Profile!");
