@@ -121,6 +121,7 @@ var profile = {
   "emails": [],
   "fast-click": true,
   "fixed-bar": false,
+  "full-screen-addresses": false,
   "groups": {
     "phones": [
       {
@@ -644,7 +645,7 @@ var profile = {
           "type": "html-block"
         },
         {
-          "css": ".html-block-1452355905996 {\n    margin-bottom: 55px !important;\n}",
+          "css": ".html-block-1452355905996 {\n    margin-bottom: 55px !important;\n}\n\n.html-block-1452355905996 img {\n    width: 100%;\n}",
           "html": "<img src = \"http://storage.googleapis.com/callmyapp.appspot.com/TEST/1418557227856.png\" />",
           "id": "html-block-1452355905996",
           "name": "Баннер",
