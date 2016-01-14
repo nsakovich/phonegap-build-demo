@@ -30,6 +30,7 @@
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-contacts" />
     <plugin name="cordova-plugin-socialsharing" />
+    <plugin name="cordova-plugin-actionsheet" />
 
     <access origin="*" />
     <allow-intent href="http://*/*" />
