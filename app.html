@@ -147,6 +147,24 @@
 
     module.controller('AppController', ['$scope', '$timeout', '$parse', function($scope, $timeout, $parse) {
       $scope.profile = window.profile;
+
+      window.addEventListener('message', function (event) {
+          event.data.updateProfile = function (exclude) {
+            for (var key in event.data.profile) {
+                if (exclude.indexOf(key) == -1) {
+                    $scope.profile[key] = event.data.profile[key];
+                }
+            }
+            $scope.profile.groupItemsCache = {};
+            $scope.profile.controlsCache = {};
+            parent.postMessage({message: "cancel_interval"}, "*"); 
+            $scope.$apply();
+          };
+          if (event.data.message == "update_profile") {
+              event.data.updateProfile(event.data.exclude);
+          }
+      }, false);
+
       $scope.part = function(name) {
         return $parse(name)($scope);
       };
