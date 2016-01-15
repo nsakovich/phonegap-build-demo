@@ -678,8 +678,14 @@ var profile = {
       "main": {
         "controls": [
           {
+            "conf": {
+              "userName": {
+                "name": "user name",
+                "value": "Nick Sakovich"
+              }
+            },
             "css": ".html-block-1452287413523 {\n    text-align: center;\n}",
-            "html": "<img ng-src=\"{{profile.logo}}\">",
+            "html": "<img ng-src=\"{{profile.logo}}\">\n",
             "id": "html-block-1452287413523",
             "name": "Логотип",
             "type": "html-block"
@@ -689,6 +695,21 @@ var profile = {
             "html": "<h3>Быстрый и простой доступ к возможностям мобильного помощника МТС!</h3>\n<p><sup>*</sup>на территории Республики Беларусь</p>",
             "id": "html-block-1418580118366",
             "name": "Описание",
+            "type": "html-block"
+          },
+          {
+            "css": ".html-block-1452501956710 {\n    margin: 0 !important;\n}",
+            "html": "<div class = \"padding-wrapper\">\n    <a href = \"tel:*120*375295506439#\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>Перезвони мне</span></h3>\n    </a>\n</div>",
+            "id": "html-block-1452501956710",
+            "name": "Перезвони мне",
+            "type": "html-block"
+          },
+          {
+            "css": ".html-block-1452355761563 {\n    margin-bottom: 0 !important;\n}\n.html-block-1452355761563 .btn-primary .fa-phone:before {\n    content: \"\\f01e\";\n}",
+            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a ng-click = \"selectContact($event, phone)\" ng-attr-id = \"{{phone.id}}\" class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
+            "id": "html-block-1452355761563",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    scope.selectContact = function($event, phone) {\n        if (phone.id === 'phone-1418560401725') {\n            var phones, onePhone, options;\n            navigator.contacts.pickContact(function(contact) {\n                if (!contact.phoneNumbers) {\n                    return;\n                }\n                \n                if (contact.phoneNumbers.length > 1) {\n                    phones = window.$.map(contact.phoneNumbers, function(phone) {\n                        return phone.value;\n                    });\n                    options = {\n                        title: 'Какой номер использовать?',\n                        buttonLabels: phones\n                    };\n                    window.plugins.actionsheet.show(options, function(index) {\n                        if (phones[index - 1]) {\n                            window.alert(phones[index - 1]);\n                        }\n                    });\n                } else if (contact.phoneNumbers.length === 1) {\n                    onePhone = contact.phoneNumbers[0].value;\n                    if (onePhone) {\n                        window.alert(onePhone);    \n                    }\n                    \n                }\n            }, function(err) {\n                window.alert(err);\n            });\n            $event.stopPropagation();\n            $event.preventDefault();\n        }\n    };\n    \n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418560393109';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
+            "name": "Автодозвон",
             "type": "html-block"
           },
           {
@@ -753,20 +774,6 @@ var profile = {
             "id": "html-block-1452355555285",
             "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418579187816';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
             "name": "Безопасность",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452355761563 {\n    margin-bottom: 0 !important;\n}\n.html-block-1452355761563 .btn-primary .fa-phone:before {\n    content: \"\\f01e\";\n}",
-            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a ng-click = \"selectContact($event, phone)\" ng-attr-id = \"{{phone.id}}\" class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
-            "id": "html-block-1452355761563",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    scope.selectContact = function($event, phone) {\n        if (phone.id === 'phone-1418560401725') {\n            var phones, onePhone, options;\n            navigator.contacts.pickContact(function(contact) {\n                if (!contact.phoneNumbers) {\n                    return;\n                }\n                \n                if (contact.phoneNumbers.length > 1) {\n                    phones = window.$.map(contact.phoneNumbers, function(phone) {\n                        return phone.value;\n                    });\n                    options = {\n                        title: 'Какой номер использовать?',\n                        buttonLabels: phones\n                    };\n                    window.plugins.actionsheet.show(options, function(index) {\n                        if (phones[index - 1]) {\n                            window.alert(phones[index - 1]);\n                        }\n                    });\n                } else if (contact.phoneNumbers.length === 1) {\n                    onePhone = contact.phoneNumbers[0].value;\n                    if (onePhone) {\n                        window.alert(onePhone);    \n                    }\n                    \n                }\n            }, function(err) {\n                window.alert(err);\n            });\n            $event.stopPropagation();\n            $event.preventDefault();\n        }\n    };\n    \n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418560393109';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
-            "name": "Автодозвон",
-            "type": "html-block"
-          },
-          {
-            "html": "<div class = \"padding-wrapper\">\n    <a href = \"tel:*120*375295506439#\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>Перезвони мне</span></h3>\n    </a>\n</div>",
-            "id": "html-block-1452501956710",
-            "name": "Перезвони мне",
             "type": "html-block"
           }
         ],
