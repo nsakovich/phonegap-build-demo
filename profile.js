@@ -686,7 +686,7 @@ var profile = {
           },
           {
             "css": ".html-block-1418580118366, .html-block-1418580118366 h3 {\n    margin: 0 !important;\n}\n\n.html-block-1418580118366 h3 {\n    font-size: 18px;\n    line-height: 18px;\n    text-align: center;\n    padding: 0 5px 0 5px;\n}\n\n.html-block-1418580118366 p {\n    text-align: center;\n    padding: 0 0 10px 0; margin: 0;\n    font-size: 12px;\n}\n\n.html-block-1418580118366 p sup {\n    color: red;\n}",
-            "html": "<h3>Быстрый и простой доступ к возможностям мобильного помощника МТС!</h3>\n<p><sup>*</sup>на территории Республики Беларусь</p>",
+            "html": "<h3>Быстрый и простой доступ к возможностям мобильного помощника МТС !!!</h3>\n<p><sup>*</sup>на территории Республики Беларусь</p>",
             "id": "html-block-1418580118366",
             "name": "Описание",
             "type": "html-block"
