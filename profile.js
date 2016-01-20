@@ -2,13 +2,7 @@ var profile = {
   "app-root": "zip://storage.googleapis.com/wellknown/wellknown_10.zip",
   "background-color": "",
   "background-scroll": false,
-  "banners": [
-    {
-      "link": "http://www.mts.by/mobile/entertainment/cinema/",
-      "name": "Баннер 1",
-      "picture": "http://storage.googleapis.com/callmyapp.appspot.com/TEST/1418557227856.png"
-    }
-  ],
+  "banners": [],
   "bunches": [
     {
       "id": "group-1418579187816",
