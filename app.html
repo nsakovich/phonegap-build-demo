@@ -176,28 +176,30 @@
       $scope.bodyStyle = function(type) {
         var _this = this;
         if (this.profile) {
-          if (!this.headStyles) {
-            this.headStyles = $("<style />").appendTo($("head"));
-          }
-          var styles = "";
-          var addControlStyle = function (page) {
-            if (page && page.controls) {
-              $.each(page.controls, function (i, control) {
-                if (control.css && control.css.trim() !== "") {
-                    styles = "\n" + styles + control.css;
+          if (!this.headStyles || window != window.parent) {
+              if (!this.headStyles) {
+                this.headStyles = $("<style />").appendTo($("head"));
+              }
+              var styles = "";
+              var addControlStyle = function (page) {
+                if (page && page.controls) {
+                  $.each(page.controls, function (i, control) {
+                    if (control.css && control.css.trim() !== "") {
+                        styles = "\n" + styles + control.css;
+                    }
+                  });
                 }
+              };
+    
+              angular.forEach(this.profile.ui.pages, function(page, name) {
+                addControlStyle(page);
               });
-            }
-          };
-
-          angular.forEach(this.profile.ui.pages, function(page, name) {
-            addControlStyle(page);
-          });
-          angular.forEach([this.profile.ui.header, this.profile.ui.footer], function(e, i) {
-            addControlStyle(e);
-          });
-
-          this.headStyles.text(styles);
+              angular.forEach([this.profile.ui.header, this.profile.ui.footer], function(e, i) {
+                addControlStyle(e);
+              });
+    
+              this.headStyles.text(styles);
+          }
 
           var result = {
             "background-color": this.profile['background-color'] ? this.profile['background-color'] : "transparent",
