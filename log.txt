@@ -1,0 +1,557 @@
+01-19 15:14:59.022: I/DMA:LA(16398): @GAManager Trying to send
+01-19 15:14:59.041: I/DMA:LA(16398): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/templates/profile.js:7	Profile config: DialMyApp
+01-19 15:14:59.179: I/DMA:LA(16398): @GAManager Successfully sent
+01-19 15:14:59.291: I/DMA:LA(16398): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/templates/copyright.html
+01-19 15:14:59.291: I/DMA:LA(16398): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/templates/copyright.html
+01-19 15:14:59.319: I/DMA:LA(16398): @InboxActivity web: http://callmyapp.appspot.com/favicon.ico
+01-19 15:15:20.836: I/DMA:LA(16720): @Injector SharedExecutor created
+01-19 15:15:20.837: I/DMA:LA(16720): @Injector LA created
+01-19 15:15:20.837: I/DMA:LA(16720): preConfigure: app LucyApplication
+01-19 15:15:20.840: I/DMA:LA(16720): @Injector ReceivingManager created
+01-19 15:15:20.842: I/DMA:LA(16720): @Injector org.mbte.dialmyapp.app.ExternalStorageManager created
+01-19 15:15:20.844: I/DMA:LA(16720): @Injector org.mbte.dialmyapp.app.DiscoveryManager created
+01-19 15:15:20.844: I/DMA:LA(16720): @RESTClient userAgent=lucy.me.DMA/1.5.1-b1435:1435 (Linux; U; Android 6.0.1; Nexus 5 Build/MMB29S) 352584060655328_075f8441439d0e08; dmaPackage lucy.me
+01-19 15:15:20.849: I/DMA:LA(16720): @Injector RESTClient created
+01-19 15:15:20.850: I/DMA:LA(16720): @Injector NetworkManager created
+01-19 15:15:20.850: I/DMA:LA(16720): @Injector WellknownManager created
+01-19 15:15:20.852: I/DMA:LA(16720): @Injector ZipCacheManager created
+01-19 15:15:20.855: I/DMA:LA(16720): @WellknownManager Get stream: 
+01-19 15:15:20.857: I/DMA:LA(16720): @PrefetchManager pending: 
+01-19 15:15:20.857: I/DMA:LA(16720): @Injector PrefetchManager created
+01-19 15:15:20.858: I/DMA:LA(16720): @Injector BloomerManager created
+01-19 15:15:20.858: I/DMA:LA(16720): @Injector OnAirManager created
+01-19 15:15:20.858: I/DMA:LA(16720): @PrefetchManager Downloading 
+01-19 15:15:20.859: I/DMA:LA(16720): @Injector CompanyProfileManager created
+01-19 15:15:20.861: I/DMA:LA(16720): @Injector IconManager created
+01-19 15:15:20.862: I/DMA:LA(16720): @Injector MessageManager created
+01-19 15:15:20.862: I/DMA:LA(16720): @Injector GCMManager created
+01-19 15:15:20.862: I/DMA:LA(16720): @Injector SIM created
+01-19 15:15:20.862: I/DMA:LA(16720): @Injector UserDataManager created
+01-19 15:15:20.864: I/DMA:LA(16720): @Injector SyncManager created
+01-19 15:15:20.887: I/DMA:LA(16720): @Injector PhoneUtils created
+01-19 15:15:20.891: I/DMA:LA(16720): @Injector PhoneManager created
+01-19 15:15:20.892: I/DMA:LA(16720): @Injector PositionManager created
+01-19 15:15:20.894: I/DMA:LA(16720): @Injector GAManager created
+01-19 15:15:20.894: I/DMA:LA(16720): configure: app LucyApplication
+01-19 15:15:20.894: I/DMA:LA(16720): @SharedExecutor configure
+01-19 15:15:20.894: I/DMA:LA(16720): @ReceivingManager configure
+01-19 15:15:20.894: I/DMA:LA(16720): @org.mbte.dialmyapp.app.ExternalStorageManager configure
+01-19 15:15:20.895: I/DMA:LA(16720): @org.mbte.dialmyapp.app.DiscoveryManager configure
+01-19 15:15:20.896: I/DMA:LA(16720): @RESTClient configure
+01-19 15:15:20.896: I/DMA:LA(16720): @NetworkManager configure
+01-19 15:15:20.896: I/DMA:LA(16720): @WellknownManager configure
+01-19 15:15:20.898: D/DMA:LA(16720): @DiscoveryManager write versionContent: lucy.me:10000
+01-19 15:15:20.906: E/DMA:LA(16720): @DiscoveryManager an error occurred during version file i/o operations
+01-19 15:15:20.915: I/DMA:LA(16720): @ZipCacheManager configure
+01-19 15:15:20.915: I/DMA:LA(16720): @PrefetchManager configure
+01-19 15:15:20.915: I/DMA:LA(16720): @BloomerManager configure
+01-19 15:15:20.917: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/server/bloomer
+01-19 15:15:20.921: I/DMA:LA(16720): @WellknownManager Trying to send
+01-19 15:15:20.921: I/DMA:LA(16720): @WellknownManager Request update
+01-19 15:15:20.932: I/DMA:LA(16720): @BloomerManager Bloomer successfully updated
+01-19 15:15:20.932: I/DMA:LA(16720): @OnAirManager configure
+01-19 15:15:20.932: I/DMA:LA(16720): @CompanyProfileManager configure
+01-19 15:15:21.041: I/DMA:LA(16720): ev: ADDRESS BOOK LOADED
+01-19 15:15:21.041: I/DMA:LA(16720): @IconManager configure
+01-19 15:15:21.041: I/DMA:LA(16720): @MessageManager configure
+01-19 15:15:21.049: I/DMA:LA(16720): @SIM configure
+01-19 15:15:21.050: I/DMA:LA(16720): @UserDataManager configure
+01-19 15:15:21.050: I/DMA:LA(16720): @SyncManager configure
+01-19 15:15:21.050: I/DMA:LA(16720): @PhoneUtils configure
+01-19 15:15:21.050: I/DMA:LA(16720): @PhoneManager configure
+01-19 15:15:21.050: I/DMA:LA(16720): @PositionManager configure
+01-19 15:15:21.050: I/DMA:LA(16720): @GAManager configure
+01-19 15:15:21.050: I/DMA:LA(16720): @SharedExecutor postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @org.mbte.dialmyapp.app.ExternalStorageManager postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @org.mbte.dialmyapp.app.DiscoveryManager postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @RESTClient postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @NetworkManager postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @WellknownManager postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @ZipCacheManager postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @PrefetchManager postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @BloomerManager postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @OnAirManager postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @CompanyProfileManager postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @IconManager postConfigure
+01-19 15:15:21.050: I/DMA:LA(16720): @MessageManager postConfigure
+01-19 15:15:21.051: I/DMA:LA(16720): @GCMManager postConfigure
+01-19 15:15:21.051: I/DMA:LA(16720): @SIM postConfigure
+01-19 15:15:21.051: I/DMA:LA(16720): @UserDataManager postConfigure
+01-19 15:15:21.051: I/DMA:LA(16720): @SyncManager postConfigure
+01-19 15:15:21.051: I/DMA:LA(16720): @PhoneUtils postConfigure
+01-19 15:15:21.051: I/DMA:LA(16720): @PhoneManager postConfigure
+01-19 15:15:21.051: I/DMA:LA(16720): @PositionManager postConfigure
+01-19 15:15:21.051: I/DMA:LA(16720): @GAManager postConfigure
+01-19 15:15:21.057: I/DMA:LA(16720): @SharedExecutor onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @ReceivingManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @org.mbte.dialmyapp.app.ExternalStorageManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @org.mbte.dialmyapp.app.DiscoveryManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @RESTClient onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @NetworkManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @WellknownManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @ZipCacheManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @PrefetchManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @BloomerManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @OnAirManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @CompanyProfileManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @IconManager onStartup
+01-19 15:15:21.058: I/DMA:LA(16720): @MessageManager onStartup
+01-19 15:15:21.060: I/DMA:LA(16720): ev: profile update request
+01-19 15:15:21.060: I/DMA:LA(16720): @CompanyProfileManager Req update: 012 Mobile 1446112610752
+01-19 15:15:21.060: I/DMA:LA(16720): @CompanyProfileManager Req update: ???? ????? 1451832245166
+01-19 15:15:21.060: I/DMA:LA(16720): @CompanyProfileManager Req update: AVIS Israel 1444326692087
+01-19 15:15:21.060: I/DMA:LA(16720): @CompanyProfileManager Req update: Reporter 1447414445901
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: ??????? ??? 0
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: ???? ?? ?????? ????? 1445259962075
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: Telecom 1449049963174
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: ???? ????? 1449482432334
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: ????? 1452897873398
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: ???????? 0
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: Softteco 1448732806651
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: RUNWAY 1443658648511
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: ??? ???? 0
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: ??? ??????? 0
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: ????? 1433021874171
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: ????? ?????? ?????? 1451921596031
+01-19 15:15:21.061: I/DMA:LA(16720): @GCMManager onStartup
+01-19 15:15:21.061: I/DMA:LA(16720): @CompanyProfileManager Req update: HUAWEI Israel 1438607774881
+01-19 15:15:21.064: I/DMA:LA(16720): @SIM onStartup
+01-19 15:15:21.064: I/DMA:LA(16720): @UserDataManager onStartup
+01-19 15:15:21.065: I/DMA:LA(16720): @PhoneUtils onStartup
+01-19 15:15:21.065: I/DMA:LA(16720): @PhoneManager onStartup
+01-19 15:15:21.065: I/DMA:LA(16720): @PositionManager onStartup
+01-19 15:15:21.065: I/DMA:LA(16720): @GAManager onStartup
+01-19 15:15:21.065: I/DMA:LA(16720): ev: LucyApplication.onStartup
+01-19 15:15:21.144: I/DMA:LA(16720): @WellknownManager Got files update: 0
+01-19 15:15:21.167: I/DMA:LA(16720): @WellknownManager Scheduling next update in 668 min
+01-19 15:15:21.169: I/DMA:LA(16720): @WellknownManager Successfully sent
+01-19 15:15:21.207: D/DMA:LA(16720): @DiscoveryManager isVersionLatest
+01-19 15:15:21.209: E/DMA:LA(16720): @PrefetchManager Download failed: 
+01-19 15:15:21.221: D/DMA:LA(16720): @DiscoveryManager lucy.me installed on device
+01-19 15:15:21.221: D/DMA:LA(16720): @DiscoveryManager versionCodeLucyMe: 1435
+01-19 15:15:21.222: D/DMA:LA(16720): @DiscoveryManager currentPackageName: lucy.me
+01-19 15:15:21.223: E/DMA:LA(16720): @DiscoveryManager an error occurred during version file i/o operations
+01-19 15:15:21.474: I/DMA:LA(16720): @CompanyProfileManager Got update: ???????? 0
+01-19 15:15:21.474: I/DMA:LA(16720): @CompanyProfileManager Got update: ??????? ??? 0
+01-19 15:15:21.474: I/DMA:LA(16720): @CompanyProfileManager Got update: ??? ???? 0
+01-19 15:15:21.474: I/DMA:LA(16720): @CompanyProfileManager Got update: ??? ??????? 0
+01-19 15:15:21.474: I/DMA:LA(16720): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:15:21.474: I/DMA:LA(16720): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=????????
+01-19 15:15:21.474: I/DMA:LA(16720): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%93%D7%99%D7%96%D7%A0%D7%94%D7%95%D7%99%D7%96/1423053549579.png
+01-19 15:15:21.475: I/DMA:LA(16720): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%90%D7%9C%D7%98%D7%A9%D7%95%D7%9C%D7%A8%20%D7%A9%D7%97%D7%9D/1432538749709.png
+01-19 15:15:21.478: I/DMA:LA(16720): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:15:21.479: I/DMA:LA(16720): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%90%D7%9C%D7%98%D7%A9%D7%95%D7%9C%D7%A8%20%D7%A9%D7%97%D7%9D/1451920807883.png
+01-19 15:15:21.479: I/DMA:LA(16720): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=??????? ???
+01-19 15:15:21.482: I/DMA:LA(16720): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%90%D7%9C%D7%98%D7%A9%D7%95%D7%9C%D7%A8%20%D7%A9%D7%97%D7%9D/1451913577554.png
+01-19 15:15:21.485: I/DMA:LA(16720): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:15:21.485: I/DMA:LA(16720): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=??? ????
+01-19 15:15:21.485: I/DMA:LA(16720): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%92%D7%A9%D7%A8%20%D7%92%D7%95%D7%9C%D7%9F/1450780062101.png
+01-19 15:15:21.485: I/DMA:LA(16720): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:15:21.485: I/DMA:LA(16720): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=??? ???????
+01-19 15:15:21.485: I/DMA:LA(16720): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%A8%D7%A9%D7%AA%20%D7%94%D7%A7%D7%90%D7%A0%D7%98%D7%A8%D7%99/1450359135326.png
+01-19 15:15:21.525: I/DMA:LA(16720): @CompanyProfileManager ????????
+01-19 15:15:21.525: I/DMA:LA(16720): ??????? ???
+01-19 15:15:21.525: I/DMA:LA(16720): ??? ????
+01-19 15:15:21.525: I/DMA:LA(16720): ??? ???????
+01-19 15:15:21.525: I/DMA:LA(16720): ev: profile update request done
+01-19 15:15:21.540: I/DMA:LA(16720): @SyncManager SYNC:??????? ???
+01-19 15:15:21.552: I/DMA:LA(16720): @SyncManager SYNC:????????
+01-19 15:15:21.563: I/DMA:LA(16720): @SyncManager SYNC:??? ???????
+01-19 15:15:21.590: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/standard.html?profile=DialMyApp
+01-19 15:15:21.590: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/standard.html
+01-19 15:15:21.637: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lib/font-awesome/4.3.0/css/font-awesome.min.css
+01-19 15:15:21.637: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lib/font-awesome/4.3.0/css/font-awesome.min.css
+01-19 15:15:21.639: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lib/bootstrap/css/bootstrap.min.css
+01-19 15:15:21.639: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lib/bootstrap/css/bootstrap.min.css
+01-19 15:15:21.642: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/templates/standard.css
+01-19 15:15:21.642: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/templates/standard.css
+01-19 15:15:21.704: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/%7B%7BdmaLogo%7D%7D
+01-19 15:15:21.704: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/%7B%7BdmaLogo%7D%7D
+01-19 15:15:21.708: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/%7B%7BmarketLogo%7D%7D
+01-19 15:15:21.708: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/%7B%7BmarketLogo%7D%7D
+01-19 15:15:21.709: I/DMA:LA(16720): @InboxActivity web: http://developer.android.com/images/brand/en_generic_rgb_wo_60.png
+01-19 15:15:21.711: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js
+01-19 15:15:21.711: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js
+01-19 15:15:21.715: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lib/jquery/2.0.0/jquery.min.js
+01-19 15:15:21.715: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lib/jquery/2.0.0/jquery.min.js
+01-19 15:15:21.718: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/extra-lib/fastclick.min.js
+01-19 15:15:21.718: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/extra-lib/fastclick.min.js
+01-19 15:15:21.719: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/extra-lib/require.js
+01-19 15:15:21.719: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/extra-lib/require.js
+01-19 15:15:21.720: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lib/angularjs/1.2.0/angular.min.js
+01-19 15:15:21.720: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lib/angularjs/1.2.0/angular.min.js
+01-19 15:15:21.728: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lib/angularjs/1.2.0/angular-route.min.js
+01-19 15:15:21.729: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lib/angularjs/1.2.0/angular-route.min.js
+01-19 15:15:21.733: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lib/angularjs/1.2.0/angular-sanitize.min.js
+01-19 15:15:21.735: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lib/angularjs/1.2.0/angular-sanitize.min.js
+01-19 15:15:21.736: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/extra-lib/ocLazyLoad.min.js
+01-19 15:15:21.736: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/extra-lib/ocLazyLoad.min.js
+01-19 15:15:21.739: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/lucy.js
+01-19 15:15:21.739: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/lucy.js
+01-19 15:15:21.742: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/templates/profile.js
+01-19 15:15:21.743: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/templates/profile.js
+01-19 15:15:21.748: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/templates/phone.js
+01-19 15:15:21.748: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/templates/phone.js
+01-19 15:15:21.749: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/standard.js
+01-19 15:15:21.749: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/standard.js
+01-19 15:15:22.040: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:6	start configuring Config
+01-19 15:15:22.041: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:6	start configuring UI
+01-19 15:15:22.041: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:6	start configuring Http
+01-19 15:15:22.050: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:6	start configuring Profile
+01-19 15:15:22.053: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:6	start configuring Phone
+01-19 15:15:22.092: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova_plugins.js
+01-19 15:15:22.092: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova_plugins.js
+01-19 15:15:22.106: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/filetransfer/FileTransfer.js
+01-19 15:15:22.106: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/filetransfer/FileTransfer.js
+01-19 15:15:22.108: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/filetransfer/FileTransferError.js
+01-19 15:15:22.109: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/filetransfer/FileTransferError.js
+01-19 15:15:22.110: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/CaptureAudioOptions.js
+01-19 15:15:22.110: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/CaptureAudioOptions.js
+01-19 15:15:22.112: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/CaptureImageOptions.js
+01-19 15:15:22.112: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/CaptureImageOptions.js
+01-19 15:15:22.113: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/CaptureVideoOptions.js
+01-19 15:15:22.113: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/CaptureVideoOptions.js
+01-19 15:15:22.117: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/CaptureError.js
+01-19 15:15:22.117: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/CaptureError.js
+01-19 15:15:22.119: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/MediaFileData.js
+01-19 15:15:22.119: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/MediaFileData.js
+01-19 15:15:22.120: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/MediaFile.js
+01-19 15:15:22.121: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/MediaFile.js
+01-19 15:15:22.122: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/capture.js
+01-19 15:15:22.122: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/mediacapture/capture.js
+01-19 15:15:22.124: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/DirectoryEntry.js
+01-19 15:15:22.124: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/DirectoryEntry.js
+01-19 15:15:22.126: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/DirectoryReader.js
+01-19 15:15:22.126: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/DirectoryReader.js
+01-19 15:15:22.128: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/Entry.js
+01-19 15:15:22.128: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/Entry.js
+01-19 15:15:22.130: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/File.js
+01-19 15:15:22.130: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/File.js
+01-19 15:15:22.133: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileEntry.js
+01-19 15:15:22.133: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileEntry.js
+01-19 15:15:22.135: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileError.js
+01-19 15:15:22.135: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileError.js
+01-19 15:15:22.137: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileReader.js
+01-19 15:15:22.137: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileReader.js
+01-19 15:15:22.138: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileSystem.js
+01-19 15:15:22.138: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileSystem.js
+01-19 15:15:22.139: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileUploadOptions.js
+01-19 15:15:22.139: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileUploadOptions.js
+01-19 15:15:22.140: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileUploadResult.js
+01-19 15:15:22.140: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileUploadResult.js
+01-19 15:15:22.140: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileWriter.js
+01-19 15:15:22.140: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/FileWriter.js
+01-19 15:15:22.141: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/Flags.js
+01-19 15:15:22.141: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/Flags.js
+01-19 15:15:22.142: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/LocalFileSystem.js
+01-19 15:15:22.142: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/LocalFileSystem.js
+01-19 15:15:22.144: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/Metadata.js
+01-19 15:15:22.144: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/Metadata.js
+01-19 15:15:22.147: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/ProgressEvent.js
+01-19 15:15:22.147: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/ProgressEvent.js
+01-19 15:15:22.148: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/fileSystems.js
+01-19 15:15:22.148: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/fileSystems.js
+01-19 15:15:22.148: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/requestFileSystem.js
+01-19 15:15:22.148: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/requestFileSystem.js
+01-19 15:15:22.153: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/resolveLocalFileSystemURI.js
+01-19 15:15:22.153: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/resolveLocalFileSystemURI.js
+01-19 15:15:22.154: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/android/FileSystem.js
+01-19 15:15:22.154: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/android/FileSystem.js
+01-19 15:15:22.154: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/fileSystems-roots.js
+01-19 15:15:22.154: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/fileSystems-roots.js
+01-19 15:15:22.155: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/fileSystemPaths.js
+01-19 15:15:22.155: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/file/fileSystemPaths.js
+01-19 15:15:22.155: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/emailcomposer/email_composer.js
+01-19 15:15:22.155: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/emailcomposer/email_composer.js
+01-19 15:15:22.156: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/media/MediaError.js
+01-19 15:15:22.156: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/media/MediaError.js
+01-19 15:15:22.161: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/media/Media.js
+01-19 15:15:22.163: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/local/lib/cordova/plugins/media/Media.js
+01-19 15:15:22.254: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/favicon.ico
+01-19 15:15:22.262: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:6	end configuring UI
+01-19 15:15:22.263: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:6	end configuring Http
+01-19 15:15:22.315: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:7	Config: {"lang":"sv","locale":"sv_SE","userData":{"active":true,"lang":"sv_SE","dataSim":{"countryISO":"se","operator":"24007","operatorName":"Comviq","serialNumber":"89462046111116789501"},"imei":"352584060655328","dialAppVerionNumber":1435,"dialAppVerionName":"1.5.1-b1435","dmaPackage":"lucy.me","buildInfo":{"serial":"075f8441439d0e08","manufacturer":"LGE","model":"Nexus 5","product":"hammerhead","hardware":"hammerhead","version":"6.0.1","time":1450216359000},"me":{"name":"Nexus 5 ","emails":[{"email":"mbtelucy@gmail.com","type":"com.google"}],"phones":[{"phone":"+46769124310","type":"linenumber"},{"phone":"+46769124310","type":"profile"}]},"support_native_sharing":true,"supportNativeMaps":true,"support_push_messages":true,"androidId":"d53cc8252fead7ec","prefs":{}},"hasGA":true}
+01-19 15:15:22.315: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:6	end configuring Config
+01-19 15:15:22.349: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:6	end configuring Phone
+01-19 15:15:22.357: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/templates/profile.js:1	Profile ev: {"event":"onsubscribed","user":{"active":true,"lang":"sv_SE","dataSim":{"countryISO":"se","operator":"24007","operatorName":"Comviq","serialNumber":"89462046111116789501"},"imei":"352584060655328","dialAppVerionNumber":1435,"dialAppVerionName":"1.5.1-b1435","dmaPackage":"lucy.me","buildInfo":{"serial":"075f8441439d0e08","manufacturer":"LGE","model":"Nexus 5","product":"hammerhead","hardware":"hammerhead","version":"6.0.1","time":1450216359000},"me":{"name":"Nexus 5 ","emails":[{"email":"mbtelucy@gmail.com","type":"com.google"}],"phones":[{"phone":"+46769124310","type":"linenumber"},{"phone":"+46769124310","type":"profile"}]},"support_native_sharing":true,"supportNativeMaps":true,"support_push_messages":true,"androidId":"d53cc8252fead7ec","prefs":{}},"profiles":[{"profile":"012 Mobile","logo":"http://storage.googleapis.com/callmyapp.appspot.com/012%20Mobile/1418551634915.png","unreadInProfile":0},{"profile":"???? ?????","logo":"http://storage.googleapis.com/callmyapp.appspot.com/%D7%A8%D7%9B%D7%91%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C/1446406355763.png","unreadInProfile":0},{"profile":"AVIS Israel","logo":"http://storage.googleapis.com/callmyapp.appspot.com/AVIS%20Israel/1416521422178.png","unreadInProfile":0},{"profile":"Reporter","logo":"http://storage.googleapis.com/callmyapp.appspot.com/Reporter/1444226740301.png","unreadInProfile":0},{"profile":"??????? ???","logo":"http://storage.googleapis.com/callmyapp.appspot.com/%D7%90%D7%9C%D7%98%D7%A9%D7%95%D7%9C%D7%A8%20%D7%A9%D7%97%D7%9D/1432538749709.png","unreadInProfile":0},{"profile":"???? ?? ?????? ?????","logo":"http://storage.googleapis.com/callmyapp.appspot.com/%D7%90%D7%95%D7%A8%D7%98%20%D7%99%D7%93%20%D7%9C%D7%91%D7%95%D7%91%D7%99%D7%A5%20%D7%A0%D7%AA%D7%A0%D7%99%D7%94/1433769067037.png","unreadInProfile":0},{"profile":"Telecom","logo":"http://storage.googleapis.com/callmyapp.appspot.com/Telecom/1447701585339.png","unreadInProfile":0},{"profile":"???? ?????","logo":"http://storage.googleapis.com/callmyapp.appspot.com/%D7%97%D7%91%D7%A8%D7%AA%20%D7%94%D7%97%D7%A9%D7%9E%D7%9C/1416741318437.png","unreadInProfile":0},{"profile":"?????","logo":"http://storage.googleapis.com/callmyapp.appspot.com/%D7%92%D7%9C%D7%92%D7%9C%D7%A6/1450355033903.png","unreadInProfile":0},{"profile":"????????","logo":"http://storage.googleapis.com/callmyapp.appspot.com/%D7%93%D7%99%D7%96%D7%A0%D7%94%D7%95%D7%99%D7%96/1423053549579.png","unreadInProfile":0},{"profile":"Softteco","logo":"http://storage.googleapis.com/callmyapp.appspot.com/Softteco/1415971681185.png","unreadInProfile":0},{"profile":"RUNWAY","logo":"http://storage.googleapis.com/callmyapp.appspot.com/RUNWAY/1442385803382.png","unreadInProfile":0},{"profile":"??? ????","logo":"http://storage.googleapis.com/callmyapp.appspot.com/%D7%92%D7%A9%D7%A8%20%D7%92%D7%95%D7%9C%D7%9F/1450780062101.png","unreadInProfile":0},{"profile":"??? ???????","logo":"http://storage.googleapis.com/callmyapp.appspot.com/%D7%A8%D7%A9%D7%AA%20%D7%94%D7%A7%D7%90%D7%A0%D7%98%D7%A8%D7%99/1450359135326.png","unreadInProfile":0},{"profile":"?????","logo":"http://storage.googleapis.com/callmyapp.appspot.com/%D7%92%D7%9C%D7%95%D7%91%D7%A1/1421059690683.png","unreadInProfile":0},{"profile":"????? ?????? ??????","logo":"http://storage.googleapis.com/callmyapp.appspot.com/%D7%94%D7%97%D7%91%D7%A8%D7%94%20%D7%9C%D7%A4%D7%99%D7%AA%D7%95%D7%97%20%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94/1446413986624.png","unreadInProfile":0},{"profile":"HUAWEI Israel","logo":"http://storage.googleapis.com/callmyapp.appspot.com/HUAWEI%20Israel/1433248328422.png","unreadInProfile":0}]}
+01-19 15:15:22.357: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/lucy.js:6	end configuring Profile
+01-19 15:15:22.434: I/DMA:LA(16720): @GAManager Trying to send
+01-19 15:15:22.457: I/DMA:LA(16720): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/lucy/templates/profile.js:7	Profile config: DialMyApp
+01-19 15:15:22.542: I/DMA:LA(16720): @GAManager Successfully sent
+01-19 15:15:22.716: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/assets/lucy/templates/copyright.html
+01-19 15:15:22.716: I/DMA:LA(16720): @WellknownManager Get stream: http://callmyapp.appspot.com/assets/lucy/templates/copyright.html
+01-19 15:15:22.743: I/DMA:LA(16720): @InboxActivity web: http://callmyapp.appspot.com/favicon.ico
+01-19 15:16:43.509: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC rocess any ArrayBuffers in the args into a string.
+01-19 15:16:43.509: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 123
+01-19 15:16:43.513: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:43.513: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:43.515: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:19	androidEXEC  processMessages
+01-19 15:16:43.515: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:17	androidEXEC
+01-19 15:16:43.515: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC rocess any ArrayBuffers in the args into a string.
+01-19 15:16:43.515: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 123
+01-19 15:16:43.518: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:43.518: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:43.518: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:19	androidEXEC  processMessages
+01-19 15:16:43.519: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:23	 messagesFromNative.push(messages);
+01-19 15:16:43.519: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:17	androidEXEC
+01-19 15:16:43.519: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC rocess any ArrayBuffers in the args into a string.
+01-19 15:16:43.519: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 123
+01-19 15:16:43.519: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:43.520: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:43.520: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:19	androidEXEC  processMessages
+01-19 15:16:43.520: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:17	androidEXEC
+01-19 15:16:43.521: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC rocess any ArrayBuffers in the args into a string.
+01-19 15:16:43.521: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 123
+01-19 15:16:43.523: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:43.523: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:43.524: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:19	androidEXEC  processMessages
+01-19 15:16:43.524: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL2NhbGxteWFwcC5hcHBzcG90LmNvbS9wcm9maWxlc19hc3NldHMvaW1hZ2VzL2F2aXMvZmIucG5n
+01-19 15:16:43.525: I/DMA:LA(18785): @SyncManager LUCY_SYNC removing contact:AVIS **2722
+01-19 15:16:43.533: I/DMA:LA(18785): @PrefetchManager Downloading http://callmyapp.appspot.com/profiles_assets/images/avis/avis_logo.png
+01-19 15:16:43.535: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tL0FWSVMlMjBJc3JhZWwvMTQxNjUyMTQyMjE3OC5wbmc
+01-19 15:16:43.541: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tLyVENyVBOCVENyU5QiVENyU5MSVENyVBQSUyMCVENyU5OSVENyVBOSVENyVBOCVENyU5MCVENyU5Qy8xNDQ2NzI4OTEyMzc3LnBuZw
+01-19 15:16:43.542: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/%D7%A8%D7%9B%D7%91%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C/1446406478698.png
+01-19 15:16:43.550: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/DRAFT/1417774517003.png
+01-19 15:16:43.708: D/DMA:LA(18785): Company profile name for removing:Harmony
+01-19 15:16:43.721: I/DMA:LA(18785): @SyncManager LUCY_SYNC removing contact:Harmony
+01-19 15:16:43.754: D/DMA:LA(18785): Company profile name for removing:Roshan Test ?????? ??????? ?????? ????? ?????
+01-19 15:16:43.764: I/DMA:LA(18785): @SyncManager LUCY_SYNC removing contact:Roshan Test ?????? ??????? ?????? ????? ?????
+01-19 15:16:43.785: D/DMA:LA(18785): Company profile name for removing:DAVID_TEST
+01-19 15:16:43.808: I/DMA:LA(18785): @SyncManager LUCY_SYNC removing contact:DAVID_TEST
+01-19 15:16:43.830: D/DMA:LA(18785): Company profile name for removing:sun ?????? - ???? ????
+01-19 15:16:43.838: I/DMA:LA(18785): @SyncManager LUCY_SYNC removing contact:sun ?????? - ???? ????
+01-19 15:16:43.859: D/DMA:LA(18785): Company profile name for removing:HDFC Bank
+01-19 15:16:43.866: I/DMA:LA(18785): @SyncManager LUCY_SYNC removing contact:HDFC Bank
+01-19 15:16:43.883: D/DMA:LA(18785): Company profile name for removing:?? ????
+01-19 15:16:43.890: I/DMA:LA(18785): @SyncManager LUCY_SYNC removing contact:?? ????
+01-19 15:16:43.907: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/Reporter/1444226740301.png
+01-19 15:16:44.032: I/DMA:LA(18785): @SyncManager SYNC:???? ?????
+01-19 15:16:44.038: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:???? ?????
+01-19 15:16:44.190: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tLyVENyVBOCVENyU5QiVENyU5MSVENyVBQSUyMCVENyU5OSVENyVBOSVENyVBOCVENyU5MCVENyU5Qy8xNDQ2NDA2NDc4Njk4LnBuZw
+01-19 15:16:44.198: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/%D7%90%D7%95%D7%A8%D7%98%20%D7%99%D7%93%20%D7%9C%D7%91%D7%95%D7%91%D7%99%D7%A5%20%D7%A0%D7%AA%D7%A0%D7%99%D7%94/1433769067037.png
+01-19 15:16:44.239: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tL0RSQUZULzE0MTc3NzQ1MTcwMDMucG5n
+01-19 15:16:44.243: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL2NhbGxteWFwcC5hcHBzcG90LmNvbS9wcm9maWxlc19hc3NldHMvaW1hZ2VzL2F2aXMvYXZpc19sb2dvLnBuZw
+01-19 15:16:44.252: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/Telecom/1447701585339.png
+01-19 15:16:44.258: I/DMA:LA(18785): @SyncManager SYNC:AVIS Israel
+01-19 15:16:44.259: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/%D7%97%D7%91%D7%A8%D7%AA%20%D7%94%D7%97%D7%A9%D7%9E%D7%9C/1416741318437.png
+01-19 15:16:44.267: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tL1JlcG9ydGVyLzE0NDQyMjY3NDAzMDEucG5n
+01-19 15:16:44.272: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:AVIS Israel
+01-19 15:16:44.273: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/%D7%92%D7%9C%D7%92%D7%9C%D7%A6/1450355033903.png
+01-19 15:16:44.361: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tLyVENyVBOCVENyU5QiVENyU5MSVENyVBQSUyMCVENyU5OSVENyVBOSVENyVBOCVENyU5MCVENyU5Qy8xNDQ2NzI5ODk2MTE0LnBuZw
+01-19 15:16:44.368: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/RUNWAY/1442385803382.png
+01-19 15:16:44.374: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tLyVENyU5MCVENyU5NSVENyVBOCVENyU5OCUyMCVENyU5OSVENyU5MyUyMCVENyU5QyVENyU5MSVENyU5NSVENyU5MSVENyU5OSVENyVBNSUyMCVENyVBMCVENyVBQSVENyVBMCVENyU5OSVENyU5NC8xNDMzNzY5MDY3MDM3LnBuZw
+01-19 15:16:44.381: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/Softteco/1415971681185.png
+01-19 15:16:44.395: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tLyVENyU5NyVENyU5MSVENyVBOCVENyVBQSUyMCVENyU5NCVENyU5NyVENyVBOSVENyU5RSVENyU5Qy8xNDE2NzQxMzE4NDM3LnBuZw
+01-19 15:16:44.403: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/HUAWEI%20Israel/1433248328422.png
+01-19 15:16:44.417: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tL1RlbGVjb20vMTQ0NzcwMTU4NTMzOS5wbmc
+01-19 15:16:44.428: I/DMA:LA(18785): @PrefetchManager Downloading http://www.softteco.com/static/mSa4B9nUTBjK7TrKPZCnUXERMYvCs76xcUJONLRlUA8.png
+01-19 15:16:44.441: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tLyVENyU5MiVENyU5QyVENyU5MiVENyU5QyVENyVBNi8xNDUwMzU1MDMzOTAzLnBuZw
+01-19 15:16:44.448: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/%D7%94%D7%97%D7%91%D7%A8%D7%94%20%D7%9C%D7%A4%D7%99%D7%AA%D7%95%D7%97%20%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94/1446413986624.png
+01-19 15:16:44.459: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tL1NvZnR0ZWNvLzE0MTU5NzE2ODExODUucG5n
+01-19 15:16:44.466: I/DMA:LA(18785): @PrefetchManager Downloading http://storage.googleapis.com/callmyapp.appspot.com/%D7%92%D7%9C%D7%95%D7%91%D7%A1/1421059690683.png
+01-19 15:16:44.473: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tL0hVQVdFSSUyMElzcmFlbC8xNDMzMjQ4MzI4NDIyLnBuZw
+01-19 15:16:44.497: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:23	 messagesFromNative.push(messages);
+01-19 15:16:44.501: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tL1JVTldBWS8xNDQyMzg1ODAzMzgyLnBuZw
+01-19 15:16:44.505: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:17	androidEXEC
+01-19 15:16:44.505: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC rocess any ArrayBuffers in the args into a string.
+01-19 15:16:44.505: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 123
+01-19 15:16:44.508: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:44.508: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:44.508: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:19	androidEXEC  processMessages
+01-19 15:16:44.508: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:23	 messagesFromNative.push(messages);
+01-19 15:16:44.509: I/DMA:LA(18785): @InboxActivity WebConsole: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/lucy.js:6	end configuring UI
+01-19 15:16:44.515: I/DMA:LA(18785): @InboxActivity WebConsole: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/lucy.js:6	end configuring Http
+01-19 15:16:44.515: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:17	androidEXEC
+01-19 15:16:44.515: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC rocess any ArrayBuffers in the args into a string.
+01-19 15:16:44.515: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 123
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: 012 Mobile 1446112610752
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: ???? ????? 1451832245166
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: AVIS Israel 1444326692087
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: DMA Start 0
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: DRAFT 1418097993394
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: Reporter 1447414445901
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: ??????? ??? 0
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: ???? ?? ?????? ????? 1445259962075
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: Telecom 1449049963174
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: ???? ????? 1449482432334
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: ????? 1452897873398
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: ???????? 0
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: RUNWAY 1443658648511
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: Softteco 1448732806651
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: ??? ???? 0
+01-19 15:16:44.519: I/DMA:LA(18785): @CompanyProfileManager Got update: ??? ??????? 0
+01-19 15:16:44.520: I/DMA:LA(18785): @CompanyProfileManager Got update: ????? ?????? ?????? 1451921596031
+01-19 15:16:44.520: I/DMA:LA(18785): @CompanyProfileManager Got update: Debug 1444040998443
+01-19 15:16:44.520: I/DMA:LA(18785): @CompanyProfileManager Got update: HUAWEI Israel 1438607774881
+01-19 15:16:44.520: I/DMA:LA(18785): @CompanyProfileManager Got update: ????? 1433021874171
+01-19 15:16:44.520: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=012 Mobile
+01-19 15:16:44.520: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/012%20Mobile/1418551634915.png
+01-19 15:16:44.520: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.523: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=???? ?????
+01-19 15:16:44.523: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%A8%D7%9B%D7%91%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C/1446406355763.png
+01-19 15:16:44.523: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%A8%D7%9B%D7%91%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C/1446728912377.png
+01-19 15:16:44.523: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%A8%D7%9B%D7%91%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C/1446729896114.png
+01-19 15:16:44.523: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.523: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%A8%D7%9B%D7%91%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C/1446406478698.png
+01-19 15:16:44.523: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/AVIS%20Israel/1416521422178.png
+01-19 15:16:44.523: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=AVIS Israel
+01-19 15:16:44.523: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.523: I/DMA:LA(18785): @PrefetchManager req prefetching: http://callmyapp.appspot.com/profiles_assets/images/avis/fb.png
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: http://callmyapp.appspot.com/profiles_assets/images/avis/avis_logo.png
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=DMA Start
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/DRAFT/1417774517003.png
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/wellknown/draft/main.html
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/Reporter/1444226740301.png
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=Reporter
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=??????? ???
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%90%D7%95%D7%A8%D7%98%20%D7%99%D7%93%20%D7%9C%D7%91%D7%95%D7%91%D7%99%D7%A5%20%D7%A0%D7%AA%D7%A0%D7%99%D7%94/1433769067037.png
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=???? ?? ?????? ?????
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/Telecom/1447701585339.png
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=Telecom
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%97%D7%91%D7%A8%D7%AA%20%D7%94%D7%97%D7%A9%D7%9E%D7%9C/1416741318437.png
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=???? ?????
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%92%D7%9C%D7%92%D7%9C%D7%A6/1450355033903.png
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=?????
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.524: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=????????
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/RUNWAY/1442385803382.png
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=RUNWAY
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=Softteco
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/Softteco/1415971681185.png
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: http://www.softteco.com/static/mSa4B9nUTBjK7TrKPZCnUXERMYvCs76xcUJONLRlUA8.png
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=??? ????
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=??? ???????
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=????? ?????? ??????
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%94%D7%97%D7%91%D7%A8%D7%94%20%D7%9C%D7%A4%D7%99%D7%AA%D7%95%D7%97%20%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94/1446413986624.png
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: http://callmyapp.appspot.com/assets/lucy/protected-access.html#/?name=Debug&profile=294dadf7-eb18-4c01-a495-f7ea073be5b8&submit=auto&timer=1
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/HUAWEI%20Israel/1433248328422.png
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=HUAWEI Israel
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/standard.html?profile=?????
+01-19 15:16:44.525: I/DMA:LA(18785): @PrefetchManager req prefetching: http://storage.googleapis.com/callmyapp.appspot.com/%D7%92%D7%9C%D7%95%D7%91%D7%A1/1421059690683.png
+01-19 15:16:44.529: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tLyVENyU5NCVENyU5NyVENyU5MSVENyVBOCVENyU5NCUyMCVENyU5QyVENyVBNCVENyU5OSVENyVBQSVENyU5NSVENyU5NyUyMCVENyVBNyVENyU5OSVENyVBMSVENyVBOCVENyU5OSVENyU5NC8xNDQ2NDEzOTg2NjI0LnBuZw
+01-19 15:16:44.543: I/DMA:LA(18785): @PrefetchManager Saving /data/user/0/lucy.me/cache/prefetched/aHR0cDovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vY2FsbG15YXBwLmFwcHNwb3QuY29tLyVENyU5MiVENyU5QyVENyU5NSVENyU5MSVENyVBMS8xNDIxMDU5NjkwNjgzLnBuZw
+01-19 15:16:44.545: E/DMA:LA(18785): @PrefetchManager Download failed: http://www.softteco.com/static/mSa4B9nUTBjK7TrKPZCnUXERMYvCs76xcUJONLRlUA8.png
+01-19 15:16:44.567: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:44.567: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:44.568: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:19	androidEXEC  processMessages
+01-19 15:16:44.568: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:23	 messagesFromNative.push(messages);
+01-19 15:16:44.568: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:17	androidEXEC
+01-19 15:16:44.568: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC rocess any ArrayBuffers in the args into a string.
+01-19 15:16:44.568: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 123
+01-19 15:16:44.577: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:44.577: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:44.577: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:19	androidEXEC  processMessages
+01-19 15:16:44.577: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:23	 messagesFromNative.push(messages);
+01-19 15:16:44.582: I/DMA:LA(18785): @InboxActivity WebConsole: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/lucy.js:7	Config: {"lang":"sv","locale":"sv_SE","userData":{"active":true,"lang":"sv_SE","dataSim":{"countryISO":"se","operator":"24007","operatorName":"Comviq","serialNumber":"89462046111116789501"},"imei":"352584060655328","dialAppVerionNumber":1419,"dialAppVerionName":"2.1.8","dmaPackage":"lucy.me","buildInfo":{"serial":"075f8441439d0e08","manufacturer":"LGE","model":"Nexus 5","product":"hammerhead","hardware":"hammerhead","version":"6.0.1","time":1450216359000},"me":{"name":"Nexus 5 ","emails":[{"email":"mbtelucy@gmail.com","type":"com.google"}],"phones":[{"phone":"+46769124310","type":"linenumber"},{"phone":"+46769124310","type":"profile"}]},"support_native_sharing":true,"supportNativeMaps":true,"support_push_messages":true,"prefs":{}},"hasGA":true}
+01-19 15:16:44.582: I/DMA:LA(18785): @InboxActivity WebConsole: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/lucy.js:6	end configuring Config
+01-19 15:16:44.584: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:17	androidEXEC
+01-19 15:16:44.584: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC rocess any ArrayBuffers in the args into a string.
+01-19 15:16:44.585: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 123
+01-19 15:16:44.650: I/DMA:LA(18785): @CompanyProfileManager 012 Mobile
+01-19 15:16:44.650: I/DMA:LA(18785): ???? ?????
+01-19 15:16:44.650: I/DMA:LA(18785): AVIS Israel
+01-19 15:16:44.650: I/DMA:LA(18785): DMA Start
+01-19 15:16:44.650: I/DMA:LA(18785): DRAFT
+01-19 15:16:44.650: I/DMA:LA(18785): Reporter
+01-19 15:16:44.650: I/DMA:LA(18785): ??????? ???
+01-19 15:16:44.650: I/DMA:LA(18785): ???? ?? ?????? ?????
+01-19 15:16:44.650: I/DMA:LA(18785): Telecom
+01-19 15:16:44.650: I/DMA:LA(18785): ???? ?????
+01-19 15:16:44.650: I/DMA:LA(18785): ?????
+01-19 15:16:44.650: I/DMA:LA(18785): ????????
+01-19 15:16:44.650: I/DMA:LA(18785): RUNWAY
+01-19 15:16:44.650: I/DMA:LA(18785): Softteco
+01-19 15:16:44.650: I/DMA:LA(18785): ??? ????
+01-19 15:16:44.650: I/DMA:LA(18785): ??? ???????
+01-19 15:16:44.650: I/DMA:LA(18785): ????? ?????? ??????
+01-19 15:16:44.650: I/DMA:LA(18785): Debug
+01-19 15:16:44.650: I/DMA:LA(18785): HUAWEI Israel
+01-19 15:16:44.650: I/DMA:LA(18785): ?????
+01-19 15:16:44.675: I/DMA:LA(18785): @SyncManager SYNC:DMA Start
+01-19 15:16:44.684: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:DMA Start
+01-19 15:16:44.685: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:44.686: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:18	androidEXEC 3333.
+01-19 15:16:44.686: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:19	androidEXEC  processMessages
+01-19 15:16:44.686: I/DMA:LA(18785): @InboxActivity WebConsole: http://callmyapp.appspot.com/assets/local/lib/cordova/cordova-2.7.0.js:23	 messagesFromNative.push(messages);
+01-19 15:16:44.686: I/DMA:LA(18785): @InboxActivity WebConsole: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/lucy.js:6	end configuring Phone
+01-19 15:16:44.696: I/DMA:LA(18785): @InboxActivity WebConsole: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/templates/profile.js:1	Profile ev: {"event":"profilesupdated","loaded":{"uid":"b49452d2-3e44-49c1-ac88-fcd98d16648a","fixed-bar":false,"incoming":"http://callmyapp.appspot.com/landing/page.jsp","primary-button":{"gradient":[{"position":0,"color":"#0088cc"},{"position":1,"color":"#0044cc"}]},"full-screen-addresses":false,"hangup":false,"autoInstall":true,"check-availablity-frequency":5,"profile-view":"/lucy/standard.html?profile=DialMyApp","oncall-push":true,"phones":[{"phone":"**8041","hangup":true,"remove-sms":false,"outgoing-intent":{"package":"lucy.me","class":"org.mbte.dialmyapp.activities.ImportProfilesActivity"},"sms-sender":false},{"phone":"IL:*8040","hangup":true,"remove-sms":true,"sms-sender":true,"outgoing":"/lucy/standard.html?profile=DialMyApp"}],"version":1450271922901,"timezone":"Asia/Jerusalem","message-panel":{},"social":{},"working-hours":{"0":{"name":"Sunday","intervals":[]},"1":{"name":"Monday","intervals":[]},"2":{"name":"Tuesday","intervals":[]},"3":{"name":"Wednesday","intervals":[]},"4":{"name":"Thursday","intervals":[]},"5":{"name":"Friday","intervals":[]},"6":{"name":"Saturday","intervals":[]}},"groups":{},"profile":"DialMyApp","ui":{"footer":{"controls":[{"id":"html-block-1400495133962","name":"Copyright","html":"<div ng-include=\"'templates/copyright.html'\" class=\"padding-wrapper\"></div>","type":"html-block"}],"type":"lucy-v-panel"},"pages":{"about":{"controls":[{"id":"html-block-1400652863904","javascript":"this.extend = function(scope) {\n    'use strict';\n    \n    scope.profile.iWantDma = {\n        en: \"I want DialMyApp&trade; for my customers\",\n        ru: \"? ???? DialMyApp&trade; ??? ???? ????????\",\n        iw: \"??? ??????? ?????? &trade;DialMyApp ???? ??????? ???\"\n    };\n    scope.profile.forBusinessTxt = {\n        en: \"For Business\",\n        ru: \"??? ???????\",\n        iw: \"???? ???? ?????\"\n    };\n    scope.profile.aboutDma = {};\n    scope.profile.aboutDma.p1 = {\n        en: \"DialMyApp&trade; is the shell application for you - the most respected customer of very smart businesses, which really want to improve their availability.\",\n        ru: \"DialMyApp&trade; - ??? ?????????? ??? ??? - ?????????? ??????? ???????? ??????????? ????????, ??????? ????? ??????????? ????????? ???? ???????????.\",\n        iw: \"?? ??? ?????? ???? ???? ???? ??? ???? ?? ??? ?????? ??????, ??????? ?????? ????? ??? ??? ???????? ??????? ?? ??????? ?? ????? ???? ?????. &trade;DialMyApp ???? ???????? ??????? ?? ?????? ????? ?????? ??????? ???, ?? &trade;DialMyApp ???? ????? ??? ???????.\"\n    };\n    scope.profile.aboutDma.p2 = {\n        en: \"No more listening to \\\"Do you want to talk to X\\\", select 1, \\\"Do you want to talk to Y\\\" select 2 ......\",\n        ru: \"??? ????? ????????? ??????? \\\"?? ?????? ?????????? ? X \\\", ???????? 1, \\\"?? ?????? ?????????? ? Y \\\" ???????? 2 ......\",\n        iw: \"?? ??? ????? ???????? ?????? ??????? ??????? ????? ????? ????????? \\\"??????\\\", ??? 1,  \\\"???????\\\",  ??? 5...... ????? ?????? ?? ??????? ?? ????. ???? ???? ????? ????? ??? ???? ???? ?? ????? ??????? ??? ??? ????.\"\n    };\n    scope.profile.aboutDma.p3 = {\n        en: \"DialMyApp&trade; is a bridge between your phone and your favorite businesses.\",\n        ru: \"DialMyApp&trade; ???????? ???????? ????? ????? ????????? ? ????
+01-19 15:16:44.707: E/DMA:LA(18785): @InboxActivity WebConsole: zip://storage.googleapis.com/wellknown/wellknown_10.zip/lucy/templates/profile.js:5	Uncaught TypeError: a.profilesUpdated is not a function
+01-19 15:16:44.944: I/DMA:LA(18785): @SyncManager SYNC:DRAFT
+01-19 15:16:44.958: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:DRAFT
+01-19 15:16:45.259: I/DMA:LA(18785): @SyncManager SYNC:Reporter
+01-19 15:16:45.266: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:Reporter
+01-19 15:16:45.524: I/DMA:LA(18785): @SyncManager SYNC:??????? ???
+01-19 15:16:45.542: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:??????? ???
+01-19 15:16:45.713: I/DMA:LA(18785): @SyncManager SYNC:Telecom
+01-19 15:16:45.741: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:Telecom
+01-19 15:16:45.983: I/DMA:LA(18785): @SyncManager SYNC:???? ?????
+01-19 15:16:45.992: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:???? ?????
+01-19 15:16:46.197: I/DMA:LA(18785): @SyncManager SYNC:?????
+01-19 15:16:46.204: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:?????
+01-19 15:16:46.540: I/DMA:LA(18785): @SyncManager SYNC:????????
+01-19 15:16:46.550: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:????????
+01-19 15:16:47.193: I/DMA:LA(18785): @SyncManager SYNC:RUNWAY
+01-19 15:16:47.212: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:RUNWAY
+01-19 15:16:47.578: I/DMA:LA(18785): @SyncManager SYNC:??? ????
+01-19 15:16:47.589: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:??? ????
+01-19 15:16:47.819: I/DMA:LA(18785): @SyncManager SYNC:??? ???????
+01-19 15:16:47.828: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:??? ???????
+01-19 15:16:47.987: I/DMA:LA(18785): @SyncManager SYNC:Debug
+01-19 15:16:47.997: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:Debug
+01-19 15:16:48.167: I/DMA:LA(18785): @SyncManager SYNC:HUAWEI Israel
+01-19 15:16:48.200: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:HUAWEI Israel
+01-19 15:16:48.560: I/DMA:LA(18785): @SyncManager SYNC:????? ?????? ??????
+01-19 15:16:48.580: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:????? ?????? ??????
+01-19 15:16:48.909: I/DMA:LA(18785): @SyncManager SYNC:?????
+01-19 15:16:48.917: I/DMA:LA(18785): @SyncManager LUCY_SYNC adding contact:?????
+01-19 15:16:49.246: I/DMA:LA(18785): @SyncManager SYNC:012 Mobile
+01-19 15:16:49.268: I/DMA:LA(18785): @SyncManager SYNC:???? ?????
+01-19 15:16:49.283: I/DMA:LA(18785): @SyncManager SYNC:AVIS Israel
+01-19 15:16:49.300: I/DMA:LA(18785): @SyncManager SYNC:DMA Start
+01-19 15:16:49.317: I/DMA:LA(18785): @SyncManager SYNC:DRAFT
+01-19 15:16:49.333: I/DMA:LA(18785): @SyncManager SYNC:Reporter
+01-19 15:16:49.351: I/DMA:LA(18785): @SyncManager SYNC:??????? ???
+01-19 15:16:49.370: I/DMA:LA(18785): @SyncManager SYNC:Telecom
+01-19 15:16:49.391: I/DMA:LA(18785): @SyncManager SYNC:???? ?????
+01-19 15:16:49.423: I/DMA:LA(18785): @SyncManager SYNC:?????
+01-19 15:16:49.459: I/DMA:LA(18785): @SyncManager SYNC:????????
+01-19 15:16:49.504: I/DMA:LA(18785): @SyncManager SYNC:RUNWAY
+01-19 15:16:49.555: I/DMA:LA(18785): @SyncManager SYNC:??? ????
+01-19 15:16:49.602: I/DMA:LA(18785): @SyncManager SYNC:??? ???????
+01-19 15:16:49.625: I/DMA:LA(18785): @SyncManager SYNC:Debug
+01-19 15:16:49.656: I/DMA:LA(18785): @SyncManager SYNC:HUAWEI Israel
+01-19 15:16:49.675: I/DMA:LA(18785): @SyncManager SYNC:????? ?????? ??????
+01-19 15:16:49.689: I/DMA:LA(18785): @SyncManager SYNC:?????
+01-19 15:16:49.716: I/DMA:LA(18785): @SyncManager SYNC:012 Mobile
+01-19 15:16:49.732: I/DMA:LA(18785): @SyncManager SYNC:???? ?????
+01-19 15:16:49.745: I/DMA:LA(18785): @SyncManager SYNC:AVIS Israel
+01-19 15:16:49.813: I/DMA:LA(18785): @SyncManager SYNC:DMA Start
+01-19 15:16:49.831: I/DMA:LA(18785): @SyncManager SYNC:DRAFT
+01-19 15:16:49.847: I/DMA:LA(18785): @SyncManager SYNC:Reporter
+01-19 15:16:49.862: I/DMA:LA(18785): @SyncManager SYNC:??????? ???
+01-19 15:16:49.876: I/DMA:LA(18785): @SyncManager SYNC:Telecom
+01-19 15:16:49.890: I/DMA:LA(18785): @SyncManager SYNC:???? ?????
+01-19 15:16:49.906: I/DMA:LA(18785): @SyncManager SYNC:?????
+01-19 15:16:49.923: I/DMA:LA(18785): @SyncManager SYNC:????????
+01-19 15:16:49.940: I/DMA:LA(18785): @SyncManager SYNC:RUNWAY
+01-19 15:16:49.965: I/DMA:LA(18785): @SyncManager SYNC:??? ????
+01-19 15:16:49.998: I/DMA:LA(18785): @SyncManager SYNC:??? ???????
+01-19 15:16:50.021: I/DMA:LA(18785): @SyncManager SYNC:Debug
+01-19 15:16:50.043: I/DMA:LA(18785): @SyncManager SYNC:HUAWEI Israel
+01-19 15:16:50.062: I/DMA:LA(18785): @SyncManager SYNC:????? ?????? ??????
+01-19 15:16:50.084: I/DMA:LA(18785): @SyncManager SYNC:?????
