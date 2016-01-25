@@ -11,14 +11,15 @@
         app.run(function($ionicPlatform) {});
         app.controller('AppController', function($scope) {
             $scope.sayHello = function() {
-                window.alert("Say Hello!");
+                $scope.showHello = !$scope.showHello;
             };
         });
     </script>
 </head>
 <body ng-app = "ionic-app">
     <div ng-controller = "AppController">
-        <button style = "margin: 100px auto 0 auto;" ng-click = "sayHello()">Say Hello!</button>
+        <button style = "margin-top: 100px;" ng-click = "sayHello()">Say Hello!</button>
+        <div ng-if = "showHello">Hello World!</div>
     </div>
 </body>
 </html>
