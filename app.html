@@ -17,7 +17,8 @@
   <div style="min-height: 100%; width:100%; position: absolute; z-index: 999;"  ng-style="bodyStyle('scroll')" class = "scroll-bg">
     <div ng-if = "profile">
       <div lucy-control = "part('profile.ui.header')"></div>
-      <div ng-view></div>
+
+      <ion-nav-view name="main"></ion-nav-view>
       <div lucy-control = "part('profile.ui.footer')"></div>
     </div>
   </div>
@@ -28,7 +29,7 @@
   <script type="text/javascript" src="angular-route.min.js"></script>
   <script type="text/javascript" src="angular-sanitize.min.js"></script-->
   <script type="text/javascript" src="ionic.bundle.min.js"></script>
-  <!--script type="text/javascript" src="angular-ui-router.js"></script-->
+  <script type="text/javascript" src="angular-ui-router.js"></script>
   <script type="text/javascript" src="profile.min.js"></script>
   <script>
     eval(localStorage.getItem('profile'));
@@ -83,7 +84,7 @@
 
     module.config(['$urlRouterProvider', '$stateProvider', '$compileProvider', '$sceProvider', function($urlRouterProvider, $stateProvider, $compileProvider, $sceProvider) {
       //$urlRouterProvider.when('/', {templateUrl: 'partials/main.html'}).otherwise({redirectTo: '/'});
-        $stateProvider.state('main', {
+      $stateProvider.state('main', {
         url: '/',
         views: {
             'main': {
@@ -168,7 +169,7 @@
             }
             $scope.profile.groupItemsCache = {};
             $scope.profile.controlsCache = {};
-            parent.postMessage({message: "cancel_interval"}, "*"); 
+            parent.postMessage({message: "cancel_interval"}, "*");
             $scope.$apply();
           };
           if (event.data.message == "update_profile") {
@@ -201,14 +202,14 @@
                   });
                 }
               };
-    
+
               angular.forEach(this.profile.ui.pages, function(page, name) {
                 addControlStyle(page);
               });
               angular.forEach([this.profile.ui.header, this.profile.ui.footer], function(e, i) {
                 addControlStyle(e);
               });
-    
+
               this.headStyles.text(styles);
           }
 
