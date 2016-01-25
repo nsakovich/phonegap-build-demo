@@ -3,46 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Hello World App!</title>
+    <link rel="stylesheet" href="css/ionic.bundle.css">
 </head>
 <body>
   <script src="cordova.js"></script>
-  <script src="jquery.min.js"></script>
-  <h1>Hello World!</h1>
-  <img src = "" id = "myImage" />
-  <input type = "button" value = "Take a Photo !!!" onclick = "takePhoto()" />
-  <script>
-
-    document.addEventListener("deviceready", onDeviceReady, false);
-    function onDeviceReady() {};
-
-    var r = $.ajax({
-        url:'http://callmyapp.appspot.com/profile?profile=AVIS Israel',
-        type:'get'
-    }).success(function(){
-        window.alert(r.responseText);
-    }).error(function(){
-        window.alert("Error!");
-    });
-
-    function takePhoto() {
-      navigator.camera.getPicture(function(imageData) {
-        var image = document.getElementById('myImage');
-        image.src = "data:image/jpeg;base64," + imageData;
-      }, function() {
-        window.alert("Camera error!");
-      }, {
-        quality: 50,
-        destinationType: Camera.DestinationType.DATA_URL,
-        sourceType: Camera.PictureSourceType.CAMERA,
-        allowEdit: true,
-        encodingType: Camera.EncodingType.JPEG,
-        targetWidth: 100,
-        targetHeight: 100,
-        popoverOptions: CameraPopoverOptions,
-        saveToPhotoAlbum: false,
-        correctOrientation:true
-      });
-    }
-  </script>
+  <script src="ionic.bundle.js"></script>
 </body>
 </html>
