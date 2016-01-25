@@ -7,10 +7,16 @@
     <script src="cordova.js"></script>
     <script src="ionic.bundle.min.js"></script>
     <script>
-        angular.module('ionic-app', ['ionic']).run(function($ionicPlatform) {
+        var app = angular.module('ionic-app', ['ionic']);
+        app.run(function($ionicPlatform) {});
+        app.controller('AppController', function($scope) {
+            scope.sayHello = window.alert("Say Hello!");
         });
     </script>
 </head>
 <body ng-app = "ionic-app">
+    <div ng-controller = "AppController">
+        <button ng-click = "sayHello()">Say Hello!</button>
+    </div>
 </body>
 </html>
