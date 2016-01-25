@@ -78,7 +78,7 @@
       }, false);
     }
 
-    var module = angular.module('cordovaApp', ['ngRoute', 'ngSanitize']);
+    var module = angular.module('cordovaApp', ['ionic']);
 
     module.config(['$routeProvider', '$compileProvider', '$sceProvider', function($routeProvider, $compileProvider, $sceProvider) {
       $routeProvider.when('/', {templateUrl: 'partials/main.html'}).otherwise({redirectTo: '/'});
