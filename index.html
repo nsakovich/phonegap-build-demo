@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <title>Hello World App!</title>
     <link rel="stylesheet" href="css/ionic.min.css">
+    <script src="cordova.js"></script>
+    <script src="ionic.bundle.min.js"></script>
+    <script>
+        angular.module('ionic-app', ['ionic']).run(function($ionicPlatform) {
+        });
+    </script>
 </head>
-<body>
-  <script src="cordova.js"></script>
-  <script src="ionic.bundle.min.js"></script>
+<body ng-app = "ionic-app">
 </body>
 </html>
