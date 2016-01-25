@@ -81,13 +81,22 @@
 
     var module = angular.module('cordovaApp', ['ionic']);
 
-    module.config(['$urlRouterProvider', '$compileProvider', '$sceProvider', function($urlRouterProvider, $compileProvider, $sceProvider) {
-      $urlRouterProvider.when('/', {templateUrl: 'partials/main.html'}).otherwise({redirectTo: '/'});
+    module.config(['$urlRouterProvider', '$stateProvider', '$compileProvider', '$sceProvider', function($urlRouterProvider, $stateProvider, $compileProvider, $sceProvider) {
+      //$urlRouterProvider.when('/', {templateUrl: 'partials/main.html'}).otherwise({redirectTo: '/'});
+        $stateProvider.state('main', {
+        url: '/',
+        views: {
+            'main': {
+                  templateUrl: 'partials/main.html'
+                }
+            }
+        });
       var regexp = /^\s*(https?|ftp|mailto|zip|asset|tel|geo|smsto|whatsapp):/;
       $compileProvider.urlSanitizationWhitelist && $compileProvider.urlSanitizationWhitelist(regexp);
       $compileProvider.aHrefSanitizationWhitelist && $compileProvider.aHrefSanitizationWhitelist(regexp);
       $compileProvider.imgSrcSanitizationWhitelist && $compileProvider.imgSrcSanitizationWhitelist(regexp);
       $sceProvider.enabled(false);
+      $urlRouterProvider.otherwise('/');
     }]);
 
     module.simpleDirective = function (name, template, extra) {
