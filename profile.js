@@ -671,6 +671,15 @@ var profile = {
             "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector();\n    \n    try {\n        scope.modal = injector.get('$ionicModal').fromTemplateUrl('my-modal.html', {\n            scope: scope,\n            animation: 'slide-in-up'\n        }).then(function(modal) {\n            scope.modal = modal;\n        });\n    } catch(ignore) {}\n    \n    scope.show = function() {\n        scope.modal.show();\n    };\n    \n    scope.closeModal = function() {\n        scope.modal.hide();\n    };\n    \n    if (scope.$on) {\n        scope.$on('$destroy', function() {\n            scope.modal.remove();\n        });\n    }\n};",
             "name": "Modal Window",
             "type": "html-block"
+          },
+          {
+            "conf": {},
+            "css": ".html-block-1453834699596 {\n    padding: 0 5px;\n}",
+            "html": "<script id=\"my-popover.html\" type=\"text/ng-template\">\n  <ion-popover-view>\n    <ion-header-bar>\n        <h1 class=\"title\">My Popover Title</h1>\n    </ion-header-bar>\n    <ion-content class = \"vcenter\">\n        Hello!\n    </ion-content>\n  </ion-popover-view>\n</script>\n\n<button ng-click = \"show($event)\" class=\"button button-block button-positive\">\n    Popover\n</button>",
+            "id": "html-block-1453834699596",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector();\n    \n    try {\n        scope.popover = injector.get('$ionicPopover').fromTemplateUrl('my-popover.html', {\n            scope: scope\n        }).then(function(popover) {\n            scope.popover = popover;\n        });\n    } catch(ignore) {}\n    \n    scope.show = function($event) {\n        scope.popover.show($event);\n    };\n    \n    scope.hide = function() {\n        scope.popover.hide();\n    };\n    \n    if (scope.$on) {\n        scope.$on('$destroy', function() {\n            scope.popover.remove();\n        });\n    }\n};",
+            "name": "Popover",
+            "type": "html-block"
           }
         ],
         "type": "lucy-v-panel"
