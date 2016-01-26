@@ -657,7 +657,7 @@ var profile = {
             "type": "html-block"
           },
           {
-            "css": ".html-block-1453830333946 {\n    padding: 0 5px;\n}",
+            "css": ".html-block-1453830333946 {\n    padding: 0px;\n}",
             "html": "<script id=\"my-modal.html\" type=\"text/ng-template\">\n  <ion-modal-view>\n    <ion-header-bar>\n      <h1 class=\"title\">My Modal title</h1>\n    </ion-header-bar>\n    <ion-content>\n      Hello!\n    </ion-content>\n  </ion-modal-view>\n</script>\n<button ng-click = \"show()\" class=\"button button-block button-positive\">\n    Modal Window\n</button>",
             "id": "html-block-1453830333946",
             "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector();\n    \n    try {\n        scope.modal = injector.get('$ionicModal').fromTemplateUrl('my-modal.html', {\n            scope: scope,\n            animation: 'slide-in-up'\n        }).then(function(modal) {\n            scope.modal = modal;\n        });\n    } catch(ignore) {}\n    \n    scope.show = function() {\n        scope.modal.show();\n    };\n    \n    scope.closeModal = function() {\n        scope.modal.hide();\n    };\n    \n    if (scope.$on) {\n        scope.$on('$destroy', function() {\n            scope.modal.remove();\n        });\n    }\n};",
