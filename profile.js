@@ -641,8 +641,8 @@ var profile = {
       "main": {
         "controls": [
           {
-            "css": ".red, .blue {\n    height: 100px;\n}\n\n.red {\n    background-color: red;\n}\n\n.blue {\n    background-color: blue;\n}",
-            "html": "<ion-slide-box show-pager = \"false\">\n  <ion-slide>\n    <div class = \"red\">Red</div>\n  </ion-slide>\n  <ion-slide>\n    <div class = \"blue\">Blue</div>\n  </ion-slide>\n</ion-slide-box>",
+            "css": ".html-block-1453835582290 {\n    height: 100px;\n}\n\n.html-block-1453835582290 div[html-block] {\n    height: 100px;\n}\n\n.red, .blue {\n    height: 100px;\n}\n\n.red {\n    background-color: red;\n}\n\n.blue {\n    background-color: blue;\n}",
+            "html": "<ion-slides options=\"options\" slider=\"data.slider\">\n  <ion-slide-page>\n    <div class=\"box blue\"><h1>BLUE</h1></div>\n  </ion-slide-page>\n  <ion-slide-page>\n    <div class=\"box red\"><h1>RED</h1></div>\n  </ion-slide-page>\n</ion-slides>",
             "id": "html-block-1453835582290",
             "name": "Slider",
             "type": "html-block"
