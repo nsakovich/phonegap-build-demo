@@ -641,6 +641,14 @@ var profile = {
       "main": {
         "controls": [
           {
+            "css": ".html-block-1453833714730 {\n    padding: 0 5px;\n}",
+            "html": "<button ng-click = \"show()\" class=\"button button-block button-positive\">\n  Action Sheet\n</button>",
+            "id": "html-block-1453833714730",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector();\n         \n    scope.show = function() {\n        var $ionicActionSheet = injector.get('$ionicActionSheet');\n            $ionicActionSheet.show({\n                buttons: [\n                    { text: '<b>Share</b> This' },\n                    { text: 'Move' }\n                ],\n                titleText: 'Modify your album',\n                cancelText: 'Cancel',\n                buttonClicked: function() {\n                    return true;\n                }\n            });\n        };\n};",
+            "name": "Action Sheet",
+            "type": "html-block"
+          },
+          {
             "css": ".html-block-1453828393447 {\n    padding: 0 5px;\n}",
             "html": "<button ng-click = \"show()\" class=\"button button-block button-positive\">\n  Backdrop\n</button>\n<ion-checkbox ng-model=\"isChecked\">Check Me</ion-checkbox>\n<ion-toggle ng-model=\"airplaneMode\" toggle-class=\"toggle-calm\">Toogle Me</ion-toggle>",
             "id": "html-block-1453828393447",
