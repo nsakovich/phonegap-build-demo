@@ -641,6 +641,13 @@ var profile = {
       "main": {
         "controls": [
           {
+            "css": ".red, .blue {\n    height: 100px;\n}\n\n.red {\n    background-color: red;\n}\n\n.blue {\n    background-color: blue;\n}",
+            "html": "<ion-slide-box show-pager = \"false\">\n  <ion-slide>\n    <div class = \"red\">Red</div>\n  </ion-slide>\n  <ion-slide>\n    <div class = \"blue\">Blue</div>\n  </ion-slide>\n</ion-slide-box>",
+            "id": "html-block-1453835582290",
+            "name": "Slider",
+            "type": "html-block"
+          },
+          {
             "css": ".html-block-1453833714730 {\n    padding: 0 5px;\n}",
             "html": "<button ng-click = \"show()\" class=\"button button-block button-positive\">\n  Action Sheet\n</button>",
             "id": "html-block-1453833714730",
