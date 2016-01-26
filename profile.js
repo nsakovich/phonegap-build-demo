@@ -630,164 +630,21 @@ var profile = {
   "timezone": "Asia/Jerusalem",
   "ui": {
     "footer": {
-      "controls": [
-        {
-          "css": ".html-block-1418563437537 {\n    text-align: center;\n}",
-          "html": "<p>\n    Не нашли что искали? Где-то допущена ошибка? <a href = \"mailto:n.sakovich@gmail.com\">Дайте нам знать!</a>\n</p>",
-          "id": "html-block-1418563437537",
-          "name": "Нашли ошибку",
-          "type": "html-block"
-        },
-        {
-          "css": ".html-block-1452355905996 {\n    margin-bottom: 55px !important;\n}\n\n.html-block-1452355905996 img {\n    width: 100%;\n}",
-          "html": "<img src = \"http://storage.googleapis.com/callmyapp.appspot.com/TEST/1418557227856.png\" />",
-          "id": "html-block-1452355905996",
-          "name": "Баннер",
-          "type": "html-block"
-        },
-        {
-          "css": ".html-block-1418580435503 {\n    position: fixed;\n    bottom: 0; margin: 0 !important; width: 100%;\n}\n\n.html-block-1418580435503 a {\n    cursor: pointer;\n}\n\n.html-block-1418580435503 .share {\n    height: 55px;\n    background-color: #fff;\n    box-shadow: 0 0 20px #000;\n    -webkit-box-shadow: 0 0 20px #000;\n}\n\n.fa-share-alt:hover {\n    background-color: #fff;\n}\n\n.fa-share-alt {\n    background-color: #eee;\n    padding: 5px 8px 5px 5px;\n    border: 1px solid #ccc;\n    border-radius: 20px;\n    float: right;\n    margin: 6px 5px 0 0;\n}\n\n.html-block-1418580435503 .share i {\n    font-size: 32px;\n    color: #9c9d9e;\n}\n\n.html-block-1418580435503 .share a:hover {\n    text-decoration: none;\n}\n\n.html-block-1418580435503 .share p {\n    padding: 17px 0 0 20px; margin: 0;\n    float: left;\n}\n\n.html-block-1418580435503 .share .fa-envelope {\n    position: relative;\n    top:-1px;\n}",
-          "html": "<div class = \"share\">\n    <p>Нравится? Расскажите друзьям!</p>\n    <a ng-click = \"share()\"><i class = \"fa fa-share-alt\"></i></a>\n    <!--a ng-href = \"{{shareFbLink}}\" target = \"_blank\"><i class = \"fa fa-facebook-square\"></i></a>\n    <a ng-href = \"{{shareTwLink}}\" target = \"_blank\"><i class = \"fa fa-twitter-square\"></i></a>\n    <a ng-href = \"{{sharePlusLink}}\" target = \"_blank\"><i class = \"fa fa-vk\"></i></a>\n    <a ng-href = \"{{sharePlusLink}}\" target = \"_blank\"><i class = \"fa fa-google-plus-square\"></i></a>\n    <a ng-href = \"{{emailLink}}\" target = \"_blank\"><i class = \"fa fa-envelope\"></i></a-->\n</div>",
-          "id": "html-block-1418580435503",
-          "javascript": "this.extend = function(scope) {\n    'use strict';\n    scope.share = function() {\n        window.plugins.socialsharing.share(\"Удобное приложение для абонентов МТС (Беларусь)!\", null, null, 'http://mts.by');       \n    };\n};",
-          "name": "Шаринг",
-          "type": "html-block"
-        }
-      ],
+      "controls": [],
       "type": "lucy-v-panel"
     },
     "header": {
-      "controls": [
-        {
-          "css": ".footer-market-alert {\n    display: none;\n}\n\nbody * {\n    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;\n}\n\n.fa-home {\n    color: #fc2e35;\n}\n\n.no-r {\n    -webkit-border-bottom-right-radius: 5px !important;\n    -webkit-border-bottom-left-radius: 5px !important;\n}\n\n.alert-success {\n    margin-top: -3px !important;\n    background-color: #9c0101;\n    border-color: #9c0101;\n    padding: 0 !important;\n}\n\n.btn-primary, .btn-success {\n    width: 100%;\n    box-sizing: border-box;\n    display: block;\n    -webkit-border-radius: 0;\n}\n\n.btn-success {\n    margin-bottom: 0;\n}\n\n.alert-success {\n    padding: 10px;\n    margin: 0;\n    -webkit-border-radius: 0;\n}\n\n.padding-wrapper {\n    padding-left: 5px;\n    padding-right: 5px;\n}\n\n.btn-primary {\n    background-image: none;\n    background-color: #fc2e35;\n    text-align: left;\n}\n\n.btn-primary:focus, .btn-primary:hover {\n    background-image: none;\n    background-color: #db2932;\n}\n\n.btn-primary .fa-caret-down {\n    float: right;\n}\n\n.btn-primary .fa-caret-down:before {\n    content: \"\\f107\";\n}\n\n.btn-success {\n    background-image: none;\n    background-color: #fff;\n    color: #fc2e35;\n    text-align: left;\n}\n\n.btn-success:hover, .btn-success:focus {\n    background-color: #eee;\n    background-image: none;\n    color: #fc2e35;\n}\n",
-          "id": "html-block-1418551548594",
-          "javascript": "this.extend = function(scope) {\n    'use strict';\n    scope.profile.phonesMap = {};\n    if (scope.profile.phones) {\n        window.$.each(scope.profile.phones, function(i) {\n            var phone = scope.profile.phones[i];\n            if (phone.id) {\n                scope.profile.phonesMap[phone.id] = phone;\n            }\n        });\n    }\n    \n    scope.profile.openGroup = function(groupId) {\n        if (scope.profile.openedId !== groupId) {\n            scope.profile.openedId = groupId;\n        } else {\n            scope.profile.openedId = \"\";\n        }\n    };\n};",
-          "name": "CSS  & JS",
-          "type": "html-block"
-        }
-      ],
+      "controls": [],
       "type": "lucy-v-panel"
     },
     "pages": {
       "main": {
         "controls": [
           {
-            "conf": {
-              "userName": {
-                "name": "user name",
-                "value": "Nick Sakovich"
-              }
-            },
-            "css": ".html-block-1452287413523 {\n    text-align: center;\n}",
-            "html": "<img ng-src=\"{{profile.logo}}\">\n",
-            "id": "html-block-1452287413523",
-            "name": "Логотип",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1418580118366, .html-block-1418580118366 h3 {\n    margin: 0 !important;\n}\n\n.html-block-1418580118366 h3 {\n    font-size: 18px;\n    line-height: 18px;\n    text-align: center;\n    padding: 0 5px 0 5px;\n}\n\n.html-block-1418580118366 p {\n    text-align: center;\n    padding: 0 0 10px 0; margin: 0;\n    font-size: 12px;\n}\n\n.html-block-1418580118366 p sup {\n    color: red;\n}",
-            "html": "<h3>Быстрый и простой доступ к возможностям мобильного помощника МТС!</h3>\n<p><sup>*</sup>на территории Республики Беларусь</p>",
-            "id": "html-block-1418580118366",
-            "name": "Описание",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452501956710 {\n    margin: 0 !important;\n}",
-            "html": "<div class = \"padding-wrapper\">\n    <a href = \"tel:*120*375295506439#\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>Перезвони мне</span></h3>\n    </a>\n</div>",
-            "id": "html-block-1452501956710",
-            "name": "Перезвони мне",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452355761563 {\n    margin-bottom: 0 !important;\n}\n.html-block-1452355761563 .btn-primary .fa-phone:before {\n    content: \"\\f01e\";\n}",
-            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a ng-click = \"selectContact($event, phone)\" ng-attr-id = \"{{phone.id}}\" class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
-            "id": "html-block-1452355761563",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    scope.selectContact = function($event, phone) {\n        if (phone.id === 'phone-1418560401725') {\n            var phones, onePhone, options;\n            navigator.contacts.pickContact(function(contact) {\n                if (!contact.phoneNumbers) {\n                    return;\n                }\n                \n                if (contact.phoneNumbers.length > 1) {\n                    phones = window.$.map(contact.phoneNumbers, function(phone) {\n                        return phone.value;\n                    });\n                    options = {\n                        title: 'Какой номер использовать?',\n                        buttonLabels: phones\n                    };\n                    window.plugins.actionsheet.show(options, function(index) {\n                        if (phones[index - 1]) {\n                            window.alert(phones[index - 1]);\n                        }\n                    });\n                } else if (contact.phoneNumbers.length === 1) {\n                    onePhone = contact.phoneNumbers[0].value;\n                    if (onePhone) {\n                        window.alert(onePhone);    \n                    }\n                    \n                }\n            }, function(err) {\n                window.alert(err);\n            });\n            $event.stopPropagation();\n            $event.preventDefault();\n        }\n    };\n    \n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418560393109';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
-            "name": "Автодозвон",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452287655254 {\n    margin-bottom: 0 !important;\n}\n\n.html-block-1452287655254 .btn-primary .fa-phone:before {\n    content: \"\\f155\";\n}",
-            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
-            "id": "html-block-1452287655254",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418554543189';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
-            "name": "Счет",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452291461589 {\n    margin-bottom: 0 !important;\n}",
-            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
-            "id": "html-block-1452291461589",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418577235645';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
-            "name": "Смена тарифного плана",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452354288484 .btn-primary .fa-phone:before {\n    content: \"\\f0ac\";\n}\n.html-block-1452354288484 {\n    margin-bottom: 0 !important;\n}",
-            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
-            "id": "html-block-1452354288484",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418555406960';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
-            "name": "Международная связь и роуминг",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452354945971 {\n    margin-bottom: 0 !important;\n}\n",
-            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
-            "id": "html-block-1452354945971",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418576750737';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
-            "name": "Любимые номера",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452355134142 .btn-primary .fa-phone:before {\n    content: \"\\f0e8\";\n}\n.html-block-1452355134142 {\n    margin-bottom: 0 !important;\n}",
-            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
-            "id": "html-block-1452355134142",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418574696054';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
-            "name": "Интернет",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452355278749 {\n    margin-bottom: 0 !important;\n}\n.html-block-1452355278749 .btn-primary .fa-phone:before {\n    content: \"\\f0e5\";\n}\n.html-block-1452355278749 h3 {\n    font-size: 21px;\n}\n",
-            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
-            "id": "html-block-1452355278749",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418575327252';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
-            "name": "SMS и MMS-услуги",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452355458310 {\n    margin-bottom: 0 !important;\n}\n",
-            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
-            "id": "html-block-1452355458310",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418576194945';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
-            "name": "Сетевые услуги",
-            "type": "html-block"
-          },
-          {
-            "css": ".html-block-1452355555285 {\n    margin-bottom: 0 !important;\n}\n.html-block-1452355555285 .btn-primary .fa-phone:before {\n    content: \"\\f023\";\n}",
-            "html": "<div class = \"padding-wrapper\">\n    <a ng-click = \"profile.openGroup(group.id)\" class=\"btn btn-primary\">\n        <h3><i class=\"fa fa-phone\"></i> <span>{{group.name}}</span> <i class=\"fa fa-caret-down\"></i></h3>\n    </a>\n    <div  ng-show = \"profile.openedId == group.id\" class=\"alert alert-success\">\n        <div ng-repeat=\"phone in phones\">\n            <a class=\"btn btn-large btn-success\"  ng-href=\"{{ep(phone.phone)}}\"><i class=\"fa fa-phone\"></i> {{phone.name}}</a>\n        </div>\n    </div>\n</div>",
-            "id": "html-block-1452355555285",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.profile.groups && scope.profile.groups.phones) {\n        scope.group = window.$.grep(scope.profile.groups.phones, function(group) {\n            return group.id === 'group-1418579187816';\n        })[0];\n        \n        if (scope.profile.phonesMap) {\n            scope.phones = [];\n            window.$.each(scope.group.items, function(i) {\n                var id = scope.group.items[i];\n                scope.phones.push(scope.profile.phonesMap[id]);\n            });\n        }\n    }\n};",
-            "name": "Безопасность",
-            "type": "html-block"
-          }
-        ],
-        "type": "lucy-v-panel"
-      },
-      "ussd": {
-        "controls": [
-          {
-            "css": ".wysiwyg-block-1418557088929 font {\r\n    line-height: 24px !important;\r\n}",
-            "html_en": "<div style=\"text-align: center;\"><span style=\"font-family: inherit; line-height: 1.42857143;\"><font size=\"5\">Все самые необходимые USSD запросы в одном месте!</font></span></div>",
-            "id": "wysiwyg-block-1418557088929",
-            "margin-bottom": 10,
-            "margin-top": 0,
-            "type": "wysiwyg-block"
-          },
-          {
-            "css": ".html-block-1418557484411 {\n    padding: 0 10px 0 10px;\n    margin-bottom: 0 !important;\n}\n\n.html-block-1418557484411 p {\n    padding: 0 0 5px 0; margin: 0;\n}",
-            "html": "<p><b>За мой счет</b>: *190*1*&lt;номер абонента&gt;#</p>\n<p><b>Пополнить счет</b>: *121#</p>\n<p><b>Обещанный платеж</b>: *113*&lt;сумма&gt;#</p>\n<p><b>Перезвони мне</b>: *120*&lt;номер абонента&gt;#</p>\n<p><b>Международные звонки</b>: *111*20#</p>\n<p><b>Роуминг</b>: *111*22#</p>\n<p><b>WAP-портал МТС</b>: *303#</p>\n<p><b>Услуга \"Вам Звонили\" когда телефон</b>:<br/>\n    <ul>\n        <li><b>недоступен или выключен</b>: **62*110110#</li>\n        <li><b>занят</b>: **61*110110#</li>\n        <li><b>не отвечает 15 секунд</b>: **67*110110#</li>\n    </ul>\n</p>\n\n\n",
-            "id": "html-block-1418557484411",
-            "name": "USSD",
+            "css": ".html-block-1453828393447 {\n    padding: 0 5px;\n}",
+            "html": "<button ng-click = \"show()\" class=\"button button-block button-positive\">\n  Backdrop\n</button>",
+            "id": "html-block-1453828393447",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n         \n    scope.show = function() {\n        var injector = window.angular.element(document).injector(), \n            $timeout = injector.get('$timeout'),\n            $ionicBackdrop = injector.get('$ionicBackdrop');\n        $ionicBackdrop.retain();\n        $timeout(function()  {\n            $ionicBackdrop.release();\n        }, 2000);\n    };\n};",
             "type": "html-block"
           }
         ],
