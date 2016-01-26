@@ -652,8 +652,16 @@ var profile = {
             "css": ".html-block-1453829979612 {\n    padding: 0 5px;\n}",
             "html": "<button ng-click = \"show()\" class=\"button button-block button-positive\">\n  Show Loading\n</button>",
             "id": "html-block-1453829979612",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector();\n\n         \n    scope.show = function() {\n        var $timeout = injector.get('$timeout'),\n            $ionicLoading = injector.get('$ionicLoading');\n            $ionicLoading.show({\n              template: 'Loading...'\n            });\n            $timeout(function() {\n                $ionicLoading.hide();    \n            }, 3000);\n        };\n};",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector();\n         \n    scope.show = function() {\n        var $timeout = injector.get('$timeout'),\n            $ionicLoading = injector.get('$ionicLoading');\n            $ionicLoading.show({\n              template: 'Loading...'\n            });\n            $timeout(function() {\n                $ionicLoading.hide();    \n            }, 3000);\n        };\n};",
             "name": "Show Loading",
+            "type": "html-block"
+          },
+          {
+            "css": ".html-block-1453830333946 {\n    padding: 0 5px;\n}",
+            "html": "<script id=\"my-modal.html\" type=\"text/ng-template\">\n  <ion-modal-view>\n    <ion-header-bar>\n      <h1 class=\"title\">My Modal title</h1>\n    </ion-header-bar>\n    <ion-content>\n      Hello!\n    </ion-content>\n  </ion-modal-view>\n</script>\n<button ng-click = \"show()\" class=\"button button-block button-positive\">\n    Modal Window\n</button>",
+            "id": "html-block-1453830333946",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector();\n    \n    scope.show = function() {\n        var $ionicModal = injector.get('$ionicModal');\n        $ionicModal.fromTemplate('my-modal.html', {\n            scope: scope,\n            animation: 'slide-in-up'\n        });\n    };\n};",
+            "name": "Modal Window",
             "type": "html-block"
           }
         ],
