@@ -644,6 +644,7 @@ var profile = {
             "css": ".html-block-1453835582290 {\n    height: 100px;\n}\n\n.html-block-1453835582290 div[html-block] {\n    height: 100px;\n}\n\n.red, .blue {\n    height: 100px;\n}\n\n.red {\n    background-color: red;\n}\n\n.blue {\n    background-color: blue;\n}",
             "html": "<ion-slides options=\"options\" slider=\"data.slider\">\n  <ion-slide-page>\n    <div class=\"box blue\"><h1>BLUE</h1></div>\n  </ion-slide-page>\n  <ion-slide-page>\n    <div class=\"box red\"><h1>RED</h1></div>\n  </ion-slide-page>\n</ion-slides>",
             "id": "html-block-1453835582290",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    scope.options = {\n      loop: true,\n      effect: 'fade',\n      speed: 500\n    };\n    \n    scope.data = {};\n    if (scope.$watch) {\n        scope.$watch('data.slider', function() {\n            scope.slider = scope.data.slider;\n        });\n    }\n};",
             "name": "Slider",
             "type": "html-block"
           },
