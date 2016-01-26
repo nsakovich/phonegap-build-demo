@@ -642,9 +642,18 @@ var profile = {
         "controls": [
           {
             "css": ".html-block-1453828393447 {\n    padding: 0 5px;\n}",
-            "html": "<button ng-click = \"show()\" class=\"button button-block button-positive\">\n  Backdrop\n</button>",
+            "html": "<button ng-click = \"show()\" class=\"button button-block button-positive\">\n  Backdrop\n</button>\n<ion-checkbox ng-model=\"isChecked\">Check Me</ion-checkbox>\n<ion-toggle ng-model=\"airplaneMode\" toggle-class=\"toggle-calm\">Toogle Me</ion-toggle>",
             "id": "html-block-1453828393447",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n         \n    scope.show = function() {\n        var injector = window.angular.element(document).injector(), \n            $timeout = injector.get('$timeout'),\n            $ionicBackdrop = injector.get('$ionicBackdrop');\n        $ionicBackdrop.retain();\n        $timeout(function()  {\n            $ionicBackdrop.release();\n        }, 2000);\n    };\n};",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector();\n\n         \n    scope.show = function() {\n        var $timeout = injector.get('$timeout'),\n            $ionicBackdrop = injector.get('$ionicBackdrop');\n            $ionicBackdrop.retain();\n            $timeout(function()  {\n                $ionicBackdrop.release();\n            }, 2000);\n        };\n};",
+            "name": "Backdrop, Check Me and Toogle",
+            "type": "html-block"
+          },
+          {
+            "css": ".html-block-1453829979612 {\n    padding: 0 5px;\n}",
+            "html": "<button ng-click = \"show()\" class=\"button button-block button-positive\">\n  Show Loading\n</button>",
+            "id": "html-block-1453829979612",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector();\n\n         \n    scope.show = function() {\n        var $timeout = injector.get('$timeout'),\n            $ionicLoading = injector.get('$ionicLoading');\n            $ionicLoading.show({\n              template: 'Loading...'\n            });\n            $timeout(function() {\n                $ionicLoading.hide();    \n            }, 3000);\n        };\n};",
+            "name": "Show Loading",
             "type": "html-block"
           }
         ],
