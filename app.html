@@ -43,13 +43,15 @@
   </script>
 
   <script type="text/ng-template" id="partials/main.html">
-    <ion-header-bar class="bar-positive">
+    <ion-header-bar>
       <div lucy-control = "part('profile.ui.header')"></div>
     </ion-header-bar>
     <ion-content>
       <div lucy-control="part('profile.ui.pages.main')"></div>
     </ion-content>
-    <div lucy-control = "part('profile.ui.footer')"></div>
+    <ion-footer-bar>
+      <div lucy-control = "part('profile.ui.footer')"></div>
+    </ion-footer-bar>
   </script>
 
   <script>
