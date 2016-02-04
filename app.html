@@ -18,7 +18,20 @@
 
   <div ng-style="bodyStyle('scroll')">
     <div ng-if = "profile">
-      <ion-nav-view name="main"></ion-nav-view>
+      <ion-side-menus>
+        <!-- Left menu -->
+        <ion-side-menu side="left" is-enabled = "true">
+        </ion-side-menu>
+
+        <ion-side-menu-content>
+          <ion-nav-view name="main"></ion-nav-view>
+        </ion-side-menu-content>
+
+        <!-- Right menu -->
+        <ion-side-menu side="right" is-enabled = "false">
+        </ion-side-menu>
+
+      </ion-side-menus>
     </div>
   </div>
 
