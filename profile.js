@@ -634,7 +634,15 @@ var profile = {
       "type": "lucy-v-panel"
     },
     "header": {
-      "controls": [],
+      "controls": [
+        {
+          "css": "",
+          "html": "<ion-nav-bar>\n    <ion-nav-buttons side=\"left\">\n        <button menu-toggle=\"left\" class=\"button button-icon icon ion-navicon\"></button>\n    </ion-nav-buttons>\n</ion-nav-bar>",
+          "id": "html-block-1454601337292",
+          "name": "Menu Icon",
+          "type": "html-block"
+        }
+      ],
       "type": "lucy-v-panel"
     },
     "pages": {
@@ -690,6 +698,10 @@ var profile = {
             "type": "html-block"
           }
         ],
+        "type": "lucy-v-panel"
+      },
+      "menu": {
+        "controls": [],
         "type": "lucy-v-panel"
       }
     }
