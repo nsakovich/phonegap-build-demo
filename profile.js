@@ -710,6 +710,17 @@ var profile = {
           }
         ],
         "type": "lucy-v-panel"
+      },
+      "search": {
+        "controls": [
+          {
+            "html": "<h1>Search Control Here</h1>",
+            "id": "html-block-1454678351029",
+            "name": "Search",
+            "type": "html-block"
+          }
+        ],
+        "type": "lucy-v-panel"
       }
     }
   },
