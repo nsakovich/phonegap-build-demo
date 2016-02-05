@@ -35,6 +35,11 @@
           </ion-nav-bar>
 
           <ion-nav-view name="main"></ion-nav-view>
+          
+          <ion-footer-bar>
+            <div lucy-control = "part('profile.ui.footer')"></div>
+          </ion-footer-bar>
+
         </ion-side-menu-content>
 
       </ion-side-menus>
@@ -73,9 +78,6 @@
         <div lucy-control="part('profile.ui.pages.' + pageName)"></div>
       </ion-content>
     </ion-view>
-    <ion-footer-bar>
-      <div lucy-control = "part('profile.ui.footer')"></div>
-    </ion-footer-bar>
   </script>
 
   <script>
