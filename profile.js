@@ -632,7 +632,7 @@ var profile = {
     "footer": {
       "controls": [
         {
-          "css": ".html-block-1454682676359 p {\n    text-align: center;\n}",
+          "css": ".html-block-1454682676359 p {\n    text-align: center;\n}\n\nion-footer-bar div {\n    width: 100%;\n}",
           "html": "<p>Copyright Ionic Apps</p>",
           "id": "html-block-1454682676359",
           "type": "html-block"
