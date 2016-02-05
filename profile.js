@@ -637,7 +637,7 @@ var profile = {
       "controls": [
         {
           "css": "",
-          "html": "<ion-nav-bar>\n    <ion-nav-buttons side=\"left\">\n        <button menu-toggle=\"left\" class=\"button button-icon icon ion-navicon\"></button>\n    </ion-nav-buttons>\n</ion-nav-bar>",
+          "html": "<ion-nav-back-button></ion-nav-back-button>\n\n<ion-nav-buttons side=\"left\">\n  <button class=\"button button-icon button-clear ion-navicon\" menu-toggle=\"left\"></button>\n</ion-nav-buttons>",
           "id": "html-block-1454601337292",
           "name": "Menu Icon",
           "type": "html-block"
@@ -654,6 +654,11 @@ var profile = {
             "id": "html-block-1453835582290",
             "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    scope.options = {\n      loop: true,\n      effect: 'fade',\n      speed: 500\n    };\n    \n    scope.data = {};\n    if (scope.$watch) {\n        scope.$watch('data.slider', function() {\n            scope.slider = scope.data.slider;\n        });\n    }\n};",
             "name": "Slider",
+            "type": "html-block"
+          },
+          {
+            "html": "<a ui-sref=\"search\">Hello</a>",
+            "id": "html-block-1454682065581",
             "type": "html-block"
           },
           {
