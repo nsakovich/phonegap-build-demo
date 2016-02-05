@@ -59,12 +59,13 @@
       </div>
   </script>
 
-  <script type="text/ng-template" id="partials/main.html">
+  <script type="text/ng-template" id="partials/page.html">
+    <h1>{{pageName}}</h1>
     <ion-header-bar>
       <div lucy-control = "part('profile.ui.header')"></div>
     </ion-header-bar>
     <ion-content>
-      <div lucy-control="part('profile.ui.pages.main')"></div>
+      <div lucy-control="part('profile.ui.pages.' + pageName)"></div>
     </ion-content>
     <ion-footer-bar>
       <div lucy-control = "part('profile.ui.footer')"></div>
@@ -108,14 +109,25 @@
 
     module.config(['$urlRouterProvider', '$stateProvider', '$compileProvider', '$sceProvider', function($urlRouterProvider, $stateProvider, $compileProvider, $sceProvider) {
       //$urlRouterProvider.when('/', {templateUrl: 'partials/main.html'}).otherwise({redirectTo: '/'});
-      $stateProvider.state('main', {
-        url: '/',
-        views: {
-            'main': {
-                  templateUrl: 'partials/main.html'
-                }
+
+      var pages = Object.keys(window.profile.ui.pages);
+      angular.forEach(pages, function(page) {
+        $stateProvider.state(page, {
+          url: '/' + (page === 'main' ? '' : page),
+          resolve: {
+            pageName: function() {
+              return page;
             }
-        });
+          },
+          views: {
+              'main': {
+                    templateUrl: 'partials/page.html',
+                    controller: 'PageController'
+                  }
+              }
+          });
+      });
+
       var regexp = /^\s*(https?|ftp|mailto|zip|asset|tel|geo|smsto|whatsapp):/;
       $compileProvider.urlSanitizationWhitelist && $compileProvider.urlSanitizationWhitelist(regexp);
       $compileProvider.aHrefSanitizationWhitelist && $compileProvider.aHrefSanitizationWhitelist(regexp);
@@ -181,6 +193,10 @@
     }]);
 
     module.simpleDirective('lucyVPanel', 'templates/ctrl/vpanel.html');
+
+    module.controller('PageController', ['pageName', '$scope', function(pageName, $scope) {
+      $scope.pageName = pageName;
+    }]);
 
     module.controller('AppController', ['$scope', '$timeout', '$parse', function($scope, $timeout, $parse) {
       $scope.profile = window.profile;
