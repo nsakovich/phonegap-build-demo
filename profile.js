@@ -667,6 +667,7 @@ var profile = {
             "css": ".html-block-1454682065581 {\n    padding: 0 5px;\n}",
             "html": "<a ui-sref=\"search\" class=\"button button-block button-balanced\">\n  Search Page\n</a>",
             "id": "html-block-1454682065581",
+            "name": "Sarch Button",
             "type": "html-block"
           },
           {
