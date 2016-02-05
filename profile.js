@@ -703,7 +703,7 @@ var profile = {
       "menu": {
         "controls": [
           {
-            "html": "<ion-header-bar class=\"bar-stable\">\n  <h1 class=\"title\">Left Menu</h1>\n</ion-header-bar>\n<ion-content>\n    <ion-list>\n        <ion-item menu-close>\n          Login\n        </ion-item>\n        <ion-item menu-close>\n          Search\n        </ion-item>\n        <ion-item menu-close>\n          Browse\n        </ion-item>\n        <ion-item menu-close>\n          Playlists\n        </ion-item>\n    </ion-list>\n</ion-content>",
+            "html": "<ion-header-bar class=\"bar-stable\">\n  <h1 class=\"title\">Left Menu</h1>\n</ion-header-bar>\n<ion-content>\n    <ion-list>\n        <ion-item ui-sref=\"main\" menu-close>\n          Main Page\n        </ion-item>\n        <ion-item ui-sref=\"search\" menu-close>\n          Search\n        </ion-item>\n        <ion-item menu-close>\n          Browse\n        </ion-item>\n        <ion-item menu-close>\n          Playlists\n        </ion-item>\n    </ion-list>\n</ion-content>",
             "id": "html-block-1454602947899",
             "name": "Menu Items",
             "type": "html-block"
