@@ -19,18 +19,23 @@
   <div ng-style="bodyStyle('scroll')">
     <div ng-if = "profile">
       <ion-side-menus>
-        <!-- Left menu -->
+
         <ion-side-menu side="left" is-enabled = "part('profile.ui.pages.menu')">
           <div lucy-control="part('profile.ui.pages.menu')"></div>
         </ion-side-menu>
 
         <ion-side-menu-content>
+          
+          <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+              <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+          </ion-nav-bar>
+
           <ion-nav-view name="main"></ion-nav-view>
         </ion-side-menu-content>
-
-        <!-- Right menu -->
-        <ion-side-menu side="right" is-enabled = "false">
-        </ion-side-menu>
 
       </ion-side-menus>
     </div>
@@ -60,13 +65,14 @@
   </script>
 
   <script type="text/ng-template" id="partials/page.html">
-    <h1>{{pageName}}</h1>
-    <ion-header-bar>
+    <!--ion-header-bar>
       <div lucy-control = "part('profile.ui.header')"></div>
-    </ion-header-bar>
-    <ion-content>
-      <div lucy-control="part('profile.ui.pages.' + pageName)"></div>
-    </ion-content>
+    </ion-header-bar-->
+    <ion-view view-title="{{pageName}}">
+      <ion-content>
+        <div lucy-control="part('profile.ui.pages.' + pageName)"></div>
+      </ion-content>
+    </ion-view>
     <ion-footer-bar>
       <div lucy-control = "part('profile.ui.footer')"></div>
     </ion-footer-bar>
