@@ -630,7 +630,14 @@ var profile = {
   "timezone": "Asia/Jerusalem",
   "ui": {
     "footer": {
-      "controls": [],
+      "controls": [
+        {
+          "css": ".html-block-1454682676359 p {\n    text-align: center;\n}",
+          "html": "<p>Copyright Ionic Apps</p>",
+          "id": "html-block-1454682676359",
+          "type": "html-block"
+        }
+      ],
       "type": "lucy-v-panel"
     },
     "header": {
