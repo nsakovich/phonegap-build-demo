@@ -26,15 +26,13 @@
 
         <ion-side-menu-content>
 
-          <ion-nav-bar class="bar-stable" lucy-control = "part('profile.ui.header')"></div>
-
-          <!--ion-nav-bar class="bar-stable">
+          <ion-nav-bar class="bar-stable">
             <ion-nav-back-button></ion-nav-back-button>
 
             <ion-nav-buttons side="left">
               <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
             </ion-nav-buttons>
-          </ion-nav-bar-->
+          </ion-nav-bar>
 
           <ion-nav-view name="main"></ion-nav-view>
         </ion-side-menu-content>
@@ -67,6 +65,9 @@
   </script>
 
   <script type="text/ng-template" id="partials/page.html">
+    <!--ion-header-bar>
+      <div lucy-control = "part('profile.ui.header')"></div>
+    </ion-header-bar-->
     <ion-view view-title="{{pageName}}">
       <ion-content>
         <div lucy-control="part('profile.ui.pages.' + pageName)"></div>
