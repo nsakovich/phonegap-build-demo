@@ -729,8 +729,9 @@ var profile = {
       "search": {
         "controls": [
           {
-            "html": "<h1>Search</h1>",
+            "html": "<div class=\"list list-inset\">\n  <label class=\"item item-input\">\n    <i class=\"icon ion-search placeholder-icon\"></i>\n    <input type=\"text\" placeholder=\"Search\">\n  </label>\n</div>\n\n<div class=\"list\">\n    <a ng-repeat = \"product in products\" class=\"item item-thumbnail-left\">\n        <img src=\"\">\n        <h2>Pretty Hate Machine</h2>\n        <p>Nine Inch Nails</p>\n    </a>\n</div>",
             "id": "html-block-1454678351029",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    scope.search = function() {\n        scope.products = [];  \n    };\n};",
             "name": "Search",
             "type": "html-block"
           }
