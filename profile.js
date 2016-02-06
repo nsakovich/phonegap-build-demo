@@ -731,7 +731,7 @@ var profile = {
           {
             "html": "<div class=\"list list-inset\">\n  <label class=\"item item-input\">\n    <i class=\"icon ion-search placeholder-icon\"></i>\n    <input ng-change = \"search()\" ng-model-options = \"{ debounce: 1000 }\" ng-model = \"query\" type=\"text\" placeholder=\"Search\">\n  </label>\n</div>\n\n<div class=\"list\">\n    <a ng-repeat = \"product in products\" class=\"item item-thumbnail-left\">\n        <img src=\"\">\n        <h2>Pretty Hate Machine</h2>\n        <p>Nine Inch Nails</p>\n    </a>\n</div>",
             "id": "html-block-1454678351029",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector(), \n        $http = injector.get('$http');\n    \n    scope.search = function() {\n        $http.get({\n            url: 'https://catalog.api.onliner.by/search/products',\n            params: {\n                query: 'iphone'\n            }\n        }).then(function(data) {\n            scope.products = data.products;      \n        });\n    };\n};",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector(), \n        $http = injector.get('$http');\n    \n    scope.search = function() {\n        $http.get('https://catalog.api.onliner.by/search/products', {\n            params: {\n                query: 'iphone'\n            }\n        }).then(function(data) {\n            scope.products = data.products;      \n        });\n    };\n};",
             "name": "Search",
             "type": "html-block"
           }
