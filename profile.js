@@ -729,7 +729,8 @@ var profile = {
       "search": {
         "controls": [
           {
-            "html": "<div class=\"list list-inset\">\n  <label class=\"item item-input\">\n    <i class=\"icon ion-search placeholder-icon\"></i>\n    <input ng-change = \"search()\" ng-model-options = \"{ debounce: 1000 }\" ng-model = \"query\" type=\"text\" placeholder=\"Search\">\n  </label>\n</div>\n\n<div class=\"list\">\n    <a ng-repeat = \"product in products\" class=\"item item-thumbnail-left\">\n        <img src=\"\">\n        <h2 ng-bind = \"product.name\"></h2>\n        <p ng-bind = \"product.description\"></p>\n    </a>\n</div>",
+            "css": "",
+            "html": "<div class=\"list list-inset\">\n  <label class=\"item item-input\">\n    <i class=\"icon ion-search placeholder-icon\"></i>\n    <input ng-change = \"search()\" ng-model-options = \"{ debounce: 1000 }\" ng-model = \"query\" type=\"text\" placeholder=\"Search\">\n  </label>\n</div>\n\n<div class=\"list\">\n    <a ng-repeat = \"product in products\" class=\"item item-thumbnail-left\">\n        <img ng-src=\"{{product.images.header}}\">\n        <h2 ng-bind = \"product.name\"></h2>\n        <p ng-bind = \"product.description\"></p>\n    </a>\n</div>\n",
             "id": "html-block-1454678351029",
             "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    var injector = window.angular.element(document).injector(), \n        $http = injector.get('$http'),\n        $timeout = injector.get('$timeout');\n    \n    scope.search = function() {\n        $http.get('https://catalog.api.onliner.by/search/products', {\n            params: {\n                query: scope.query\n            }\n        }).then(function(response) {\n            $timeout(function() {\n                scope.products = response.data.products;\n            });\n        });\n    };\n};",
             "name": "Search",
