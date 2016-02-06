@@ -73,7 +73,7 @@
     <!--ion-header-bar>
       <div lucy-control = "part('profile.ui.header')"></div>
     </ion-header-bar-->
-    <ion-view view-title="{{getPageTitle()}}">
+    <ion-view view-title="{{data.pageTitle}}">
       <!--ion-content-->
         <div lucy-control="part('profile.ui.pages.' + pageName)"></div>
       <!--/ion-content-->
@@ -204,12 +204,11 @@
 
     module.controller('PageController', ['pageName', '$scope', function(pageName, $scope) {
       $scope.pageName = pageName;
-      $scope.pageTitle = pageName;
-      $scope.getPageTitle = function() {
-        return $scope.pageTitle;
+      $scope.data = {
+        pageTitle: pageName
       };
       $scope.setPageTitle = function(title) {
-        $scope.pageTitle = title;
+        $scope.data.pageTitle = title;
       };
     }]);
 
