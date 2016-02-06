@@ -731,6 +731,7 @@ var profile = {
           {
             "html": "<div>{{profile.product}}</div>",
             "id": "html-block-1454799852745",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    function init() {\n        return scope.setPageTitle && scope.setPageTitle(\"Hello!\");\n    }\n    init();\n\n};",
             "name": "Product",
             "type": "html-block"
           }
