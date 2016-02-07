@@ -729,10 +729,10 @@ var profile = {
       "product": {
         "controls": [
           {
-            "css": ".html-block-1454799852745 .img-wrapper {\n    text-align: center;\n}",
-            "html": "<ion-content>\n    <div class=\"list card\">\n      <div class=\"item item-body\">\n        <div class = \"img-wrapper\">\n            <img ng-src=\"{{profile.product.images.header}}\">\n        </div>\n        <p ng-bind-html = \"profile.product.description\"></p>\n        <p>\n          <a href=\"#\" class=\"subdued\">1 Like</a>\n          <a href=\"#\" class=\"subdued\">5 Comments</a>\n        </p>\n      </div>\n    </div>\n</ion-content>",
+            "css": ".html-block-1454799852745 .img-wrapper {\n    text-align: center;\n}\n\n.html-block-1454799852745 .description {\n    margin-top: 0;\n}",
+            "html": "<ion-content>\n    <div class=\"list card\">\n      <div class=\"item item-body\">\n        <p class = \"description\" ng-bind-html = \"product.description\"></p>\n        <div ng-if = \"image()\" class = \"img-wrapper\">\n            <img ng-src=\"{{image()}}\">\n        </div>\n        <p>\n          <a href=\"#\" class=\"subdued\">1 Like</a>\n          <a href=\"#\" class=\"subdued\">5 Comments</a>\n        </p>\n      </div>\n    </div>\n</ion-content>",
             "id": "html-block-1454799852745",
-            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    function init() {\n        return scope.setPageTitle && scope.setPageTitle(scope.profile.product.name);\n    }\n    init();\n\n};",
+            "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    scope.product = scope.profile.product;\n    scope.image = function() {\n        return scope.product.images.header || scope.product.images.icon;\n    };\n    \n    function init() {\n        return scope.setPageTitle && scope.setPageTitle(scope.profile.product.name);\n    }\n    init();\n\n};",
             "name": "Product",
             "type": "html-block"
           }
