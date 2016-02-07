@@ -729,7 +729,8 @@ var profile = {
       "product": {
         "controls": [
           {
-            "html": "<ion-content>{{profile.product}}</ion-content>",
+            "css": ".html-block-1454799852745 .img-wrapper {\n    text-align: center;\n}",
+            "html": "<ion-content>\n    <div class=\"list card\">\n      <div class=\"item item-body\">\n        <div class = \"img-wrapper\">\n            <img ng-src=\"{{profile.product.images.header}}\">\n        </div>\n        <p ng-bind-html = \"profile.product.description\"></p>\n        <p>\n          <a href=\"#\" class=\"subdued\">1 Like</a>\n          <a href=\"#\" class=\"subdued\">5 Comments</a>\n        </p>\n      </div>\n    </div>\n</ion-content>",
             "id": "html-block-1454799852745",
             "javascript": "this.extend = function(scope) {\n    'use strict';\n    \n    function init() {\n        return scope.setPageTitle && scope.setPageTitle(scope.profile.product.name);\n    }\n    init();\n\n};",
             "name": "Product",
