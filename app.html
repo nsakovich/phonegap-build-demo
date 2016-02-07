@@ -74,7 +74,7 @@
       <div lucy-control = "part('profile.ui.header')"></div>
     </ion-header-bar-->
     <ion-view>
-    <ion-nav-title>{{data.pageTitle}}</ion-nav-title>
+    <ion-nav-title ng-bind-html = "data.pageTitle"></ion-nav-title>
       <!--ion-content-->
         <div lucy-control="part('profile.ui.pages.' + pageName)"></div>
       <!--/ion-content-->
