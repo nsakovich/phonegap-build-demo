@@ -194,7 +194,11 @@
                     }
 
                     if (this['extend']) {
-                        this['extend'](scope);
+                        var pageScope;
+                        if (scope.$parent) {
+                            pageScope = scope.$parent.$parent.$parent.$parent;
+                        }
+                        this['extend'](scope, pageScope);
                     }
                 }, true);
             }
