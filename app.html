@@ -196,8 +196,8 @@
                     var args = [];
                     if(this['inject']) {
                         angular.forEach(this['inject'], function(name) {
-                            if (name === 'pageScope') {
-                                args.push[scope.$parent.$parent.$parent.$parent;        
+                            if (name === 'pageScope' && scope.$parent) {
+                                args.push[scope.$parent.$parent.$parent.$parent];        
                             } else {
                                 
                             }
