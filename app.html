@@ -193,13 +193,14 @@
                         }
                     }
                     
-                    var args = [scope];
+                    var args = [];
                     
                     window.console.log("Args:");   
                     window.console.log(args);
                     window.console.log("Inject:");   
                     window.console.log(this['inject']);
                     
+                    args.push(scope);
                     if(this['inject']) {
                         angular.forEach(this['inject'], function(name) {
                             window.console.log(name);   
