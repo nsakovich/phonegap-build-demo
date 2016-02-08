@@ -86,7 +86,7 @@ module.directive('htmlBlock', ['$compile',function($compile) {
                     angular.forEach(this['inject'], function(name) {
                         if (name === 'pageScope' && scope.$parent) {
                             args.push(scope.$parent.$parent.$parent.$parent);
-                        } if (name === 'app') {
+                        } else if (name === 'app') {
                           args.push(module);
                         } else {
                             args.push(injector.get(name));
