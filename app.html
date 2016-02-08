@@ -193,7 +193,7 @@
                         }
                     }
                     
-                    var args = [];
+                    var args = [scope];
                     if(this['inject']) {
                         angular.forEach(this['inject'], function(name) {
                             if (name === 'pageScope' && scope.$parent) {
@@ -205,7 +205,7 @@
                     }
 
                     if (this['extend']) {                 
-                        this['extend'].apply(scope, args);
+                        this['extend'].apply(this, args);
                     }
                     
                 }, true);
