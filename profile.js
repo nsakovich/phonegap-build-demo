@@ -633,7 +633,7 @@ var profile = {
       "controls": [
         {
           "css": ".html-block-1454682676359 p {\n    text-align: center;\n    padding-top: 8px;\n}\n\nion-footer-bar div {\n    width: 100%;\n}",
-          "html": "<p>Copyright Ionic Apps</p>",
+          "html": "<p>Поиск по каталогу onliner.by</p>",
           "id": "html-block-1454682676359",
           "name": "Copyright",
           "type": "html-block"
