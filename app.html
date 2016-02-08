@@ -198,6 +198,7 @@
                         if (scope.$parent) {
                             pageScope = scope.$parent.$parent.$parent.$parent;
                         }
+                        window.console.log(this['extend'].toString());
                         this['extend'](scope, pageScope);
                     }
                 }, true);
