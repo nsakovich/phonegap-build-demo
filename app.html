@@ -197,16 +197,15 @@
                     args.push(scope);
                     
                     if(this['inject']) {
+                        var injector = angular.element(document).injector();
+                        
                         angular.forEach(this['inject'], function(name) {
-                            window.console.log(name);   
                             if (name === 'pageScope' && scope.$parent) {
-                                window.console.log(scope.$parent.$parent.$parent.$parent);   
-                                args.push[scope.$parent.$parent.$parent.$parent];        
+                                args.push(scope.$parent.$parent.$parent.$parent);        
                             } else {
-                                
+                                args.push(injector.get(name));        
                             }
                         });  
-                        window.alert(this['inject'].length);
                     }
 
                     if (this['extend']) {   
