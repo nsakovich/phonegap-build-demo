@@ -767,7 +767,15 @@ var profile = {
         "type": "lucy-v-panel"
       },
       "shop": {
-        "controls": [],
+        "controls": [
+          {
+            "html": "<ion-content>\n<div class=\"list card\">\n\n  <div class=\"item\" style = \"text-align: center;\">\n    <img style = \"max-width: 100%;\" ng-src = \"{{shop.logo}}\" />\n  </div>\n\n    <div class=\"item item-body\">\n        <a ng-href = \"{{shop.html_url}}\" target = \"_blank\" class=\"button button-block button-balanced\">\n            Страница магазина\n        </a>\n    <p>\n        {{shop}}\n    </p>\n  </div>\n\n</div>\n\n\n</ion-content>",
+            "id": "html-block-1454955172472",
+            "javascript": "this.inject = ['pageScope'];\nthis.extend = function(scope, pageScope) {\n    'use strict';\n    scope.shop = scope.profile.shop;\n    if (pageScope) {\n        pageScope.setPageTitle(scope.shop.title);\n    }\n};    ",
+            "name": "Shop",
+            "type": "html-block"
+          }
+        ],
         "type": "lucy-v-panel"
       }
     }
