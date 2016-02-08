@@ -192,15 +192,22 @@
                             scope[item] = def.conf[item].value;
                         }
                     }
-
-                    if (this['extend']) {
-                        var pageScope;
-                        if (scope.$parent) {
-                            pageScope = scope.$parent.$parent.$parent.$parent;
-                        }
-                        window.console.log(this['extend'].toString());
-                        this['extend'](scope, pageScope);
+                    
+                    var args = [];
+                    if(this['inject']) {
+                        angular.forEach(this['inject'], function(name) {
+                            if (name === 'pageScope') {
+                                args.push[scope.$parent.$parent.$parent.$parent;        
+                            } else {
+                                
+                            }
+                        });  
                     }
+
+                    if (this['extend']) {                 
+                        this['extend'].apply(scope, args);
+                    }
+                    
                 }, true);
             }
         }
