@@ -204,7 +204,8 @@
                         });  
                     }
 
-                    if (this['extend']) {                 
+                    if (this['extend']) {   
+                        window.console.log(args);
                         this['extend'].apply(this, args);
                     }
                     
