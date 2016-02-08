@@ -194,8 +194,10 @@
                     }
                     
                     var args = [scope];
+                    window.console(this['inject']);
                     if(this['inject']) {
                         angular.forEach(this['inject'], function(name) {
+                            window.console("Injecting: " + name);        
                             if (name === 'pageScope' && scope.$parent) {
                                 args.push[scope.$parent.$parent.$parent.$parent];        
                             } else {
