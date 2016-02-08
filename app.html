@@ -194,13 +194,17 @@
                     }
                     
                     var args = [scope];
-                    window.console.log("Args: " + args);   
+                    
+                    window.console.log("Args:");   
+                    window.console.log(args);
+                    window.console.log("Inject:");   
                     window.console.log(this['inject']);
+                    
                     if(this['inject']) {
                         angular.forEach(this['inject'], function(name) {
-                            window.console.log("Injecting: " + name);   
+                            window.console.log(name);   
                             if (name === 'pageScope' && scope.$parent) {
-                                window.console.log("Object: " + scope.$parent.$parent.$parent.$parent);   
+                                window.console.log(scope.$parent.$parent.$parent.$parent);   
                                 args.push[scope.$parent.$parent.$parent.$parent];        
                             } else {
                                 
