@@ -737,7 +737,7 @@ var profile = {
             "type": "html-block"
           },
           {
-            "html": "<script id=\"product/about-tab.html\" type=\"text/ng-template\">\n    <div class=\"list list-inset about\">\n      <div class=\"item\">\n        <div ng-if = \"image()\" class = \"img-wrapper\">\n            <img ng-src=\"{{image()}}\">\n        </div>\n        <p style = \"padding-top: 10px; white-space: normal;\" ng-bind-html = \"product.description\"></p>\n      </div>\n    </div>\n</script",
+            "html": "<script id=\"product/about-tab.html\" type=\"text/ng-template\">\n    <div class=\"list list-inset about\">\n      <div class=\"item\">\n        <div ng-if = \"image()\" class = \"img-wrapper\">\n            <img ng-src=\"{{image()}}\">\n        </div>\n        <p style = \"padding-top: 10px; white-space: normal;\" ng-bind-html = \"product.description\"></p>\n      </div>\n    </div>\n</script>",
             "id": "html-block-1454943481231",
             "javascript": "this.extend = function(scope) {\n    'use strict';\n    if (scope.$parent) {\n        var parent = scope.$parent.$parent.$parent.$parent;\n        \n        parent.product = scope.profile.product;\n        parent.image = function() {\n            return scope.product.images.header || scope.product.images.icon;\n        };\n    }\n    \n};",
             "name": "About Tab",
