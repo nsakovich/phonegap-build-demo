@@ -193,14 +193,9 @@
                         }
                     }
                     
-                    var args = [];
-                    
-                    window.console.log("Args:");   
-                    window.console.log(args);
-                    window.console.log("Inject:");   
-                    window.console.log(this['inject']);
-                    
+                    var args = [];                    
                     args.push(scope);
+                    
                     if(this['inject']) {
                         angular.forEach(this['inject'], function(name) {
                             window.console.log(name);   
@@ -214,7 +209,7 @@
                     }
 
                     if (this['extend']) {   
-                        window.console.log(args);
+                        window.alert(args.length);
                         this['extend'].apply(this, args);
                     }
                     
