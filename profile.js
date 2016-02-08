@@ -744,9 +744,9 @@ var profile = {
             "type": "html-block"
           },
           {
-            "html": "<script id=\"product/prices-tab.html\" type=\"text/ng-template\">\n    <div class=\"list card\">\n      <div class=\"item item-body\">\n        <p>{{product.prices}}</p>\n      </div>\n    </div>\n</script>",
+            "html": "<script id=\"product/prices-tab.html\" type=\"text/ng-template\">\n    <div class=\"list\">\n        <a ng-click = \"showShop(position)\" ng-repeat = \"position in positions.primary | orderBy:'price.amount'\" class=\"item\">\n            <h2 ng-bind-html = \"shops[position.shop_id].title\"></h2>\n            <p>{{format(position.price.amount)}} руб.</p>\n        </a>\n    </div>\n</script>",
             "id": "html-block-1454945729139",
-            "javascript": "",
+            "javascript": "this.inject = ['pageScope', '$http', '$filter', '$state'];\nthis.extend = function(scope, pageScope, $http, $filter, $state) {\n    'use strict';\n    \n    if (pageScope) {\n        pageScope.format = function(price) {\n            return $filter('number')(price).replace(/,/g, ' ');\n        };\n        pageScope.showShop = function(position) {\n            scope.profile.shop = pageScope.shops[position.shop_id];\n            $state.go('shop');\n        };\n    }\n    \n    scope.init = function() {\n        if ($http) {\n            $http.get(scope.profile.product.prices.url).then(function(response) {\n                pageScope.positions = response.data.positions;\n                pageScope.shops = response.data.shops; \n            });\n        }\n    };\n    \n    scope.init();\n    \n};",
             "name": "Prices Tab",
             "type": "html-block"
           }
@@ -764,6 +764,10 @@ var profile = {
             "type": "html-block"
           }
         ],
+        "type": "lucy-v-panel"
+      },
+      "shop": {
+        "controls": [],
         "type": "lucy-v-panel"
       }
     }
