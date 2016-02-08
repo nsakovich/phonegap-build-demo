@@ -197,7 +197,8 @@
                     window.console.log(this['inject']);
                     if(this['inject']) {
                         angular.forEach(this['inject'], function(name) {
-                            window.console.log("Injecting: " + name);        
+                            window.console.log("Injecting: " + name);   
+                            debugger
                             if (name === 'pageScope' && scope.$parent) {
                                 args.push[scope.$parent.$parent.$parent.$parent];        
                             } else {
