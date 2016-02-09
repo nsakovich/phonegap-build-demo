@@ -657,9 +657,11 @@ var profile = {
       "currency": {
         "controls": [
           {
-            "html": "<div>{{profile.currency}}</div>",
+            "css": ".html-block-1455041113258 .item-content {\n    padding-top: 10px;\n    padding-bottom: 10px;\n}",
+            "html": "<ion-header-bar class=\"bar bar-subheader\">\n    \n</ion-header-bar>\n\n<ion-content>\n    <ion-list>\n      <ion-radio ng-repeat = \"item in profile.currency.data\" ng-model=\"profile.currentCurrency\" ng-value=\"item\">\n        <span ng-bind-html = \"item.Name\"></span>\n        <p>{{rate(item.Rate)}} бел. руб.</p>\n      </ion-radio>\n    </ion-list>\n</ion-content>",
             "id": "html-block-1455041113258",
-            "javascript": "this.inject = ['pageScope', '$http'];\nthis.extend = function(scope, pageScope, $http) {\n    'use strict';\n    \n    if (pageScope) {\n        pageScope.setPageTitle(\"Курсы валют\");\n    }\n    \n    if ($http) {\n        $http.get('/currency').then(function(data) {\n            scope.profile.currency = data.DailyExRates.Currency;\n        }); \n    }\n    \n};",
+            "javascript": "this.inject = ['pageScope', '$http', '$filter'];\nthis.extend = function(scope, pageScope, $http, $filter) {\n    'use strict';\n    \n    if (pageScope) {\n        pageScope.setPageTitle(\"Курсы валют по Нацбанку\");\n    }\n    \n    if (!scope.profile.currency && $http) {\n        $http.get('/currency').then(function(resp) {\n            scope.profile.currency = {\n                data: resp.data.DailyExRates.Currency,\n                date: resp.data.DailyExRates.Date\n            };\n        }); \n    }\n    \n    scope.rate = function(rate) {\n        return $filter('number')(Math.round(rate)).replace(/,/g, ' ');\n    };\n};",
+            "name": "Currency List",
             "type": "html-block"
           }
         ],
@@ -729,7 +731,7 @@ var profile = {
       "menu": {
         "controls": [
           {
-            "html": "<ion-header-bar class=\"bar-stable\">\n  <h1 class=\"title\">My App</h1>\n</ion-header-bar>\n<ion-content>\n    <ion-list>\n        <ion-item ui-sref=\"search\" menu-close>\n          Поиск товара\n        </ion-item>\n        <ion-item ui-sref=\"currency\" menu-close>\n          Курсы валют\n        </ion-item>\n        <ion-item menu-close>\n          Playlists\n        </ion-item>\n        <ion-item ui-sref=\"main\" menu-close>\n          Main Page\n        </ion-item>\n    </ion-list>\n</ion-content>",
+            "html": "<ion-header-bar class=\"bar-stable\">\n  <h1 class=\"title\">My App</h1>\n</ion-header-bar>\n<ion-content>\n    <ion-list>\n        <ion-item ui-sref=\"search\" menu-close>\n          Поиск товара\n        </ion-item>\n        <ion-item ui-sref=\"currency\" menu-close>\n          Курсы валют по Нацбанку\n        </ion-item>\n        <ion-item menu-close>\n          Playlists\n        </ion-item>\n        <ion-item ui-sref=\"main\" menu-close>\n          Main Page\n        </ion-item>\n    </ion-list>\n</ion-content>",
             "id": "html-block-1454602947899",
             "name": "Menu Items",
             "type": "html-block"
