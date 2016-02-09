@@ -659,7 +659,7 @@ var profile = {
           {
             "html": "<div>{{profile.currency}}</div>",
             "id": "html-block-1455041113258",
-            "javascript": "this.inject = ['pageScope', '$http'];\nthis.extend = function(scope, pageScope, $http) {\n    'use strict';\n    \n    if (pageScope) {\n        pageScope.setPageTitle(\"Курсы валют\");\n    }\n    \n    if (!scope.profile.currency && $http) {\n        $http.get('/currency').then(function(data) {\n            scope.profile.currency = data.DailyExRates.Currency;\n        }); \n    }\n    \n};",
+            "javascript": "this.inject = ['pageScope', '$http'];\nthis.extend = function(scope, pageScope, $http) {\n    'use strict';\n    \n    if (pageScope) {\n        pageScope.setPageTitle(\"Курсы валют\");\n    }\n    \n    if ($http) {\n        $http.get('/currency').then(function(data) {\n            scope.profile.currency = data.DailyExRates.Currency;\n        }); \n    }\n    \n};",
             "type": "html-block"
           }
         ],
